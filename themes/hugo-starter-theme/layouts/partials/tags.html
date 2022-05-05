@@ -1,0 +1,16 @@
+<section class="tags">
+    <div class="tags__wrapper">
+        <div class="tags__title-wrapper">
+            <h2 class="tags__title">
+                {{ .Site.Params.tags.title }}
+            </h2>
+        </div>
+        <ul class="tags__list">
+            {{ range $name := .Site.Data.tags.list }}
+            <li>
+                <span class="tags__list_item" style="text-transform: capitalize">{{ $name }}</span>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>

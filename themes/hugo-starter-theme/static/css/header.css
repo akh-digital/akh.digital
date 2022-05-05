@@ -1,0 +1,37 @@
+.site__header {
+    margin: 40px auto 0;
+}
+
+.nav__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    fill: var(--red);
+}
+
+.nav__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav__logo-white {
+    fill: var(--white);
+}
+
+.nav__text {
+    text-decoration: none;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav__text:hover {
+    border-bottom: 2px solid var(--black);
+}

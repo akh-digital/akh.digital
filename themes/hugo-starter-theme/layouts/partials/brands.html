@@ -1,0 +1,24 @@
+{{ if gt (len .Site.Data.brands) 0 }}
+<section class="brands">
+    <div class="brands__wrapper">
+        <div class="brands__title-wrapper">
+            <h2 class="brands__title">{{ .Site.Params.brands.title }}</h2>
+        </div>
+
+        <ul class="brands__list">
+            {{ range .Site.Data.brands }}
+                {{ if .url }}
+                <a class="brands__list-item" href="{{ .url }}" target="_blank">
+                    <img src="{{ .image }}" alt="{{ .name }}" class="brands__list-item_image" />
+                </a>
+                {{ else }}
+                <img src="{{ .image }}" alt="{{ .name }}" class="brands__list-item_image" />
+                {{ end }}
+            {{ end }}
+        </ul>
+        <div class="brands__and-others">
+            and many others
+        </div>
+    </div>
+</section>
+{{ end }}

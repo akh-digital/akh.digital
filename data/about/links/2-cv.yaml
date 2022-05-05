@@ -1,0 +1,9 @@
+big_title: "Check out"
+title: "My CV"
+list:
+  eng:
+    label: "download eng / pdf"
+    link: "https://akh.digital/aleks_kholopov_en_cv_2022.pdf"
+  rus:
+    label: "download rus / pdf"
+    link: "https://akh.digital/aleks_kholopov_ru_cv_2022.pdf"

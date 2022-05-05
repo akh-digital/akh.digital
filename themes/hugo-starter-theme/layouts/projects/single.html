@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+
+{{ partial "post-header.html" .}}
+
+{{ partial "post-meta-data.html" .}}
+
+<div id="post-styles" class="post-styles">
+<!--    {{ $reAltIn := "<p><img src=\"([^\"]+)\" alt=\"([^\"]+)\" /></p>" }}-->
+<!--    {{ $reAltOut := "<figure><img src=\"$1\" alt=\"$2\"><figcaption>$2</figcaption></figure>" }}-->
+<!--    {{ $altContent := .Content | replaceRE $reAltIn $reAltOut | safeHTML }}-->
+
+<!--    {{ $reAltTitleIn := "<p><img src=\"([^\"]+)\" alt=\"([^\"]+)\" title=\"([^\"]+)\" /></p>" }}-->
+<!--    {{ $reAltTitleOut := "<figure><img src=\"$1\" alt=\"$2\" title=\"$3\"><figcaption>$2</figcaption></figure>" }}-->
+<!--    {{ $finalContent := $altContent | replaceRE $reAltTitleIn $reAltTitleOut | safeHTML }}-->
+    {{$finalContent1 := replace .Content "<p><img"  "<figure><img" | safeHTML}}
+    {{$finalContent2 := replace $finalContent1 "</p>"  "</figure>" | safeHTML}}
+
+    {{ $finalContent2 }}
+</div>
+{{ partial "pagination.html" .}}
+
+{{ partial "go-top.html" . }}
+
+{{ partial "footer.html" . }}

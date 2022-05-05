@@ -1,0 +1,29 @@
+/* LAYOUT */
+@font-face {
+  font-family: "SuisseIntl";
+  src: url('/fonts/SuisseIntl-Regular.otf');
+}
+
+@font-face {
+  font-family: "SuisseIntlBold";
+  src: url('/fonts/SuisseIntl-Bold.otf');
+}
+
+body {
+  font-family: "SuisseIntl", sans-serif;
+  background-color: var(--body-color);
+  margin: 0;
+}
+
+.home-page-styles {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.wrapper {
+  padding: 0 80px;
+}

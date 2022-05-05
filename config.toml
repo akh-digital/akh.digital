@@ -1,0 +1,43 @@
+baseURL = "https://mynewhugosite.com"
+title = "🤘 Aleks Kholopov - web designer"
+theme = "hugo-starter-theme"
+
+[menu]
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 20
+
+[params.about]
+  skills_title = ""
+
+[params.user]
+  name = "Aleks Kholopov"
+  post = "product designer"
+  location_1 = "Based in Saint-Peterburg, Russia"
+  location_2 = "*AVAILABLE WORLDWIDE"
+  cords_1 = "59°56'19.07' N"
+  cords_2 = "30°18'50.87' E"
+  cords_map_link = "https://goo.gl/maps/gMe7KHn4FB8AnmXX6"
+
+[params.footer]
+  cr_date_start = "2022"
+  domain = 'AKH.DIGITAL'
+  developer_title = 'Danil Savitsky'
+  developer_link = 'google.com'
+
+[params.tags]
+  title = "Expertise"
+
+[params.brands]
+  title = "Also trusted by"
+
+[params.projects]
+  title = "Recent Projects"

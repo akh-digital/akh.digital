@@ -1,0 +1,40 @@
+.brands__title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands__title {
+    color: var(--red);
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 500;
+}
+
+.brands__list {
+    display: grid;
+    gap: 3rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.brands__list-item {
+    justify-self: center;
+}
+
+.brands__list-item_image {
+    width: 308px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.brands__and-others {
+    margin-top: 60px;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

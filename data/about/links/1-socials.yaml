@@ -1,0 +1,11 @@
+big_title: "Get in touch"
+title: "Say hi!"
+list:
+  - label: "ashtimus@gmail.com"
+    link: "mailto:ashtimus@gmail.com"
+  - label: "telegram"
+    link: "https://t.me/ashtimus"
+    icon: true
+  - label: "linkedin"
+    link: "http://linkedin.com/in/aleksandr-kholopov/"
+    icon: true
