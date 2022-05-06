@@ -47,6 +47,10 @@
     gap: 8px;
 }
 
+.pagination__wrapper {
+    margin-top: 180px;
+}
+
 .pagination__divider {
     border-top: 2px solid var(--black);
 }
@@ -89,7 +93,6 @@
 .post-styles {
     font-size: 36px;
     line-height: 44px;
-    line-height: 40px;
     display: grid;
 }
 
