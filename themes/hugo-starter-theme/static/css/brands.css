@@ -6,21 +6,22 @@
 
 .brands__title {
     color: var(--red);
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     font-weight: 500;
+    text-align: center;
 }
 
 .brands__list {
     display: grid;
-    gap: 3rem;
+    row-gap: 80px;
+    column-gap: 16px;
     list-style: none;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 }
 
 .brands__list-item {
+    display: inline-block;
     justify-self: center;
 }
 
@@ -32,7 +33,7 @@
 
 .brands__and-others {
     margin-top: 60px;
-    font-size: 36px;
+    font-size: 1rem;
     line-height: 44px;
     display: flex;
     justify-content: center;

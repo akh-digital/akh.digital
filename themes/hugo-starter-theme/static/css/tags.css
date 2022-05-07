@@ -10,9 +10,9 @@
 
 .tags__title {
     color: var(--red);
-    font-size: 80px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     font-weight: 500;
-    line-height: 92px;
 }
 
 .tags__list {
@@ -27,12 +27,14 @@
 .tags__list_item {
     list-style: none;
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
-    font-size: 60px;
-    line-height: 60px;
+    word-break: break-all;
+    font-size: 1.9rem;
+    line-height: 1.9rem;
     text-decoration: none;
     color: var(--black);
-    border: 2px solid var(--black);
+    border: 0.1rem solid var(--black);
     padding: 12px 32px;
     border-radius: 42px;
 }

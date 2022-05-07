@@ -16,7 +16,7 @@ body {
     gap: 10px;
     margin-top: 200px;
     margin-bottom: 160px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
 }
 
 .about__about-me_wrapper h2{
@@ -27,16 +27,15 @@ body {
 }
 
 .about__about-me_wrapper p{
-    font-size: 36px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
     text-align: justify;
     text-indent: 70px;
 }
 
-.about__about-me_text {
-    width: 640px;
-}
-
 .about__about-me_text h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     margin-bottom: 40px;
 }
 
@@ -50,10 +49,9 @@ body {
 }
 
 .about__about-me_wrapper img {
-    height: 680px;
+    height: 600px;
     border-radius: 200px;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 14, 75, 0.24);
     z-index: 5;
 }
 
@@ -63,12 +61,15 @@ body {
 }
 
 .skills__list_item-name {
-    font-size: 80px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     font-weight: 500;
     padding-bottom: 90px;
 }
 
 .skills__list_item {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
     margin-left: 30px;
 }
 
@@ -76,23 +77,23 @@ body {
     display: grid;
     font-size: 36px;
     line-height: 43px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
     margin-bottom: 160px;
 }
 
 .links__big-title {
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
 }
 
 .links__title {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
 .links__lists_wrapper {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
     margin-bottom: 120px;
 }
 
@@ -107,8 +108,8 @@ body {
 
 .links__list_items {
     list-style: none;
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
 }
 
 .links__list_items a{

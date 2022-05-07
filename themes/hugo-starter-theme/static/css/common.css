@@ -9,10 +9,29 @@
   src: url('/fonts/SuisseIntl-Bold.otf');
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 32px;
+}
+
 body {
   font-family: "SuisseIntl", sans-serif;
   background-color: var(--body-color);
   margin: 0;
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+.wrapper {
+  padding: 0 5%;
 }
 
 .home-page-styles {
@@ -20,10 +39,6 @@ body {
   margin-top: 60px;
   margin-bottom: 120px;
   text-align: center;
-  font-size: 36px;
-  line-height: 44px;
-}
-
-.wrapper {
-  padding: 0 80px;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
