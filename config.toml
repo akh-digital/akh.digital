@@ -31,7 +31,7 @@ theme = "hugo-starter-theme"
   cr_date_start = "2022"
   domain = 'AKH.DIGITAL'
   developer_title = 'Danil Savitsky'
-  developer_link = 'google.com'
+  developer_link = 'https://www.google.com'
 
 [params.tags]
   title = "Expertise"
