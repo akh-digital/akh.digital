@@ -20,11 +20,12 @@
     font-size: 80px;
     line-height: 80px;
     font-weight: 500;
+    word-break: break-all;
 }
 
 .post-meta-data__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-bottom: 80px;
     margin-top: 60px;
 }
@@ -76,6 +77,8 @@
 
 .post-styles img {
     width: 100%;
+    height: 41rem;
+    object-fit: cover;
 }
 
 .post-meta-data__tags-list-item {
@@ -91,21 +94,21 @@
 }
 
 .post-styles {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
     display: grid;
 }
 
 .post-styles figure {
     text-align: center;
-    margin-block-start: 60px;
-    margin-block-end: 60px;
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
     margin-inline-start: 0;
     margin-inline-end: 0
 }
 
 .post-styles figure img{
-    border-radius: 80px;
+    border-radius: 2.5rem;
 }
 
 .post-styles a {
@@ -124,7 +127,7 @@
 }
 
 .post-styles p {
-    width: 50%;
+    max-width: 30rem;
 }
 
 .post-styles p {

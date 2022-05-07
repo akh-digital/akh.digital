@@ -14,11 +14,11 @@
                 {{ end }}
             </ul>
         </div>
-        {{if isset .Params "web"}}
-        <div class="post-meta-data__date-item">
-            <div>Web:</div>
-            <a target="_blank" href="{{.Params.web}}">{{.Params.web}}</a>
-        </div>
-        {{end}}
     </div>
+    {{if isset .Params "web"}}
+    <div class="post-meta-data__date-item">
+        <div>Web:</div>
+        <a target="_blank" href="{{.Params.web}}">{{.Params.web}}</a>
+    </div>
+    {{end}}
 </section>

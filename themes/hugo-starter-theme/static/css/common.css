@@ -28,6 +28,11 @@ body {
   html {
     font-size: 24px;
   }
+
+  .post-styles p {
+    text-align: center;
+    text-indent: 1px !important;
+  }
 }
 
 .wrapper {
