@@ -1,11 +1,29 @@
 list:
-  - User Interface
-  - UX Research
-  - Product
-  - Digital
-  - Design Systems
-  - Web
-  - Communication
-  - Print
-  - Visual Identity
-  - Creative Strategy
+  - label: User Interface
+    type: tag
+  - link: /img/tags/icon/sun.svg
+    type: icon
+  - label: UX Research
+    type: tag
+  - label: Product
+    type: tag
+  - link: /img/tags/icon/eye.svg
+    type: icon
+  - label: Digital
+    type: tag
+  - label: Design Systems
+    type: tag
+  - label: Web
+    type: tag
+  - label: Communication
+    type: tag
+  - link: /img/tags/icon/rose.svg
+    type: icon
+  - label: Print
+    type: tag
+  - label: Visual Identity
+    type: tag
+  - link: /img/tags/icon/layers.svg
+    type: icon
+  - label: Creative Strategy
+    type: tag

@@ -20,6 +20,10 @@
     margin: 0;
 }
 
+.tags__list__icon {
+    align-self: center;
+}
+
 .tags__list_item {
     list-style: none;
     display: flex;
