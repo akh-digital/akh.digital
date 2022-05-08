@@ -25,6 +25,7 @@
 
 .post-meta-data__wrapper {
     display: grid;
+    row-gap: 80px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-bottom: 80px;
     margin-top: 60px;
@@ -33,6 +34,10 @@
 .post-meta-data__date-item {
     display: flex;
     gap: 100px;
+}
+
+.post-meta-data {
+    margin-bottom: 50px;
 }
 
 .post-meta-data__date-item a{

@@ -24,6 +24,10 @@
     word-break: break-all;
 }
 
+.projects__title svg{
+    flex: none;
+}
+
 .projects__list_header {
     display: flex;
     font-size: 0.7rem;
@@ -37,7 +41,7 @@
 }
 
 .projects__list {
-
+    margin-bottom: 100px;
 }
 
 .projects__list_item a{

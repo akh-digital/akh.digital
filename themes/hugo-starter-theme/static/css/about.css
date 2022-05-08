@@ -65,6 +65,7 @@ body {
     line-height: 2.5rem;
     font-weight: 500;
     padding-bottom: 90px;
+    padding-top: 80px;
 }
 
 .skills__list_item {
@@ -89,6 +90,7 @@ body {
 .links__title {
     font-size: 1.5rem;
     line-height: 1.5rem;
+    margin-bottom: 80px;
 }
 
 .links__lists_wrapper {
@@ -110,6 +112,7 @@ body {
     list-style: none;
     font-size: 1.1rem;
     line-height: 1.4rem;
+    margin-bottom: 24px;
 }
 
 .links__list_items a{
