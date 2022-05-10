@@ -33,6 +33,7 @@ body {
     text-align: center;
     text-indent: 1px !important;
     justify-self: center !important;
+    max-width: 100% !important;
   }
 }
 
@@ -46,5 +47,5 @@ body {
   margin-bottom: 120px;
   text-align: center;
   font-size: 1rem;
-  line-height: 1.8rem;
+  line-height: 1.4rem;
 }

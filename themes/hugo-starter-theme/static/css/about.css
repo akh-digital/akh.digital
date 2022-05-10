@@ -29,7 +29,7 @@ body {
 .about__about-me_wrapper p{
     font-size: 1.1rem;
     line-height: 1.4rem;
-    text-align: justify;
+    text-align: left;
     text-indent: 70px;
 }
 
@@ -76,6 +76,7 @@ body {
 
 .skills__wrapper {
     display: grid;
+    column-gap: 30px;
     font-size: 36px;
     line-height: 43px;
     grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));

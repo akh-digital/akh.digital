@@ -85,12 +85,6 @@
     flex: none
 }
 
-.post-styles img {
-    width: 100%;
-    height: 41rem;
-    object-fit: cover;
-}
-
 .post-meta-data__tags-list-item {
     list-style: none;
     display: flex;
@@ -110,15 +104,12 @@
 }
 
 .post-styles figure {
-    text-align: center;
-    margin-block-start: 2rem;
-    margin-block-end: 2rem;
-    margin-inline-start: 0;
-    margin-inline-end: 0
+    margin: 0;
 }
 
 .post-styles figure img{
     border-radius: 2.5rem;
+    max-width: 100%;
 }
 
 .post-styles a {
@@ -137,10 +128,7 @@
 }
 
 .post-styles p {
-    max-width: 30rem;
-}
-
-.post-styles p {
+    max-width: 50%;
     text-indent: 70px;
 }
 

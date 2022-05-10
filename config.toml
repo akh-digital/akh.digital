@@ -37,7 +37,7 @@ theme = "hugo-starter-theme"
   title = "Expertise"
 
 [params.brands]
-  title = "Also trusted by"
+  title = "Trusted by (+)"
 
 [params.projects]
   title = "Recent Projects"

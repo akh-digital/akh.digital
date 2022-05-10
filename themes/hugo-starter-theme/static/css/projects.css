@@ -24,6 +24,10 @@
     word-break: break-all;
 }
 
+.projects__title {
+    margin: 0 0 20px;
+}
+
 .projects__title svg{
     flex: none;
 }
@@ -37,6 +41,7 @@
 
 .projects__divider {
     margin-top: 20px;
+    margin-bottom: 2rem;
     border-top: 2px solid var(--black);
 }
 

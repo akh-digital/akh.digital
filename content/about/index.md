@@ -4,7 +4,7 @@ type: "about"
 draft: false
 imgSrc: '/photo/alex-2@2x.png'
 iconSrc: '/img/about/arrow-right-long.svg'
-header: 'Hey! It’s'
+header: 'Hey! It’s me'
 iconWidth: 80 
 iconHeight: 48
 ---
