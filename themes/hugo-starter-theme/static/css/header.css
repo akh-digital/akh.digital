@@ -21,7 +21,7 @@
 }
 
 .nav__logo-white {
-    fill: var(--white);
+    filter:  brightness(0) invert(1);
 }
 
 .nav__text {
