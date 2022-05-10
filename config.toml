@@ -1,6 +1,6 @@
 baseURL = "https://tangerine-conkies-99a159.netlify.app/"
 title = "🤘 Aleks Kholopov - Digital Product Designer"
-theme = "hugo-starter-theme"
+theme = "akh-digital"
 
 [menu]
   [[menu.main]]
