@@ -23,5 +23,6 @@ As a part of development team I was involved in this project in a role of  a hea
 As a part of development team I was involved in this project in a role of  a head of design. I was responsible for development and implementation of the creative strategy, brand identity, design of web platform where anyone can create decentralized cryptocurrency Index Funds.
 
 ![5-expx-desktop@2x](5-expx-desktop@2x.png)
+
 Learn more about the project here This is an [here](http://example.com/ "With a Title").
 

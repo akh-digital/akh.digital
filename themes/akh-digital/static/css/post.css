@@ -104,11 +104,11 @@
 }
 
 .post-styles figure {
-    margin: 0;
+    margin: 0 0 2.5rem;
 }
 
 .post-styles figure img{
-    border-radius: 7.8%;
+    border-radius: 80px;
     max-width: 100%;
 }
 
@@ -128,6 +128,7 @@
 }
 
 .post-styles p {
+    margin: 0 0 2.5rem;
     max-width: 50%;
     text-indent: 70px;
 }
