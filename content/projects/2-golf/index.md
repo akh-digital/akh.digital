@@ -1,8 +1,8 @@
 ---
-title: Golf
+title: Russian Disc Golf Association
 date: 2022-01-02
-web: www.asdasd.com
-tags: ["Web", "Digital"]
+web: N/A
+tags: ["UI UX", "Web Design"]
 ---
 
 Disc golf is a new take on traditional golf and is played using plastic flying discs instead of clubs and balls. Disc golf is rapidly growing in popularity, actually it is one of the fastest-growing sports in modern times, with 33% increase in games played from 2019 to 2020 alone. Recent numbers are even more impressive.
