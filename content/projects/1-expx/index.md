@@ -1,7 +1,7 @@
 ---
 title: EXPX Cryptocurrency
 date: 2021-01-02
-web: www.asdasd.come
+web: www.expx.finance
 tags: ["UI UX", "WEB DESIGN", "BRAND IDENTITY","DIGITAL ILLUSTRATION"]
 ---
 
