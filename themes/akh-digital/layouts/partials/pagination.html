@@ -2,7 +2,11 @@
     <div class="pagination__wrapper">
         <div class="pagination__divider"></div>
         <div class="pagination__list">
-            {{ with .PrevInSection }}
+			{{ $list := sort (.Site.GetPage "section" "projects").Pages ".File.Dir" "asc" }}
+			{{$curr_idx := sub (int (first 1 .File.ContentBaseName)) 1}}
+			{{$next_page := index $list (add $curr_idx 1)}}
+			{{$prev_page := index $list (sub $curr_idx 1)}}
+			{{ with $prev_page }}
                 <a class="pagination__item" href="{{ .RelPermalink }}">
                     <svg width="33" height="12" viewBox="0 0 33 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.20726 1.70718L5.79304 0.292969L0.0859375 6.00007L5.79304 11.7072L7.20726 10.293L3.91443 7.00014L32.5002 7.00012V5.00012L3.9143 5.00014L7.20726 1.70718Z" fill="#1E1E1E"/>
@@ -13,7 +17,7 @@
                 </a>
             {{ end }}
 
-            {{ with .NextInSection }}
+            {{ with $next_page }}
                 <a class="pagination__item" href="{{ .RelPermalink }}">
                     <div>
                         NEXT PROJECT
