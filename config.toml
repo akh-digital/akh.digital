@@ -27,6 +27,7 @@ theme = "akh-digital"
   cords_2 = "30°18'50.87' E"
   cords_map_link = "https://goo.gl/maps/gMe7KHn4FB8AnmXX6"
   logoPATH = "/img/tags/icon/triangle.svg"
+	faviconPATH = "/img/favicon.png"
 
 
 [params.footer]
