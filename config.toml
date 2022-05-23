@@ -30,6 +30,7 @@ theme = "akh-digital"
 	faviconPATH = "/img/favicon.png"
 
 
+
 [params.footer]
   cr_date_start = "2022"
   domain = 'AKH.DIGITAL'
