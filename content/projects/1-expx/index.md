@@ -8,7 +8,7 @@ tags: ["UI UX", "WEB DESIGN", "BRAND IDENTITY","DIGITAL ILLUSTRATION"]
 ExpX is a New Zealand-led project, with staff and partners all around the world including Dubai, Russia and Singapore.  
 The core ExpX team includes successful IT entrepreneurs and Blockchain / Smart Contracts experts.
 
-![1-expx-desktop@2x](1-expx-desktop@2x.png)
+![1-expx-desktop@2x](1-expx-desktop@2x.webp)
 
 ExpX is a platform allowing anyone to both invest in and create decentralized cryptocurrency Index Funds with automatic 24/7 rebalancing and additional revenue generation from farming and swap commissions.
 
