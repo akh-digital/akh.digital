@@ -1,0 +1,18 @@
+- big_title: "Get in touch"
+  title: "Say hi!"
+  list:
+    - label: "ashtimus@gmail.com"
+      link: "mailto:ashtimus@gmail.com"
+    - label: "telegram"
+      link: "https://t.me/ashtimus"
+      icon: true
+    - label: "linkedin"
+      link: "http://linkedin.com/in/aleksandr-kholopov/"
+      icon: true
+- big_title: "Check out"
+  title: "My CV"
+  list:
+    - label: "download eng / pdf"
+      link: "/cv/aleks_kholopov_en_cv_2022.pdf"
+    - label: "download rus / pdf"
+      link: "/cv/aleks_kholopov_ru_cv_2022.pdf"
