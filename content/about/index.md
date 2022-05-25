@@ -13,4 +13,6 @@ Born in Estonia, currently based in Saint-P, Russia.
 
 Designing systems, apps, websites and digital illustrations.
 
-Specializing in data visualization, web and UI/UX design using Figma. Passionate about simplicity, constantly trying to build clean and simple products to make people’s lives easier.
+Specializing in data visualization, web and UI/UX design using Figma. 
+
+Passionate about simplicity, constantly trying to build clean and simple products to make people’s lives easier.
