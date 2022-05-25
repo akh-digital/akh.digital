@@ -1,6 +1,6 @@
 ---
 title: "Home"
-imgSrc: '/photo/alex-1@2x.png'
+imgSrc: '/photo/aleks-main@2x.webp'
 ---
 
 Laser-focused at bringing value to the product. 
