@@ -7,9 +7,11 @@ tags: ["UI UX", "DESIGN STRATEGY"]
 
 A.INNOVATE — Comprehensive assessment of engagement to increase the productivity of the employees.
 
-![1-ai-desktop@2x](1-ai-desktop@2x.png)
+![1-ai-desktop@2x](1-ai-desktop@2x.webp)
 
 The innovative and convenient web app that provides an expert approach to solve any HR challenges.
+
+![2-ai-desktop@2x](2-ai-desktop@2x.webp)
 
 ![2-ai-desktop@2x](2-ai-desktop@2x.png)
 
