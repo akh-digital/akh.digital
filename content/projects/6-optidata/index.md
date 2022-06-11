@@ -1,5 +1,5 @@
 ---
-title: OPTIDATA
+title: OptiData
 date: 2020-02-02
 web: 
 tags: ["UI UX", "PRODUCT DESIGN"]
