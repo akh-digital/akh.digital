@@ -10,7 +10,9 @@ There are a lot of nomenclature data files from different suppliers, each one wi
 
 ![1-optdata-desktop@2x](1-optdata-desktop@2x.webp)
 
-
+The OptiData consists of two main modules:
+**Storage** — storage of nomenclature and its analysis. 
+**Modifier** —utility functions for data unification. 
 
 ![3-optdata-desktop@2x](3-optdata-desktop@2x.webp)
 
