@@ -5,8 +5,7 @@ web:
 tags: ["UI UX", "PRODUCT DESIGN"]
 ---
 
-OptiData is powerful web-based solution which presents a sequence of actions that moves data from a source to another destination.
-
+OptiData is powerful web-based solution which presents a sequence of actions that moves data from a source to another destination. 
 There are a lot of nomenclature data files from different suppliers, each one with its own unique data set. It is necesary to store, organize and combine it to analyze it effectively.
 
 ![1-optdata-desktop@2x](1-optdata-desktop@2x.webp)
