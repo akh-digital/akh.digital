@@ -12,23 +12,15 @@ The core ExpX team includes successful IT entrepreneurs and Blockchain / Smart C
 
 ExpX is a platform allowing anyone to both invest in and create decentralized cryptocurrency Index Funds with automatic 24/7 rebalancing and additional revenue generation from farming and swap commissions.
 
-![2-expx-desktop@2x](2-expx-desktop@2x.png)
-
-![3-expx-desktop@2x](3-expx-desktop@2x-1591192.png)
+![2-expx-desktop@2x](2-expx-desktop@2x.webp)
 
 As a part of development team I was involved in this project in a role of a head of design. I was responsible for development and implementation of the creative strategy, brand identity, design of web platform where anyone can create decentralized cryptocurrency Index Funds.
 
-![4-expx-desktop@2x](4-expx-desktop@2x.png)
+![3-expx-desktop@2x](3-expx-desktop@2x.webp)
 
 ExpX web app is based on neomorphism concept with deep shadows, colorful gradients and dark UI.
 
-![5-expx-desktop@2x](5-expx-desktop@2x.png)
+![4-expx-desktop@2x](4-expx-desktop@2x.webp)
 
-
-
-
-
-
-
-Learn more about the project here This is an [here](http://example.com/ "With a Title").
+Learn more about the project  — by following this [link](https://expx.gitbook.io/expx-docs/basic-concepts/what-is-expx/ "With a Title").
 
