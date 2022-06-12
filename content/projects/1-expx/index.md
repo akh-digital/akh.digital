@@ -22,5 +22,5 @@ ExpX web app is based on neomorphism concept with deep shadows, colorful gradien
 
 ![4-expx-desktop@2x](4-expx-desktop@2x.webp)
 
-Learn more about the project  — by following this [link](https://expx.gitbook.io/expx-docs/basic-concepts/what-is-expx/ "With a Title").
+Learn more about the project  — by following this [link](https://expx.gitbook.io/expx-docs/basic-concepts/what-is-expx/ "EXPX Concept").
 
