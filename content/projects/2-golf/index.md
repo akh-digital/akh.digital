@@ -19,4 +19,7 @@ I welcomed this daring project that allowed me to design from scratch. And then 
 ![3-rdga-desktop@2x](3-rdga-desktop@2x.webp)
 
 The website was planned to promote this sport in Russia like and as the easy and fast way to share most important and interesting facts with new and potential players. Creative process was rather long and with many iterations, but in the end RDGA got completely satisfied with the result: clean-looking, easy-to-use and adapted to any devices also with simple path to expand when necessary.
-Check live project  — by following this [link](https://rdga.ru// "RDGA RUS").
+
+![4-rdga-desktop@2x](4-rdga-desktop@2x.webp)
+
+Check live project  — by following this [link](https://rdga.ru/ "RDGA RUS").
