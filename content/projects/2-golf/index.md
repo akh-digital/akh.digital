@@ -1,6 +1,6 @@
 ---
-title: Russian Disc Golf Association
-date: 2021-01-02
+title: RDGA
+date: 2022-01-02
 web: rdga.ru
 tags: ["UI UX", "WEB DESIGN"]
 ---

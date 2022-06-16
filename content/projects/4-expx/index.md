@@ -1,5 +1,5 @@
 ---
-title: EXPX Cryptocurrency
+title: EXPX DeFi
 date: 2021-01-02
 web: expx.finance
 tags: ["UI UX", "WEB DESIGN", "BRAND IDENTITY","DIGITAL ILLUSTRATION"]

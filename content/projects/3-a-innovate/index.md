@@ -1,6 +1,6 @@
 ---
 title: A.Innovate
-date: 2022-02-02
+date: 2021-02-02
 web: www.ainnovate.ru
 tags: ["UI UX", "DESIGN STRATEGY"]
 ---

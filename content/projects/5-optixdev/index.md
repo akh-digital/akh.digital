@@ -1,6 +1,6 @@
 ---
-title: OPTIXDEV
-date: 2019-02-02
+title: OptixDev
+date: 2021-02-02
 web: www.optix.dev
 tags: ["DESIGN SYSTEM", "UI UX", "PRODUCT DESIGN", "WEB DESIGN", "DIGITAL ILLUSTRATION",]
 ---
