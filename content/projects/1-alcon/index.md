@@ -12,7 +12,7 @@ Alcon is the global leader in eye care, dedicated to helping people see brillian
 Originally designed as a web-ordering portal for Alcon contact lenses, it has grown into a multifunctional back office system for the company’s partners, with a CRM, marketing, financial and other modules.
 As part of its strategy to keep enhancing the distributor experience, Alcon wanted to simplify the ordering process.
 
-
+![2-alc-desktop@2x](2-alc-desktop@2x.webp)
 
 - Order-processing and tracking
 - Custom-made loyalty program support
