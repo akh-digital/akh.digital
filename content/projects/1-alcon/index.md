@@ -21,6 +21,10 @@ As part of its strategy to keep enhancing the distributor experience, Alcon want
 - Marketing support catalog
 - External API
 
+![3-alc-desktop@2x](3-alc-desktop@2x.webp)
+
+
+
 
 
 
