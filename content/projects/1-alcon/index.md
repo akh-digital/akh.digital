@@ -21,24 +21,10 @@ As part of its strategy to keep enhancing the distributor experience, Alcon want
 5. Marketing support catalog
 6. External API
 
-
-
 ![3-alc-desktop@2x](3-alc-desktop@2x.webp)
 
 6575676575675
 reteteter
-
-te
-
-ter
-
-t
-
-er
-
-te
-
-
 
 
 
