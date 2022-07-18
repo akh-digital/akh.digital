@@ -14,19 +14,14 @@ As part of its strategy to keep enhancing the distributor experience, Alcon want
 
 ![2-alc-desktop@2x](2-alc-desktop@2x.webp)
 
-- Order-processing and tracking
+1. Order-processing and tracking
+2. Custom-made loyalty program support
+3. CRM
+4. BI and analytics
+5. Marketing support catalog
+6. External API
 
-- Custom-made loyalty program support
 
-- CRM
-
-- BI and analytics
-
-- Marketing support catalog
-
-- External API
-
-  
 
 ![3-alc-desktop@2x](3-alc-desktop@2x.webp)
 
