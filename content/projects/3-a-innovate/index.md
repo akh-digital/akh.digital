@@ -17,9 +17,9 @@ The innovative and convenient web app that provides an expert approach to solve 
 
 Beautifully designed, asking one question at a time like a real conversation, the surveys are engaging and fun to complete. This combination gives the platform great completion rates.
 
-
+![3-ai-desktop@2x](3-ai-desktop@2x.webp)
 
 A.INNOVATE makes collecting and sharing information comfortable and conversational. It's a web based platform business consultant can use to create surveys, share to the personnel, analyze the result and generate a report in both MS Excel and Powerpoint file formats.
 
-
+![4-ai-desktop@2x](4-ai-desktop@2x.webp)
 
