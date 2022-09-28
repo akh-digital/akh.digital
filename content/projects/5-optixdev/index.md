@@ -13,11 +13,9 @@ For the development and modeling of the best user experience, a design system wa
 
 ![2-optdev@2x](2-optdev@2x.webp)
 
-The design system is built according to the principles of atomic design.
+The design system is built according to the principles of atomic design —  Atoms - Molecules - Organisms - Templates - Pages.
 
 ![3-optdev@2x](3-optdev@2x.webp)
 
-
-
-![4-optdev@2x](4-optdev@2x.webp)
+It helps to standardize design language, create coherent digital products and maintain consistency across multiple different products or platforms.
 
