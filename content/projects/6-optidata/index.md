@@ -19,7 +19,7 @@ The OptiData consists of two main modules:
 
 ![3-optdata@2x](3-optdata@2x.webp)
 
-A user can easily set the rules of data unification, build up the data pipeline, convert and modify data in just some clicks.
+A user can easily set the rules of data processing, build up the data pipeline, convert and modify data in just some clicks.
 
 ![4-optdata@2x](4-optdata@2x.webp)
 
