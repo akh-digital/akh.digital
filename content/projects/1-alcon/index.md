@@ -14,6 +14,10 @@ As part of its strategy to keep enhancing the distributor experience, Alcon want
 
 ![2-alc-desktop@2x](2-alc-desktop@2x.webp)
 
+
+
+![3-alc-desktop@2x](3-alc-desktop@2x.webp)
+
 1. Order-processing and tracking
 2. Custom-made loyalty program support
 3. CRM
@@ -21,10 +25,4 @@ As part of its strategy to keep enhancing the distributor experience, Alcon want
 5. Marketing support catalog
 6. External API
 
-![3-alc-desktop@2x](3-alc-desktop@2x.webp)
-
-6575676575675
-reteteter
-
-
-
+![4-alc-desktop@2x](4-alc-desktop@2x.webp)
