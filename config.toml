@@ -44,3 +44,6 @@ theme = "akh-digital"
 
 [params.projects]
   title = "Recent Projects"
+
+[params.analytics]
+googleAnalytics = 'G-H011REW6ZN'
