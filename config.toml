@@ -1,3 +1,4 @@
+googleAnalytics = 'G-8TC2GG2BNJ'
 baseURL = "https://tangerine-conkies-99a159.netlify.app/"
 title = "Aleks Kholopov - Digital Product Designer"
 theme = "akh-digital"
@@ -45,5 +46,4 @@ theme = "akh-digital"
 [params.projects]
   title = "Recent Projects"
 
-[params.analytics]
-googleAnalytics = 'G-8TC2GG2BNJ'
+
