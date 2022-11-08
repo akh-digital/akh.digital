@@ -19,3 +19,4 @@ The design system is built according to the principles of atomic design —  Ato
 
 It helps to standardize design language, create coherent digital products and maintain consistency across multiple different products or platforms.
 
+![4-optdev@2x](4-optdev@2x.webp)
