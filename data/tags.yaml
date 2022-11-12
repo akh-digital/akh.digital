@@ -27,3 +27,5 @@ list:
     type: icon
   - label: Creative Strategy
     type: tag
+  - label: Data Visualization
+    type: tag

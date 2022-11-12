@@ -2,7 +2,7 @@
 title: Alcon
 date: 2022-02-02
 web: www.alcon.com
-tags: ["UI UX", "PRODUCT DESIGN"]
+tags: ["UI UX", "PRODUCT DESIGN", "DATA VISUALIZATION"]
 ---
 
 Alcon is the global leader in eye care, dedicated to helping people see brilliantly. With a 70+ year heritage, they are the largest eye care device company in the world – with complementary businesses in Surgical and Vision Care. It is a truly global company that works in over 70 countries and serves patients in more than 140 countries.

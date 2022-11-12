@@ -2,7 +2,7 @@
 title: A.Innovate
 date: 2021-02-02
 web: www.ainnovate.ru
-tags: ["UI UX", "DESIGN STRATEGY"]
+tags: ["UI UX", "DESIGN STRATEGY", "DATA VISUALIZATION"]
 ---
 
 A.INNOVATE — Comprehensive assessment of engagement to increase the productivity of the employees.
