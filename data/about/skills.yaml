@@ -1,10 +1,11 @@
 - name: "Hard Skills: "
   skills:
-    - CJM, User flow, Personas
-    - Creating from low-fidelity (wireframes) to high-fidelity prototypes in Figma
+    - Product Design, Brand & Communication Design, CJM Creation, User Flow Creation, A/B Testing, UX Research, Side-by-Side Testing, Corridor Testing, Quantitative Research,
+Interface Creation, Interactive Prototyping, Wireframing
+    - Design - Figma, Photoshop, Illustrator, InDesign
+    - Analytics - Google Analytics, Yandex.Metrica, Tableau
     - Usage of the principles of “atomic design” and rules of working with and creating of modern design systems
     - Knowledge of the Human Interface (IOS) and Google Material Design Guidelines (Android)
-    - Constantly monitoring UX/UI trends
     - Basic knowledge of HTML / CSS
 - name: "Soft Skills: "
   skills:
