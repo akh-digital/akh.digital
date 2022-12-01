@@ -46,4 +46,5 @@ theme = "akh-digital"
 [params.projects]
   title = "Recent Projects"
 
+enableRobotsTXT = true
 
