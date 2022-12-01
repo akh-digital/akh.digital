@@ -1,4 +1,3 @@
-User-Agent: Yandex
-User-Agent: Googlebot
+User-Agent: *
 Disallow: / 404 /
 Disallow: / notion /
