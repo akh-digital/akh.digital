@@ -1,8 +1,9 @@
 - name: "Hard Skills: "
   skills:
     - Product Design, Brand & Communication Design, CJM Creation, User Flow Creation, A/B Testing, UX Research, Side-by-Side Testing, Corridor Testing, Interface Creation, Interactive Prototyping, Wireframing
-    - Design - Figma, Photoshop, Illustrator, InDesign
-    - Analytics - Google Analytics, Yandex.Metrica, Tableau
+    - Design — Figma, Zeplin, Adobe (Photoshop, Illustrator, InDesign)
+    - Analytics — Google Analytics, Yandex.Metrica, Tableau
+    - WebDev — VSCode, GitHub, Atom/Typora, Notion
     - Principles of “atomic design” and rules of working with and creating of modern design systems
     - Human Interface (IOS) and Google Material Design Guidelines (Android)
     - Basic knowledge of HTML / CSS
