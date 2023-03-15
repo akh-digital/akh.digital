@@ -34,8 +34,8 @@ theme = "akh-digital"
 [params.footer]
   cr_date_start = "2022"
   domain = 'AKH.DIGITAL'
-  developer_title = 'Danil Savitsky'
-  developer_link = 'https://www.linkedin.com/in/daniil-savitskii//'
+  developer_title = 'Daniil Savitskii'
+  developer_link = 'https://www.linkedin.com/in/daniil-savitskii/'
 
 [params.tags]
   title = "Expertise"
