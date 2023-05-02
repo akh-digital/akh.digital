@@ -9,6 +9,9 @@
     - label: "linkedin"
       link: "http://linkedin.com/in/aleksandr-kholopov/"
       icon: true
+    - label: "Instagram"
+      link: "https://www.instagram.com/akh.digital/"
+      icon: true 
 - big_title: "Check out"
   title: "My CV"
   list:
