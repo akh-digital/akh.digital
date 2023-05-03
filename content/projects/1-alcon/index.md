@@ -26,3 +26,5 @@ As part of its strategy to keep enhancing the distributor experience, Alcon want
 6. External API
 
 ![4-alc-desktop@2x](4-alc-desktop@2x.webp)
+
+Check feedback  — by following this [link](https://sk.ru/news/rezident-skolkovo-vnedril-svoyu-razrabotku-v-servis-kompanii-alcon/ "SK").
