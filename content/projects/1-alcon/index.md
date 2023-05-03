@@ -27,4 +27,4 @@ As part of its strategy to keep enhancing the distributor experience, Alcon want
 
 ![4-alc-desktop@2x](4-alc-desktop@2x.webp)
 
-Check feedback  — by following this [link](https://sk.ru/news/rezident-skolkovo-vnedril-svoyu-razrabotku-v-servis-kompanii-alcon/ "SK").
+Customer's feedback  — [SK.RU](https://sk.ru/news/rezident-skolkovo-vnedril-svoyu-razrabotku-v-servis-kompanii-alcon/ "external linK").
