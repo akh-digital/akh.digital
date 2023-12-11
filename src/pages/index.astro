@@ -1,0 +1,150 @@
+---
+// const allPosts = await Astro.glob("../projects/*.md");
+// console.log(allPosts.map(x => x.url))
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GoToTop from "../components/goToTop.astro";
+import LinkArrow from "../components/LinkArrow.astro";
+import Logo from "../components/Logo.astro";
+---
+
+<BaseLayout>
+	<div class="mt-3.5 border-t-2 border-akhblack"></div>
+	<div class="mt-5 text-center">
+		<div
+			class="flex items-center justify-center text-center text-6xl font-bold md:text-7xl"
+		>
+			<span>AKH</span>
+			<span class="text-xl font-normal">©</span>
+		</div>
+		<h1 class="mt-0.5 text-lg">Aleks Kholopov</h1>
+	</div>
+	<div class="mt-7 border-t-2 border-akhblack"></div>
+	<div
+		class="mt-4 grid grid-cols-3 items-start justify-center text-[12px] uppercase leading-tight [text-wrap:balance] md:text-[16px]"
+	>
+		<span> BASED IN SAINT-PETERBURG, RUSSIA *AVAILABLE WORLDWIDE</span>
+		<span class="justify-self-center text-center">PRODUCT DESIGNER</span>
+		<span class="text-end">
+			<a href="https://goo.gl/maps/gMe7KHn4FB8AnmXX6" target="_blank">
+				<div>59°56'19.07' N</div>
+				<div>30°18'50.87' E</div>
+			</a>
+		</span>
+	</div>
+	<section>
+		<header class="my-8">
+			<h2 class="text-center text-4xl text-primary">
+				Recent Projects
+				<span>(6)</span>
+			</h2>
+		</header>
+		<div>
+			<article class="relative ring-primary focus-within:ring-2">
+				<p
+					class="flex justify-between border-b-2 border-akhblack pb-2.5 text-xs"
+				>
+					<span>01 /</span>
+					<time>2022</time>
+				</p>
+				<div class="mt-8">
+					<h3 class="text-4xl">
+						<LinkArrow class="float-right h-10 w-10 shrink-0" />
+						<a
+							class="text-justify before:absolute before:inset-0 focus:outline-none"
+							href="/projects/alcon">Alcon</a
+						>
+					</h3>
+					<p
+						class="mt-2.5 inline-flex flex-wrap gap-1 text-[12px] leading-tight md:text-[16px]"
+					>
+						<span
+							class="rounded-full border border-akhblack px-2 py-1"
+						>
+							UI UX
+						</span>
+						<span
+							class="rounded-full border border-akhblack px-2 py-1"
+						>
+							PRODUCT DESIGN
+						</span>
+						<span
+							class="rounded-full border border-akhblack px-2 py-1"
+						>
+							DATA VISUALIZATION
+						</span>
+					</p>
+				</div>
+			</article>
+		</div>
+	</section>
+	<section>
+		<header class="my-8">
+			<h2 class="text-center text-4xl text-primary">
+				Trusted by
+				<span>(+)</span>
+			</h2>
+		</header>
+		<div
+			class="grid grid-cols-1 items-center justify-items-center gap-x-2 gap-y-10 md:grid-cols-2"
+		>
+			<img
+				alt="SIEMENS logo"
+				width="187"
+				height="31"
+				src="/brands/SIEMENS.svg"
+			/>
+			<img
+				alt="Essilor logo"
+				width="64"
+				height="64"
+				src="/brands/Essilor.svg"
+			/>
+			<img
+				alt="SPIEF logo"
+				width="154"
+				height="65"
+				src="/brands/SPIEF.svg"
+			/>
+			<img
+				alt="CooperVision logo"
+				width="183"
+				height="34"
+				src="/brands/CooperVision.svg"
+			/>
+			<img
+				alt="Saprun logo"
+				width="179"
+				height="33"
+				src="/brands/Saprun.svg"
+			/>
+			<img
+				alt="MoscowMetro logo"
+				width="186"
+				height="48"
+				src="/brands/MoscowMetro.svg"
+			/>
+			<img
+				alt="DaSignal logo"
+				width="187"
+				height="47"
+				src="/brands/DaSignal.svg"
+			/>
+			<img
+				alt="Tassta logo"
+				width="185"
+				height="31"
+				src="/brands/Tassta.svg"
+			/>
+		</div>
+		<p class="mt-7 text-center">and many others</p>
+	</section>
+	<div class="my-10 flex justify-center">
+		<a
+			href="#navigation"
+			class="rounded-full border border-akhblack px-2.5 py-4"
+		>
+			<GoToTop class="h-7 w-7" />
+		</a>
+	</div>
+</BaseLayout>
