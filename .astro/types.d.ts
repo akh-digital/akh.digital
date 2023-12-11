@@ -175,9 +175,44 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"projects": {
-"1-alcon/index.md": {
-	id: "1-alcon/index.md";
-  slug: "1-alcon";
+"a-innovate/index.md": {
+	id: "a-innovate/index.md";
+  slug: "a-innovate";
+  body: string;
+  collection: "projects";
+  data: any
+} & { render(): Render[".md"] };
+"alcon/index.md": {
+	id: "alcon/index.md";
+  slug: "alcon";
+  body: string;
+  collection: "projects";
+  data: any
+} & { render(): Render[".md"] };
+"expx/index.md": {
+	id: "expx/index.md";
+  slug: "expx";
+  body: string;
+  collection: "projects";
+  data: any
+} & { render(): Render[".md"] };
+"golf/index.md": {
+	id: "golf/index.md";
+  slug: "golf";
+  body: string;
+  collection: "projects";
+  data: any
+} & { render(): Render[".md"] };
+"optidata/index.md": {
+	id: "optidata/index.md";
+  slug: "optidata";
+  body: string;
+  collection: "projects";
+  data: any
+} & { render(): Render[".md"] };
+"optixdev/index.md": {
+	id: "optixdev/index.md";
+  slug: "optixdev";
   body: string;
   collection: "projects";
   data: any
