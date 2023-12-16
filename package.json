@@ -2,6 +2,10 @@
 	"name": "akh.digital",
 	"private": "true",
 	"type": "module",
+	"engines": {
+		"node": "18",
+		"npm": "8"
+	},
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
