@@ -40,8 +40,4 @@ lerna-debug.log*
 # Configs
 .env.*.local
 
-# TODO
-public
-TODO.js
-
 .astro
