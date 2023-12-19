@@ -53,15 +53,15 @@
 	<meta name="twitter:card" content="summary_large_image"/>
 	<!-- END - Open Graph and Twitter Tags -->
 
-	<link rel="stylesheet" href="/src/styles/common.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/src/styles/header.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/src/styles/footer.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/src/styles/brands.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/src/styles/hero.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/src/styles/tags.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/src/styles/projects.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/src/styles/post.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/src/styles/colors.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/blocks/common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/blocks/header.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/blocks/footer.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/blocks/brands.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/blocks/hero.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/blocks/tags.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/blocks/projects.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/blocks/post.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/_old/colors.css" type="text/css" media="all" />
 
 	{{ with .OutputFormats.Get "rss" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
