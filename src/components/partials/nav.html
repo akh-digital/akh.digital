@@ -1,0 +1,16 @@
+<header id="header" class="site__header">
+  <nav class="nav__wrapper">
+    <a href="/public" class="nav__text">home</a>
+    {{ if (eq .Page.Type "about") }}
+    <span class="nav__logo nav__logo-white">
+        <img width="52" height="52" src="{{.Site.Params.user.logoPATH}}"/>
+      </span>
+    {{ else }}
+    <span class="nav__logo">
+        <img width="52" height="52" src="{{.Site.Params.user.logoPATH}}"/>
+      </span>
+    {{ end }}
+    <a href="/about/" class="nav__text">about</a>
+  </nav>
+</header>
+

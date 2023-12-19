@@ -1,0 +1,47 @@
+# Expertise
+
+- title: Expertise
+  projects:
+    - User Interface
+    - { star }
+    - UX Research
+    - Product
+    - { eye }
+    - Digital
+    - Design Systems
+    - Web
+    - Communication
+    - { star }
+    - Print
+    - Visual Identity
+    - { circles }
+    - Creative Strategy
+
+# Trusted by
+
+- title: Trusted by
+  brands:
+    - title: "SIEMENS"
+      image: "SIEMENS.svg"
+      url: "http://www.siemens.com/global/en"
+    - title: "Essilor"
+      image: "Essilor.svg"
+      url: "http://www.essilor.com/en"
+    - title: "SPIEF"
+      image: "SPIEF.svg"
+      url: "http://www.forumspb.com/en"
+    - title: "CooperVision"
+      image: "CooperVision.svg"
+      url: "http://www.coopervision.com"
+    - title: "Saprun"
+      image: "Saprun.svg"
+      url: "http://www.saprun.com"
+    - title: "MoscowMetro"
+      image: "MoscowMetro.svg"
+      url: "http://www.mosmetro.ru"
+    - title: "DaSignal"
+      image: "DaSignal.svg"
+      url: "http://www.dasignal.ru"
+    - title: "Tassta"
+      image: "Tassta.svg"
+      url: "http://www.tassta.com"

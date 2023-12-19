@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>{{ .Site.Title }} {{ if not .IsHome }} | {{ .Title }} {{ end }}</title>
+	<link rel="icon" type="image/png" href="{{ .Site.Params.user.faviconPATH }}"/>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();
+	for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+	k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	ym(40216794, "init", {
+		 clickmap:true,
+		 trackLinks:true,
+		 accurateTrackBounce:true,
+		 webvisor:true
+	});
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/40216794" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+
+	<!--meta-->
+	<meta name="keywords" content="design, portfolio, design system, product designer, ux research, digital design" />
+	<meta name="description" content="Creative digital product designer focused on UI/UX design, UX research, websites, and mobile apps.">
+	<meta name="author" content="Aleks Kholopov">
+	<meta name="copyright" content="Aleks Kholopov">
+	<meta name="robots" content="index, follow">
+	<meta name="yandex-verification" content="3f8e6fddd299b071" />
+
+	<!-- START - Open Graph and Twitter Tags -->
+	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US"/>
+	<meta property="og:site_name" content="Aleks Kholopov — Digital Product Designer"/>
+	<meta property="og:title" content="Aleks Kholopov Portfolio"/>
+	<meta property="og:url" content="https://akh.digital"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:description" content="A designer specializing in Product Design & UX Research."/>
+	<meta property="og:image" content="https://akh.digital/img/akh-opengraph-1.jpeg"/>
+	<meta property="og:image:url" content="https://akh.digital/img/akh-opengraph-1.jpeg"/>
+	<meta property="og:image:secure_url" content="https://akh.digital/img/akh-opengraph-1.jpeg"/>
+	<!-- Twitter -->
+	<meta name="twitter:title" content="Aleks Kholopov Portfolio"/>
+	<meta name="twitter:url" content="https://akh.digital"/>
+	<meta name="twitter:description" content="A designer specializing in Product Design & UX Research."/>
+	<meta name="twitter:image" content="https://akh.digital/img/akh-opengraph-1.jpeg"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<!-- END - Open Graph and Twitter Tags -->
+
+	<link rel="stylesheet" href="/src/styles/common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/header.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/footer.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/brands.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/hero.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/tags.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/projects.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/post.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/colors.css" type="text/css" media="all" />
+
+	{{ with .OutputFormats.Get "rss" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ end -}}
+
+	{{ template "_internal/google_analytics.html" . }}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+{{ partial "nav.html" . }}
+
+<main class="content">
