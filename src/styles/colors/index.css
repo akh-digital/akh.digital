@@ -1,0 +1,20 @@
+:root {
+	--primary: #f0622c;
+	--black: #1e1e1e;
+	--gray: #e5e5e5;
+	--light-gray: #f2f6fc;
+	--white: #ffffff;
+
+	--body-color: var(--white);
+	--color-focus-ring: hsl(var(--primary));
+}
+
+@supports (color: color(display-p3 1 0 0)) {
+	:root {
+		--primary: oklch(73.63% 0.2111 39.51);
+	}
+}
+
+html {
+	color: var(--primary);
+}
