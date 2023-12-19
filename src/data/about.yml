@@ -1,0 +1,40 @@
+social:
+    title: Get in touch
+    second_title: Say hi!
+    list:
+        - title: "ashtimus@gmail.com"
+          url: "mailto:ashtimus@gmail.com"
+        - title: "telegram"
+          url: "https://t.me/ashtimus"
+        - title: "linkedin"
+          url: "http://linkedin.com/in/aleksandr-kholopov/"
+        - title: "instagram"
+          url: "https://www.instagram.com/akh.digital/"
+
+cv:
+    title: Check out
+    second_title: My CV
+    list:
+        - title: "download eng / pdf"
+          url: "/cv/aleks_kholopov_en_cv_2023.pdf"
+        - title: "download rus / pdf"
+          url: "/cv/aleks_kholopov_ru_cv_2023.pdf"
+
+skills:
+    - title: Hard Skills
+      list:
+          - Product Design, Brand & Communication Design, CJM Creation, User Flow Creation, A/B Testing, UX Research, Side-by-Side Testing, Corridor Testing, Interface Creation, Interactive Prototyping, Wireframing
+          - Design — Figma, Zeplin, Adobe (Photoshop, Illustrator, InDesign)
+          - Analytics — Google Analytics, Yandex.Metrica, Tableau
+          - WebDev — VSCode, GitHub, Atom/Typora, Notion
+          - Principles of “atomic design” and rules of working with and creating of modern design systems
+          - Human Interface (IOS) and Google Material Design Guidelines (Android)
+          - Basic knowledge of HTML / CSS
+    - title: Soft Skills
+      list:
+          - Quickly adapt for changes
+          - Ability and desire to work in a team
+          - Easily switch between different tasks
+          - Empathy, willingness to put oneself in the user's shoes to solve problems
+          - Responsibility and desire to achieve results
+          - Mentoring junior-level designers

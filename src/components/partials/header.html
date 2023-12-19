@@ -15,7 +15,7 @@
 	for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
 	k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
 	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
- 
+
 	ym(40216794, "init", {
 		 clickmap:true,
 		 trackLinks:true,
@@ -53,15 +53,15 @@
 	<meta name="twitter:card" content="summary_large_image"/>
 	<!-- END - Open Graph and Twitter Tags -->
 
-	<link rel="stylesheet" href="/css/common.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/css/header.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/css/footer.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/css/brands.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/css/hero.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/css/tags.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/css/projects.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/css/post.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/css/colors.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/header.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/footer.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/brands.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/hero.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/tags.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/projects.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/post.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/src/styles/colors.css" type="text/css" media="all" />
 
 	{{ with .OutputFormats.Get "rss" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
