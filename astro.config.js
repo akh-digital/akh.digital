@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 
-// https://astro.build/config
+/** @param {import('astro').AstroConfig} */
 export default defineConfig({
-	integrations: [],
+	outDir: "./my-custom-build-directory",
+	cacheDir: "./.cache",
 });
