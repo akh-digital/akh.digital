@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
 	const projects = await getCollection("projects");
-	console.log(projects);
 
 	return projects.map((project) => ({
 		params: { slug: project.slug },

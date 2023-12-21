@@ -7,10 +7,8 @@
 
 	--body-color: var(--white);
 	--color-focus-ring: hsl(var(--primary));
-}
 
-@supports (color: color(display-p3 1 0 0)) {
-	:root {
+	@supports (color: oklch(0 0 0)) {
 		--primary: oklch(73.63% 0.2111 39.51);
 	}
 }
