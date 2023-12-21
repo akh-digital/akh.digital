@@ -10,8 +10,10 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"astro": "^4.0.1",
-		"sharp": "^0.33.0"
+		"astro": "^4.0.7",
+		"css-declaration-sorter": "^7.1.1",
+		"postcss": "^8.4.32",
+		"prettier-plugin-css-order": "^2.0.1"
 	},
 	"devDependencies": {
 		"prettier": "^3.0.3",
