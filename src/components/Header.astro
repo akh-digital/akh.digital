@@ -2,23 +2,20 @@
 import Logo from "./Logo.astro";
 ---
 
-<header class="px-[5%]">
-	<nav
-		id="navigation"
-		class="grid grid-cols-3 items-center pt-1.5 text-xs uppercase"
-	>
-		<div>
-			<a
-				class="border-b-2 border-transparent transition hover:border-akhblack"
-				href="/">home</a
-			>
-		</div>
-		<Logo class="h-7 w-7 justify-self-center text-primary" />
-		<div class="text-end">
-			<a
-				class="border-b-2 border-transparent transition hover:border-akhblack"
-				href="/about">about</a
-			>
-		</div>
+<header class="header">
+	<nav class="navigation">
+		<ul class="navigation__list">
+			<li class="navigation__item">
+				<a class="navigation__link" href="/">Home</a>
+			</li>
+			<li>
+				<a class="navigation__logo" href="/">
+					<Logo />
+				</a>
+			</li>
+			<li>
+				<a class="navigation__link" href="/about">About</a>
+			</li>
+		</ul>
 	</nav>
 </header>

@@ -1,37 +1,37 @@
 .hero__wrapper {
-    margin-top: 40px;
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .hero__text {
-    font-size: 38px;
-    line-height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    line-height: 38px;
+    font-size: 38px;
 }
 
 .hero__text_big {
-    font-size: 144px;
-    font-family: SuisseIntlBold;
     line-height: 144px;
     font-weight: bold;
+    font-size: 144px;
+    font-family: SuisseIntlBold;
 }
 
 .hero__divider {
-    border-top: 2px solid var(--black);
     margin-top: 40px;
+    border-top: 2px solid var(--black);
 }
 
 .hero__additional-text {
-    font-size: 0.5rem;
-    text-transform: uppercase;
     display: grid;
-    justify-items: center;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: center;
     margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 0.5rem;
 }
 
 .hero__additional-text_location {
@@ -40,8 +40,8 @@
 
 .hero__additional-text_cords {
     justify-self: end;
-    text-decoration: none;
     color: var(--black);
+    text-decoration: none;
 }
 
 .hero__avatar_wrapper {
@@ -53,19 +53,19 @@
 }
 
 .hero__avatar_img {
+    z-index: 5;
     height: 680px;
-    border-radius: 200px;
     overflow: hidden;
     box-shadow: 0 8px 32px rgba(0, 14, 75, 0.24);
-    z-index: 5;
+    border-radius: 200px;
 }
 
 .hero__gradient_1 {
     position: absolute;
+    top: 10%;
+    left: 60%;
     width: 30%;
     height: 30%;
-    left: 60%;
-    top: 10%;
 
     background: linear-gradient(180deg, #F22FB0 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
     filter: blur(100px);
@@ -73,10 +73,10 @@
 
 .hero__gradient_2 {
     position: absolute;
+    top: 50%;
+    left: 10%;
     width: 30%;
     height: 30%;
-    left: 10%;
-    top: 50%;
 
     background: linear-gradient(180deg, #FF7BCA 0%, rgba(255, 197, 111, 0.46) 100%);
     filter: blur(100px);

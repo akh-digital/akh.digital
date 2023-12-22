@@ -1,12 +1,12 @@
 .post-header__divider {
-    border-top: 2px solid var(--black);
     margin: 40px 0;
+    border-top: 2px solid var(--black);
 }
 
 .post-header__number {
-    font-size: 48px;
     line-height: 48px;
     font-weight: 500;
+    font-size: 48px;
 }
 
 .post-header__number__first {
@@ -17,18 +17,18 @@
     display: inline-block;
     margin-top: 70px;
     margin-bottom: 10px;
-    font-size: 80px;
     line-height: 80px;
     font-weight: 500;
+    font-size: 80px;
     word-break: break-all;
 }
 
 .post-meta-data__wrapper {
     display: grid;
-    row-gap: 80px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin-bottom: 80px;
+    row-gap: 80px;
     margin-top: 60px;
+    margin-bottom: 80px;
 }
 
 .post-meta-data__date-item {
@@ -41,16 +41,16 @@
 }
 
 .post-meta-data__date-item a{
-    text-decoration: none;
-    color: var(--black)
+    color: var(--black);
+    text-decoration: none
 }
 
 .post-meta-data__tags-list {
-    margin: 0;
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin: 0;
+    list-style: none;
 }
 
 .pagination__wrapper {
@@ -63,22 +63,22 @@
 
 .pagination__list {
     display: flex;
-    gap: 40px;
     justify-content: center;
     align-items: center;
+    gap: 40px;
     padding: 40px 0;
 }
 
 .pagination__item {
     display: flex;
     flex-shrink: unset;
-    gap: 24px;
     align-items: center;
-    text-decoration: none;
-    text-transform: uppercase;
+    gap: 24px;
     color: var(--black);
-    font-size: 24px;
     line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .pagination__item svg {
@@ -86,21 +86,21 @@
 }
 
 .post-meta-data__tags-list-item {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    font-size: 14px;
     padding: 8px 16px;
-    text-decoration: none;
-    color: var(--black);
     border: 1px solid var(--black);
     border-radius: 42px;
+    color: var(--black);
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .post-styles {
-    font-size: 1.1rem;
-    line-height: 1.4rem;
     display: grid;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .post-styles figure {
@@ -108,8 +108,8 @@
 }
 
 .post-styles figure img{
-    border-radius: 80px;
     max-width: 100%;
+    border-radius: 80px;
 }
 
 .post-styles a {

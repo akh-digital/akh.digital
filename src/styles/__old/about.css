@@ -13,30 +13,30 @@ body {
 
 .about__about-me_wrapper {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
     gap: 10px;
     margin-top: 200px;
     margin-bottom: 160px;
-    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
 }
 
 .about__about-me_wrapper h2{
-    font-size: 80px;
-    line-height: 80px;
-    margin: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0;
+    line-height: 80px;
+    font-size: 80px;
 }
 
 .about__about-me_wrapper p{
-    font-size: 1.1rem;
-    line-height: 1.4rem;
     text-align: left;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
     text-indent: 70px;
 }
 
 .about__about-me_text h2 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
     margin-bottom: 40px;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .about__about-me_text object{
@@ -49,49 +49,49 @@ body {
 }
 
 .about__about-me_wrapper img {
-    height: 600px;
-    border-radius: 200px;
-    overflow: hidden;
     z-index: 5;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 200px;
 }
 
 .skills__title {
-    font-size: 80px;
     line-height: 60px;
+    font-size: 80px;
 }
 
 .skills__list_item-name {
-    font-size: 2.5rem;
+    padding-top: 80px;
+    padding-bottom: 90px;
     line-height: 2.5rem;
     font-weight: 500;
-    padding-bottom: 90px;
-    padding-top: 80px;
+    font-size: 2.5rem;
 }
 
 .skills__list_item {
-    font-size: 1.1rem;
-    line-height: 1.4rem;
     margin-left: 30px;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .skills__wrapper {
     display: grid;
-    column-gap: 30px;
-    font-size: 36px;
-    line-height: 43px;
     grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+    column-gap: 30px;
     margin-bottom: 160px;
+    line-height: 43px;
+    font-size: 36px;
 }
 
 .links__big-title {
-    font-size: 2.5rem;
     line-height: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .links__title {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
     margin-bottom: 80px;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .links__lists_wrapper {
@@ -110,13 +110,13 @@ body {
 }
 
 .links__list_items {
-    list-style: none;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
     margin-bottom: 24px;
+    list-style: none;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .links__list_items a{
-    text-decoration: underline;
-    color: var(--black)
+    color: var(--black);
+    text-decoration: underline
 }

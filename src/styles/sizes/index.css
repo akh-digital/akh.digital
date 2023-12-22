@@ -1,0 +1,12 @@
+/*@import "sizes/mobile.css";*/
+/*@import "sizes/tablet.css";*/
+/*@import "sizes/desktop.css";*/
+
+:root {
+	--font-size-h1: 80px;
+	--font-size-h2: 48px;
+	--font-size-h3: 24px;
+	--font-size-h4: 16px;
+	--font-size-normal: 36px;
+	--font-size-small: 16px;
+}

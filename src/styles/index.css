@@ -11,6 +11,12 @@
 
 /* Sizes */
 
-@import "sizes/mobile.css";
-@import "sizes/tablet.css";
-@import "sizes/desktop.css";
+@import "sizes/index.css";
+
+/* Blocks */
+
+@import "blocks/page/index.css";
+@import "blocks/header/index.css";
+@import "blocks/footer/index.css";
+@import "blocks/intro/index.css";
+@import "blocks/divider/index.css";
