@@ -1,37 +1,37 @@
 .site__header {
-    padding-top: 25px;
+	padding-top: 25px;
 }
 
 .nav__wrapper {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .nav__logo {
-    fill: var(--red);
+	fill: var(--red);
 }
 
 .nav__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 
 .nav__logo-white {
-    filter:  brightness(0) invert(1);
+	filter: brightness(0) invert(1);
 }
 
 .nav__text {
-    text-decoration: none;
-    color: var(--black);
-    text-transform: uppercase;
-    font-size: 24px;
-    border-bottom: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	color: var(--black);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 24px;
 }
 
 .nav__text:hover {
-    border-bottom: 2px solid var(--black);
+	border-bottom: 2px solid var(--black);
 }
