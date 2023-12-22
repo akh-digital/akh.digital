@@ -2,31 +2,25 @@
 import Logo from "./Logo.astro";
 ---
 
-<style>
-	@import "../styles/footer/index.css";
-</style>
-
-<footer class="bg-akhblack px-[5%] py-6">
-	<div
-		class="grid grid-cols-3 items-center text-[20px] text-xs uppercase text-white [text-wrap:balance] md:text-[16px]"
-	>
-		<div class="max-w-max">Aleks Kholopov © 2022-2023</div>
-		<Logo class="h-7 w-7 flex-1 justify-self-center text-white" />
-		<div class="text-end">all rights reserved</div>
+<footer class="footer">
+	<div class="footer__info">
+		<p class="footer__info-item">
+			<span>ALEKS KHOLOPOV © 2022-2023</span>
+			<span>ALL RIGHTS RESERVED</span>
+		</p>
+		<Logo />
+		<span class="footer__info-credentials">
+			<span>Tg</span>
+			<span>Li</span>
+			<span>Email</span>
+		</span>
 	</div>
-	<div class="my-[120px] border-t-2 border-white"></div>
-
-	<div
-		class="break-all text-center text-[192px] font-bold uppercase leading-[1.15] text-white [text-wrap:balance]"
-	>
-		AKH.DIGITAL
-	</div>
-	<div class="mt-[120px] text-center text-xs text-white">
-		Developed by <a
-			class="text-primary underline"
-			target="_blank"
-			href="https://www.linkedin.com/in/daniil-savitskii/"
-			>Daniil Savitskii</a
-		>
+	<div class="divider is-white"></div>
+	<div class="footer__big-title">AKH.DIGITAL</div>
+	<div class="footer__project-author">
+		Developed by
+		<a href="https://www.linkedin.com/in/daniil-savitskii/">
+			Daniil Savitskii
+		</a>
 	</div>
 </footer>
