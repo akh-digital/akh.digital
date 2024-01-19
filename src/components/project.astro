@@ -1,0 +1,26 @@
+---
+import Icon from "./icon.astro";
+const { project, number, slug } = Astro.props;
+const tags = project.tags;
+---
+
+<div class="projects__list_header">
+	<span class="projects__list-count">
+		{number}
+	</span>
+	<span class="projects__list-date">
+		{new Date(project.date).getFullYear()}
+	</span>
+</div>
+<div class="projects__divider"></div>
+<article class="projects__list_item">
+	<h3 class="projects__title">
+		<a class="projects__link" href={slug}>
+			{project.title}
+		</a>
+		<Icon size="80" name="arrow-right-up" />
+	</h3>
+	<div class="projects__tags-list">
+		{tags.map((tag) => <span class="projects__tags"> {tag} </span>)}
+	</div>
+</article>

@@ -1,0 +1,32 @@
+---
+import projectData from "../data/projects.yml";
+import type { ProjectYaml } from "../files";
+
+const project = projectData as ProjectYaml;
+const brands = project.brands.brands;
+brands.map((x) => x.title);
+---
+
+<section class="brands">
+	<h1>Trusted by</h1>
+	<div class="brands__wrapper">
+		<ul class="brands__list">
+			{
+				brands.map((brand) => (
+					<a
+						class="brands__list-item"
+						href={brand.url}
+						target="_blank"
+					>
+						<img
+							src={brand.image}
+							alt={brand.title}
+							class="brands__list-item_image"
+						/>
+					</a>
+				))
+			}
+		</ul>
+		<div class="brands__and-others">and many others</div>
+	</div>
+</section>
