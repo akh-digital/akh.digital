@@ -16,3 +16,17 @@ import "../styles/index.css";
 		<slot />
 	</body>
 </html>
+
+<style>
+	.column {
+		@media (width >= 1760px) {
+			padding-inline: calc((100% - 1676px) / 2);
+		}
+		@media (1024px <= width < 1760px) {
+			padding-inline: 42px;
+		}
+		@media (width < 1024px) {
+			padding-inline: 20px;
+		}
+	}
+</style>
