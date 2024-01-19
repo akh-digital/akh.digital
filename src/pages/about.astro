@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+import Icon from "../components/icon.astro";
+---
+
+<BaseLayout>
+	<slot slot="head">
+		<title>Aleks Kholopov — Digital Product Designer | About</title>
+	</slot>
+	<Header />
+	<main>
+		<h1>Hey! It’s me</h1>
+		<Icon name="arrow-right-long" size="80" />
+	</main>
+	<Footer />
+</BaseLayout>
