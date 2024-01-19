@@ -13,6 +13,7 @@ const icons = Object.entries(modules).reduce((acc, [path, value]) => {
 
 const getIcon = (name, size) => {
 	let icon = icons[name] || undefined;
+	console.log(icon);
 	if (size) {
 		icon = icon.replace("<svg", `<svg width="${size}" height="${size}"`);
 	}
@@ -22,4 +23,4 @@ const getIcon = (name, size) => {
 const icon = getIcon(name, size);
 ---
 
-{icon ? <Fragment set:html={icon} /> : "NOT_FOUND_ICON"}
+{icon ? <Fragment set:html={icon} /> : `NOT_FOUND_ICON ${name}`}
