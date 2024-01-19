@@ -1,9 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import "../styles/index.css";
+import Brands from "../components/brands.astro";
+import Projects from "../components/projects.astro";
+import GoToTop from "../components/go-to-top.astro";
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
 ---
 
-<BaseLayout title="[DEV] Aleks Kholopov — Digital Product Designer.">
+<BaseLayout>
+	<slot slot="head">
+		<title>[DEV] Aleks Kholopov — Digital Product Designer.</title>
+	</slot>
+	<Header />
 	<main class="main">
 		<div class="divider"></div>
 		<div class="intro__wrapper">
@@ -25,11 +33,9 @@ import "../styles/index.css";
 		<section>
 			<h1>Expertise</h1>
 		</section>
-		<section>
-			<h1>Recent Projects</h1>
-		</section>
-		<section>
-			<h1>Trusted by</h1>
-		</section>
+		<Projects />
+		<Brands />
+		<GoToTop />
 	</main>
+	<Footer />
 </BaseLayout>
