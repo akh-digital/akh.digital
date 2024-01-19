@@ -1,22 +1,20 @@
 /* Global */
 
-@import "global/fonts.css";
-@import "global/box-model.css";
-@import "global/focus.css";
-@import "global/transitions.css";
+@import "fonts.css";
+@import "box-model.css";
+@import "focus.css";
+@import "transitions.css";
 
 /* Colors */
 
-@import "colors/index.css";
+@import "colors.css";
 
 /* Sizes */
 
-@import "sizes/index.css";
+@import "sizes.css";
 
 /* Blocks */
 
-@import "blocks/page/index.css";
-@import "blocks/header/index.css";
 @import "blocks/footer/index.css";
 @import "blocks/intro/index.css";
 @import "blocks/divider/index.css";
