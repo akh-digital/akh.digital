@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import Project from "./project.astro";
+const projects = await getCollection("projects");
+---
+
+<section class="projects">
+	<div class="projects__wrapper">
+		<div class="projects__title-wrapper">
+			<h1 class="projects__big-title">
+				Recent Projects ({projects.length})
+			</h1>
+		</div>
+		<ul class="projects__list">
+			{
+				projects.map((project, index) => (
+					<Project
+						slug={"/projects/" + project.slug}
+						number={String(index + 1).padStart(2, "0")}
+						project={project.data}
+					/>
+				))
+			}
+		</ul>
+	</div>
+</section>

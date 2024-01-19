@@ -1,0 +1,25 @@
+---
+const { name, size } = Astro.props;
+const modules = import.meta.glob("../../public/icons/*.svg", {
+	as: "raw",
+	eager: true,
+});
+const icons = Object.entries(modules).reduce((acc, [path, value]) => {
+	const filename = path.split("/").pop();
+	const iconName = filename.split(".")[0];
+	acc[iconName] = value;
+	return acc;
+}, {});
+
+const getIcon = (name, size) => {
+	let icon = icons[name] || undefined;
+	if (size) {
+		icon = icon.replace("<svg", `<svg width="${size}" height="${size}"`);
+	}
+	return icon;
+};
+
+const icon = getIcon(name, size);
+---
+
+{icon ? <Fragment set:html={icon} /> : "NOT_FOUND_ICON"}
