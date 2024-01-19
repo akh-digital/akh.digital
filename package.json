@@ -10,12 +10,12 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"astro": "^4.0.7",
-		"css-declaration-sorter": "^7.1.1",
-		"postcss": "^8.4.32",
-		"prettier-plugin-css-order": "^2.0.1"
+		"astro": "^4.0.7"
 	},
 	"devDependencies": {
+		"@rollup/plugin-yaml": "^4.1.2",
+		"css-declaration-sorter": "^7.1.1",
+		"postcss": "^8.4.32",
 		"prettier": "^3.0.3",
 		"prettier-plugin-astro": "^0.12.0"
 	}
