@@ -5,21 +5,21 @@ expertise:
   desc: |
     Laser-focused at bringing value to the product. I concentrate on a mix of lean design-systems for the product team, human-centric interfaces, and a little bit of design magic!
     With 15+ years in the game I worked with clients in a wide array of industries in Russia and around the world.
-tags:
-  - text: User Interface
-  - icon: /star
-  - text: UX Research
-  - text: Product
-  - icon: /eye
-  - text: Digital
-  - text: Design Systems
-  - text: Web
-  - text: Communication
-  - icon: /star
-  - text: Print
-  - text: Visual Identity
-  - icon: /circles
-  - text: Creative Strategy
+  tags:
+    - text: User Interface
+    - icon: sun
+    - text: UX Research
+    - text: Product
+    - icon: eye
+    - text: Digital
+    - text: Design Systems
+    - text: Web
+    - text: Communication
+    - icon: rose
+    - text: Print
+    - text: Visual Identity
+    - icon: layers
+    - text: Creative Strategy
 
 projects:
   title: Recent Projects

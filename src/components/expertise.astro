@@ -1,0 +1,37 @@
+---
+import ProjectYaml from "../data/projects.yml";
+import type { ProjectYaml } from "../files";
+import Icon from "./icon.astro";
+
+const expertiseData = (ProjectYaml as ProjectYaml).expertise;
+
+const tags = expertiseData.tags;
+---
+
+<section class="tags">
+	<div class="tags__wrapper">
+		<div class="tags__title-wrapper">
+			<h2 class="tags__title">
+				{expertiseData.title}
+			</h2>
+		</div>
+		<ul class="tags__list">
+			{
+				tags.map((tag) =>
+					"icon" in tag ? (
+						<Icon name={tag.icon} size="60" />
+					) : (
+						<li>
+							<span
+								class="tags__list_item"
+								style="text-transform: capitalize"
+							>
+								{tag.text}
+							</span>
+						</li>
+					),
+				)
+			}
+		</ul>
+	</div>
+</section>

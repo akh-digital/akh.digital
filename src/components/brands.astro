@@ -1,9 +1,10 @@
 ---
-import projectData from "../data/projects.yml";
+import ProjectYaml from "../data/projects.yml";
 import type { ProjectYaml } from "../files";
 
-const project = projectData as ProjectYaml;
-const brands = project.brands.brands;
+const brandsData = (ProjectYaml as ProjectYaml).brands;
+
+const brands = brandsData.brands;
 brands.map((x) => x.title);
 ---
 
