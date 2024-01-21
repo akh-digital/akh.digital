@@ -3,7 +3,7 @@ import yaml from "@rollup/plugin-yaml";
 
 /** @param {import('astro').AstroConfig} */
 export default defineConfig({
-	outDir: "./my-custom-build-directory",
+	outDir: "./dist",
 	cacheDir: "./.cache",
 	vite: {
 		plugins: [yaml()],
