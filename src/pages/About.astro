@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import AboutTitle from "../components/AboutTitle.astro";
+import AboutSkills from "../components/AboutSkills.astro";
+import AboutSocials from "../components/AboutSocials.astro";
+import AboutCv from "../components/AboutCv.astro";
+import GoToTop from "../components/GoToTop.astro";
+---
+
+<BaseLayout>
+	<slot slot="head">
+		<title>Aleks Kholopov — Digital Product Designer | About</title>
+	</slot>
+	<main class="main column">
+		<Header />
+		<AboutTitle />
+		<AboutSkills />
+		<AboutSocials />
+		<AboutCv />
+		<GoToTop />
+	</main>
+	<Footer />
+</BaseLayout>
+
+<style>
+	:root {
+		--body-color: var(--primary);
+		--logo-color: var(--white);
+	}
+</style>

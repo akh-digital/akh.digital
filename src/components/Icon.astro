@@ -34,7 +34,7 @@ const defaultSize = getIconSize(iconSvg);
 ---
 
 {
-	icon ? (
+	Icon ? (
 		<svg
 			viewBox={`0 0 ${defaultSize} ${defaultSize}`}
 			xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ const defaultSize = getIconSize(iconSvg);
 			class={className}
 			width={size | defaultSize}
 			height={size | defaultSize}
-			set:html={icon}
+			set:html={Icon}
 		/>
 	) : (
 		`NOT_FOUND_ICON ${name}`
