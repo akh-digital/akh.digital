@@ -14,8 +14,8 @@ import Hero from "../components/hero.astro";
 	<slot slot="head">
 		<title>Aleks Kholopov — Digital Product Designer.</title>
 	</slot>
-	<Header />
 	<main class="main column">
+		<Header />
 		<Hero />
 		<Intro />
 		<Expertise />
@@ -25,3 +25,9 @@ import Hero from "../components/hero.astro";
 	</main>
 	<Footer />
 </BaseLayout>
+
+<style>
+	:root {
+		--logo-color: var(--primary);
+	}
+</style>

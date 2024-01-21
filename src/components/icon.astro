@@ -1,5 +1,5 @@
 ---
-const { name, size } = Astro.props;
+const { name, class: className, size } = Astro.props;
 const modules = import.meta.glob("../../public/icons/*.svg", {
 	as: "raw",
 	eager: true,
@@ -11,16 +11,40 @@ const icons = Object.entries(modules).reduce((acc, [path, value]) => {
 	return acc;
 }, {});
 
-const getIcon = (name, size) => {
-	let icon = icons[name] || undefined;
-	console.log(icon);
-	if (size) {
-		icon = icon.replace("<svg", `<svg width="${size}" height="${size}"`);
-	}
-	return icon;
+const processRegExp = (regExp, string) => {
+	const match = string.match(regExp);
+	return match ? match[1] : null;
 };
 
-const icon = getIcon(name, size);
+const svgContentRegExp = /<svg[^>]*>([\s\S]*?)<\/svg>/;
+const viewBoxValueRegExp = /viewBox="\d+ \d+ \d+ (\d+)"/;
+
+const getIconContent = (iconSvg) => {
+	return processRegExp(svgContentRegExp, iconSvg);
+};
+
+const getIconSize = (iconSvg) => {
+	return processRegExp(viewBoxValueRegExp, iconSvg);
+};
+
+let iconSvg = icons[name] || undefined;
+
+const icon = getIconContent(iconSvg);
+const defaultSize = getIconSize(iconSvg);
 ---
 
-{icon ? <Fragment set:html={icon} /> : `NOT_FOUND_ICON ${name}`}
+{
+	icon ? (
+		<svg
+			viewBox={`0 0 ${defaultSize} ${defaultSize}`}
+			xmlns="http://www.w3.org/2000/svg"
+			style="fill: currentColor"
+			class={className}
+			width={size | defaultSize}
+			height={size | defaultSize}
+			set:html={icon}
+		/>
+	) : (
+		`NOT_FOUND_ICON ${name}`
+	)
+}

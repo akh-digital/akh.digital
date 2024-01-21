@@ -1,0 +1,31 @@
+---
+import AboutYaml from "../data/about.yml";
+import type { AboutYaml } from "../files";
+import Icon from "./icon.astro";
+import Social from "./social.astro";
+
+const socials = (AboutYaml as AboutYaml).social;
+
+const list = socials.list;
+---
+
+<section class="links">
+	<div>
+		<h2 class="links__big-title">
+			{socials.title}
+		</h2>
+		<div class="links__lists_wrapper">
+			<span class="links__title">
+				{socials.second_title}
+				<Icon name="arrow-right" />
+			</span>
+			<ul class="links__list">
+				{
+					list.map((social) => (
+						<Social url={social.url} title={social.title} />
+					))
+				}
+			</ul>
+		</div>
+	</div>
+</section>

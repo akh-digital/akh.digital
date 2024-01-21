@@ -1,0 +1,28 @@
+---
+import ProjectYaml from "../data/about.yml";
+import type { AboutYaml } from "../files";
+
+const about = (ProjectYaml as AboutYaml).about;
+
+const descList = about.desc.split("\n").filter(Boolean);
+---
+
+<section class="about">
+	<link
+		rel="stylesheet"
+		href="/src/styles/__old/about.css"
+		type="text/css"
+		media="all"
+	/>
+	<div class="about__about-me_wrapper">
+		<div class="about__about-me_text">
+			<h2>
+				{about.title}
+			</h2>
+			{descList.map((d) => <p>{d}</p>)}
+		</div>
+		<div class="about__about-me_img_wrapper">
+			<img src="" alt="avatar" class="about__about-me_img" />
+		</div>
+	</div>
+</section>

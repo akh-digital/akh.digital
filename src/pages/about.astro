@@ -2,17 +2,31 @@
 import BaseLayout from "../layouts/base-layout.astro";
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-import Icon from "../components/icon.astro";
+import AboutTitle from "../components/about-title.astro";
+import AboutSkills from "../components/about-skills.astro";
+import AboutSocials from "../components/about-socials.astro";
+import AboutCv from "../components/about-cv.astro";
+import GoToTop from "../components/go-to-top.astro";
 ---
 
 <BaseLayout>
 	<slot slot="head">
 		<title>Aleks Kholopov — Digital Product Designer | About</title>
 	</slot>
-	<Header />
-	<main>
-		<h1>Hey! It’s me</h1>
-		<Icon name="arrow-right-long" size="80" />
+	<main class="main column">
+		<Header />
+		<AboutTitle />
+		<AboutSkills />
+		<AboutSocials />
+		<AboutCv />
+		<GoToTop />
 	</main>
 	<Footer />
 </BaseLayout>
+
+<style>
+	:root {
+		--body-color: var(--primary);
+		--logo-color: var(--white);
+	}
+</style>
