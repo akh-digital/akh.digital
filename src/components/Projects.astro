@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import Project from "./project.astro";
+import Project from "./Project.astro";
 const projects = await getCollection("projects");
 ---
 
@@ -8,12 +8,12 @@ const projects = await getCollection("projects");
 	<div class="projects__wrapper">
 		<div class="projects__title-wrapper">
 			<h1 class="projects__big-title">
-				Recent Projects ({projects.length})
+				Recent Projects ({Projects.length})
 			</h1>
 		</div>
 		<ul class="projects__list">
 			{
-				projects.map((project, index) => (
+				Projects.map((project, index) => (
 					<Project
 						slug={"/projects/" + project.slug}
 						number={String(index + 1).padStart(2, "0")}

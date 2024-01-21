@@ -5,7 +5,7 @@ import type { ProjectYaml } from "../files";
 const brandsData = (ProjectYaml as ProjectYaml).brands;
 
 const brands = brandsData.brands;
-brands.map((x) => x.title);
+Brands.map((x) => x.title);
 ---
 
 <section class="brands">
@@ -13,7 +13,7 @@ brands.map((x) => x.title);
 	<div class="brands__wrapper">
 		<ul class="brands__list">
 			{
-				brands.map((brand) => (
+				Brands.map((brand) => (
 					<a
 						class="brands__list-item"
 						href={brand.url}
