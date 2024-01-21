@@ -1,7 +1,7 @@
 ---
 import Icon from "./Icon.astro";
 const { project, number, slug } = Astro.props;
-const tags = Project.tags;
+const tags = project.tags;
 ---
 
 <div class="projects__list_header">
@@ -9,14 +9,14 @@ const tags = Project.tags;
 		{number}
 	</span>
 	<span class="projects__list-date">
-		{new Date(Project.date).getFullYear()}
+		{new Date(project.date).getFullYear()}
 	</span>
 </div>
 <div class="projects__divider"></div>
 <article class="projects__list_item">
 	<h3 class="projects__title">
 		<a class="projects__link" href={slug}>
-			{Project.title}
+			{project.title}
 		</a>
 		<Icon size="80" name="arrow-right-up" />
 	</h3>
