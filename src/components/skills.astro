@@ -1,0 +1,8 @@
+---
+const { skills, title } = Astro.props;
+---
+
+<div class="skills__list_item-name">{title}</div>
+<ul class="skills__list">
+	{skills.map((item) => <li class="skills__list_item">{item}</li>)}
+</ul>

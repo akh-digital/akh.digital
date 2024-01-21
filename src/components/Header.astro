@@ -10,7 +10,7 @@ import Icon from "./icon.astro";
 			</li>
 			<li>
 				<a class="navigation__logo" href="/">
-					<Icon name="logo" />
+					<Icon name="logo" size="52" />
 				</a>
 			</li>
 			<li>
@@ -22,7 +22,7 @@ import Icon from "./icon.astro";
 
 <style>
 	.header {
-		padding: 16px 5% 10px;
+		padding: 16px 0 10px;
 	}
 
 	.navigation__list {
@@ -55,12 +55,7 @@ import Icon from "./icon.astro";
 	.navigation__logo {
 		display: block;
 		border-radius: 50%;
-		color: var(--primary);
+		color: var(--logo-color);
 		line-height: 0.5;
-
-		#logo {
-			width: 52px;
-			height: 50px;
-		}
 	}
 </style>

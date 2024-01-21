@@ -1,0 +1,17 @@
+---
+import AboutYaml from "../data/about.yml";
+import type { AboutYaml } from "../files";
+import Skills from "./skills.astro";
+
+const skills = (AboutYaml as AboutYaml).skills;
+---
+
+<section class="skills">
+	<div class="skills__wrapper">
+		{
+			skills.map((skill) => (
+				<Skills title={skill.title} skills={skill.list} />
+			))
+		}
+	</div>
+</section>

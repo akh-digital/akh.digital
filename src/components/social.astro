@@ -1,0 +1,9 @@
+---
+import Icon from "./icon.astro";
+const { title, url } = Astro.props;
+---
+
+<li class="links__list_items">
+	<a target="_blank" href={url}>{title}</a>
+	<Icon name="arrow-right-up" />
+</li>

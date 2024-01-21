@@ -7,7 +7,9 @@ import Icon from "./icon.astro";
 		<p class="footer__info-item">
 			<span>ALEKS KHOLOPOV © 2022-2023</span>
 		</p>
-		<Icon name="logo" />
+		<span class="navigation__logo">
+			<Icon name="logo" size="52" />
+		</span>
 		<p class="footer__info-item">
 			<span>ALL RIGHTS RESERVED</span>
 		</p>
@@ -21,3 +23,9 @@ import Icon from "./icon.astro";
 		</a>
 	</div>
 </footer>
+
+<style>
+	.navigation__logo {
+		color: var(--white);
+	}
+</style>
