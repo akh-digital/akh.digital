@@ -9,3 +9,32 @@
 		<span>30°18'50.87' E</span>
 	</p>
 </section>
+
+<style>
+	.intro__additional {
+		text-wrap: balance;
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		margin-top: 40px;
+		line-height: 110%;
+		text-transform: uppercase;
+		font-size: var(--font-size-extra-small);
+
+		.intro__additional-name {
+			text-align: center;
+		}
+
+		.intro__additional-cords {
+			display: flex;
+			flex-direction: column;
+			text-align: right;
+		}
+
+		h1,
+		p {
+			margin: 0;
+			font-weight: normal;
+			font-size: var(--font-size-extra-small);
+		}
+	}
+</style>

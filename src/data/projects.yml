@@ -25,7 +25,8 @@ projects:
   title: Recent Projects
 
 brands:
-  title: Trusted by
+  title: Trusted by (+)
+  post_fix: and many others
   brands:
     - title: SIEMENS
       image: /icons/brand/SIEMENS.svg

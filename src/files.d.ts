@@ -4,6 +4,7 @@ type Tag = { text: string } | { icon: string };
 export interface ProjectYaml {
 	expertise: {
 		title: string;
+		desc: string;
 		tags: Tag[];
 	};
 	projects: {
@@ -11,6 +12,7 @@ export interface ProjectYaml {
 	};
 	brands: {
 		title: string;
+		post_fix: string;
 		brands: Brand[];
 	};
 }

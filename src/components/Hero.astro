@@ -4,3 +4,39 @@
 	<h1 class="intro__name">Aleks Kholopov</h1>
 </div>
 <div class="divider"></div>
+
+<style>
+	.intro__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+
+	.intro__site-name {
+		position: relative;
+		margin: 0;
+		width: min-content;
+		font-weight: 700;
+		font-size: var(--font-size-site-name);
+		font-family: var(--font-family-heading);
+
+		&:after {
+			content: "©";
+			transform: translate(-50%, 50%);
+			position: absolute;
+			right: -30px;
+			bottom: 50%;
+			font-size: var(--font-size-small);
+		}
+	}
+
+	.intro__name {
+		margin: 20px 0 0;
+		font-weight: normal;
+		font-size: var(--font-size-normal);
+		font-family: var(--font-family-text);
+	}
+</style>
