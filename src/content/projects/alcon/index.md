@@ -1,6 +1,6 @@
 ---
 title: Alcon
-date: 2022-02-02
+date: 2022-05-02
 web: www.alcon.com
 tags: ["UI UX", "PRODUCT DESIGN", "DATA VISUALIZATION"]
 ---

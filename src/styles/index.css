@@ -4,17 +4,5 @@
 @import "box-model.css";
 @import "focus.css";
 @import "transitions.css";
-
-/* Colors */
-
-@import "colors.css";
-
-/* Sizes */
-
 @import "sizes.css";
-
-/* Blocks */
-
-@import "blocks/footer/index.css";
-@import "blocks/intro/index.css";
-@import "blocks/divider/index.css";
+@import "colors.css";

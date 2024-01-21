@@ -4,19 +4,13 @@ import Icon from "./Icon.astro";
 
 <header id="header" class="header">
 	<nav class="navigation">
-		<ul class="navigation__list">
-			<li class="navigation__item">
-				<a class="navigation__link" href="/">Home</a>
-			</li>
-			<li>
-				<a class="navigation__logo" href="/">
-					<Icon name="logo" size="52" />
-				</a>
-			</li>
-			<li>
-				<a class="navigation__link" href="/about">About</a>
-			</li>
-		</ul>
+		<div class="navigation__list">
+			<a class="navigation__link" href="/">Home</a>
+			<a class="navigation__logo" href="/">
+				<Icon name="logo" size="52" />
+			</a>
+			<a class="navigation__link" href="/about">About</a>
+		</div>
 	</nav>
 </header>
 
@@ -26,12 +20,21 @@ import Icon from "./Icon.astro";
 	}
 
 	.navigation__list {
-		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
 		align-items: center;
 		margin: 0;
 		padding: 0;
 		list-style: none;
+
+		:first-child {
+			justify-self: start;
+		}
+
+		:last-child {
+			justify-self: end;
+		}
 	}
 
 	.navigation__link {
@@ -39,7 +42,7 @@ import Icon from "./Icon.astro";
 		color: var(--black);
 		text-transform: uppercase;
 		text-decoration: none;
-		font-size: 24px;
+		font-size: var(--font-size-normal);
 
 		&:hover:after {
 			content: "";

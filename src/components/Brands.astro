@@ -7,26 +7,52 @@ const brandsData = (ProjectYaml as ProjectYaml).brands;
 const brands = brandsData.brands;
 ---
 
-<section class="brands">
-	<h1>Trusted by</h1>
+<section class="brands-section">
+	<h1 class="brands__title">{brandsData.title}</h1>
 	<div class="brands__wrapper">
-		<ul class="brands__list">
+		<div class="brands">
 			{
 				brands.map((brand) => (
-					<a
-						class="brands__list-item"
-						href={brand.url}
-						target="_blank"
-					>
+					<a class="brand" href={brand.url} target="_blank">
 						<img
 							src={brand.image}
 							alt={brand.title}
-							class="brands__list-item_image"
+							class="brand_image"
 						/>
 					</a>
 				))
 			}
-		</ul>
-		<div class="brands__and-others">and many others</div>
+		</div>
+		<div class="brands_post-fix">{brandsData.post_fix}</div>
 	</div>
 </section>
+
+<style>
+	.brands__title {
+		color: var(--primary);
+		text-align: center;
+		font-size: var(--font-size-h1);
+	}
+
+	.brands {
+		place-content: center;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		align-items: center;
+		gap: 40px;
+		margin: auto;
+		max-width: 1200px;
+	}
+
+	.brand_image {
+		object-fit: contain;
+		width: 100%;
+		height: auto;
+		max-height: 120px;
+	}
+
+	.brands_post-fix {
+		margin-top: 30px;
+		text-align: center;
+	}
+</style>

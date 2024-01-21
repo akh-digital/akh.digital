@@ -1,6 +1,6 @@
 ---
 title: EXPX DeFi
-date: 2021-01-02
+date: 2021-02-02
 web: expx.finance
 tags: ["UI UX", "WEB DESIGN", "BRAND IDENTITY","DIGITAL ILLUSTRATION"]
 ---

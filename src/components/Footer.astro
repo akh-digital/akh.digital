@@ -2,17 +2,11 @@
 import Icon from "./Icon.astro";
 ---
 
-<footer class="footer">
+<footer class="footer column">
 	<div class="footer__info">
-		<p class="footer__info-item">
-			<span>ALEKS KHOLOPOV © 2022-2023</span>
-		</p>
-		<span class="navigation__logo">
-			<Icon name="logo" size="52" />
-		</span>
-		<p class="footer__info-item">
-			<span>ALL RIGHTS RESERVED</span>
-		</p>
+		<span>ALEKS KHOLOPOV © 2022-2023</span>
+		<Icon name="logo" size="52" />
+		<span>ALL RIGHTS RESERVED</span>
 	</div>
 	<div class="divider is-white"></div>
 	<div class="footer__big-title">AKH.DIGITAL</div>
@@ -25,7 +19,55 @@ import Icon from "./Icon.astro";
 </footer>
 
 <style>
-	.navigation__logo {
+	.footer {
+		padding-top: 50px;
+		background: var(--black);
 		color: var(--white);
+		font-size: var(--font-size-extra-small);
+	}
+
+	.footer__info {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+		align-items: center;
+
+		:first-child {
+			justify-self: left;
+		}
+
+		:last-child {
+			justify-self: right;
+			text-align: right;
+		}
+	}
+
+	.footer__info-credentials {
+		display: flex;
+		justify-self: end;
+		align-self: center;
+		gap: 28px;
+		width: min-content;
+	}
+
+	.footer__big-title {
+		word-wrap: anywhere;
+		text-wrap: balance;
+		margin-top: 130px;
+		margin-bottom: 120px;
+		text-align: center;
+		line-height: 110%;
+		font-size: var(--font-size-footer-name);
+		font-family: var(--font-family-heading);
+	}
+
+	.footer__project-author {
+		padding-bottom: 60px;
+		text-align: center;
+		font-size: var(--font-size-small);
+
+		a {
+			color: var(--primary);
+		}
 	}
 </style>

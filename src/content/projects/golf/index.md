@@ -1,6 +1,6 @@
 ---
 title: RDGA
-date: 2022-01-02
+date: 2022-02-02
 web: rdga.ru
 tags: ["UI UX", "WEB DESIGN"]
 ---

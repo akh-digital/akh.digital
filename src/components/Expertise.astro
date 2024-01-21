@@ -6,6 +6,7 @@ import Icon from "./Icon.astro";
 const expertiseData = (ProjectYaml as ProjectYaml).expertise;
 
 const tags = expertiseData.tags;
+const descList = expertiseData.desc.split("\n").filter(Boolean);
 ---
 
 <section class="tags">
@@ -19,19 +20,61 @@ const tags = expertiseData.tags;
 			{
 				tags.map((tag) =>
 					"icon" in tag ? (
-						<Icon name={tag.icon} size="60" />
+						<Icon class="tag__icon" name={tag.icon} />
 					) : (
-						<li>
-							<span
-								class="tags__list_item"
-								style="text-transform: capitalize"
-							>
-								{tag.text}
-							</span>
-						</li>
+						<li class="tags__list_item">{tag.text}</li>
 					),
 				)
 			}
 		</ul>
 	</div>
+	<div class="tags__desc">
+		{descList.map((d) => <p>{d}</p>)}
+	</div>
 </section>
+
+<style>
+	.tags__title {
+		color: var(--primary);
+		text-align: center;
+		font-size: var(--font-size-h1);
+	}
+
+	.tags__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		row-gap: calc(var(--font-size-normal) / 2);
+		column-gap: calc(var(--font-size-normal) / 2);
+
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+		font-size: var(--font-size-h2);
+	}
+
+	.tags__list_item {
+		word-break: break-all;
+		display: flex;
+		padding: calc(var(--font-size-normal) / 2)
+			calc(var(--font-size-normal) * 1.5);
+
+		border: 2px solid var(--black);
+		border-radius: calc(var(--font-size-normal) * 1.5);
+
+		color: var(--black);
+	}
+
+	:global(.tag__icon) {
+		width: calc(var(--font-size-normal) * 2);
+		height: calc(var(--font-size-normal) * 2);
+	}
+
+	.tags__desc {
+		text-wrap: balance;
+		text-align: center;
+	}
+</style>
