@@ -1,5 +1,5 @@
 <section class="intro__additional">
-	<div>
+	<div class="intro__additional-location">
 		<p>Based in Saint-Peterburg, Russia</p>
 		<p>*Available Worldwide</p>
 	</div>
@@ -15,12 +15,14 @@
 		text-wrap: balance;
 		display: grid;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
-		margin-top: 40px;
+		gap: 25px;
+		margin-top: 20px;
 		line-height: 110%;
 		text-transform: uppercase;
 		font-size: var(--font-size-extra-small);
 
 		.intro__additional-name {
+			grid-column: span 1 / span 1;
 			text-align: center;
 		}
 
