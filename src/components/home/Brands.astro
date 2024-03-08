@@ -1,9 +1,7 @@
 ---
-import ProjectYaml from "../../data/projects.yml";
-import type { ProjectYaml } from "../../files";
+import { project } from "../../lib/config.js";
 
-const brandsData = (ProjectYaml as ProjectYaml).brands;
-
+const brandsData = project().brands;
 const brands = brandsData.brands;
 ---
 
