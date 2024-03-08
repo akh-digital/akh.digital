@@ -1,5 +1,6 @@
 ---
 import "../styles/index.css";
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -24,8 +25,7 @@ import "../styles/index.css";
 			as="font"
 			type="font/woff2"
 		/>
-
-		<slot name="head" />
+		<title>{title}</title>
 	</head>
 	<body class="page__body">
 		<slot />
