@@ -1,12 +1,12 @@
 ---
-import ProjectYaml from "../../data/projects.yml";
-import type { ProjectYaml } from "../../files";
 import Icon from "../Icon.astro";
+import { project } from "../../lib/config.js";
+import { parseDescription } from "../../lib/parseDescription.js";
 
-const expertiseData = (ProjectYaml as ProjectYaml).expertise;
+const expertiseData = project().expertise;
 
 const tags = expertiseData.tags;
-const descList = expertiseData.desc.split("\n").filter(Boolean);
+const descList = parseDescription(expertiseData.desc);
 ---
 
 <section class="tags">
@@ -34,6 +34,9 @@ const descList = expertiseData.desc.split("\n").filter(Boolean);
 </section>
 
 <style>
+	.tags {
+		margin-bottom: 160px;
+	}
 	.tags__title {
 		color: var(--primary);
 		text-align: center;

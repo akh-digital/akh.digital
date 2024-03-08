@@ -1,10 +1,9 @@
 ---
-import AboutYaml from "../../data/about.yml";
-import type { AboutYaml } from "../../files";
+import { about } from "../../lib/config.js";
 import Icon from "../Icon.astro";
 import Cv from "./Cv.astro";
 
-const cv = (AboutYaml as AboutYaml).cv;
+const cv = about().cv;
 const list = cv.list;
 ---
 

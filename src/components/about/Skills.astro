@@ -1,9 +1,8 @@
 ---
-import AboutYaml from "../../data/about.yml";
-import type { AboutYaml } from "../../files";
+import { about } from "../../lib/config.js";
 import Skills from "./Skill.astro";
 
-const skills = (AboutYaml as AboutYaml).skills;
+const skills = about().skills;
 ---
 
 <section class="skills">

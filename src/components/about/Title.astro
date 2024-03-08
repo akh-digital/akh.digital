@@ -1,23 +1,16 @@
 ---
-import ProjectYaml from "../../data/about.yml";
-import type { AboutYaml } from "../../files";
+import { about } from "../../lib/config.js";
+import { parseDescription } from "../../lib/parseDescription.js";
 
-const about = (ProjectYaml as AboutYaml).about;
-
-const descList = about.desc.split("\n").filter(Boolean);
+const aboutData = about().about;
+const descList = parseDescription(aboutData.desc);
 ---
 
 <section class="about">
-	<link
-		rel="stylesheet"
-		href="/src/styles/__old/about.css"
-		type="text/css"
-		media="all"
-	/>
 	<div class="about__about-me_wrapper">
 		<div class="about__about-me_text">
 			<h2>
-				{about.title}
+				{aboutData.title}
 			</h2>
 			{descList.map((d) => <p>{d}</p>)}
 		</div>
