@@ -1,6 +1,7 @@
 ---
 import "../styles/index.css";
-const { title } = Astro.props;
+const { title: propsTitle } = Astro.props;
+const title = import.meta.env.DEV ? `[DEV] ${propsTitle}` : propsTitle;
 ---
 
 <!doctype html>
