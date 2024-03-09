@@ -1,6 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import { about } from "../../lib/config.js";
 import { parseDescription } from "../../lib/parseDescription.js";
+import Aleks from "../../images/aleks-about@2x.webp";
+import Icon from "../Icon.astro";
 
 const aboutData = about().about;
 const descList = parseDescription(aboutData.desc);
@@ -12,10 +15,41 @@ const descList = parseDescription(aboutData.desc);
 			<h2>
 				{aboutData.title}
 			</h2>
+			<Icon size="90" name="arrow-right-long" />
 			{descList.map((d) => <p>{d}</p>)}
 		</div>
 		<div class="about__about-me_img_wrapper">
-			<img src="" alt="avatar" class="about__about-me_img" />
+			<Image src={Aleks} alt="Aleks" class="about__about-me_img" />
 		</div>
 	</div>
 </section>
+
+<style>
+	.about {
+	}
+	.about__about-me_wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+		justify-items: center;
+		align-items: center;
+		gap: 10px;
+		margin-top: 160px;
+	}
+	.about__about-me_img {
+		width: 360px;
+		height: auto;
+		border-radius: 200px;
+	}
+
+	.about__about-me_text {
+		h2 {
+			font-size: var(--font-size-h1);
+			font-family: var(--font-family-heading);
+		}
+
+		p {
+			text-indent: 70px;
+			font-size: var(--font-size-h2);
+		}
+	}
+</style>

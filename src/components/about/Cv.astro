@@ -1,8 +1,17 @@
 ---
-import Icon from "../Icon.astro";
 const { title, url } = Astro.props;
 ---
 
 <li class="links__list_items">
 	<a target="_blank" href={url}>{title}</a>
 </li>
+
+<style>
+	.links__list_items {
+		padding: 15px 0;
+		list-style: none;
+	}
+	a {
+		color: var(--text-color);
+	}
+</style>

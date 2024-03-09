@@ -1,10 +1,13 @@
 ---
+import * as xml from "tsxml";
 const { name, class: className, size } = Astro.props;
+
 const modules = import.meta.glob("../../public/icons/*.svg", {
 	query: "?raw",
 	import: "default",
 	eager: true,
 });
+
 const icons = Object.entries(modules).reduce((acc, [path, value]) => {
 	const filename = path.split("/").pop();
 	const iconName = filename.split(".")[0];
@@ -12,37 +15,41 @@ const icons = Object.entries(modules).reduce((acc, [path, value]) => {
 	return acc;
 }, {});
 
-const processRegExp = (regExp, string) => {
-	const match = string.match(regExp);
-	return match ? match[1] : null;
+function contentToString(node) {
+	return node.childNodes.reduce((acc, curr) => {
+		acc += curr.toString();
+		return acc;
+	}, "");
+}
+
+const getIconContent = async (iconSvg) => {
+	const ast = await xml.Compiler.parseXmlToAst(iconSvg);
+	const svg = ast.childNodes[0];
+	return contentToString(svg);
 };
 
-const svgContentRegExp = /<svg[^>]*>([\s\S]*?)<\/svg>/;
-const viewBoxValueRegExp = /viewBox="\d+ \d+ \d+ (\d+)"/;
-
-const getIconContent = (iconSvg) => {
-	return processRegExp(svgContentRegExp, iconSvg);
-};
-
-const getIconSize = (iconSvg) => {
-	return processRegExp(viewBoxValueRegExp, iconSvg);
+const getViewBox = async (iconSvg) => {
+	const ast = await xml.Compiler.parseXmlToAst(iconSvg);
+	const svg = ast.childNodes[0];
+	return svg.getAttribute("viewBox");
 };
 
 let iconSvg = icons[name] || undefined;
+const defaultSize = 60;
 
-const icon = getIconContent(iconSvg);
-const defaultSize = getIconSize(iconSvg);
+const icon = await getIconContent(iconSvg);
+const viewBox = await getViewBox(iconSvg);
 ---
 
 {
 	icon ? (
 		<svg
-			viewBox={`0 0 ${defaultSize} ${defaultSize}`}
+			viewBox={viewBox}
 			xmlns="http://www.w3.org/2000/svg"
 			style="fill: currentColor"
 			class={className}
-			width={size | defaultSize}
-			height={size | defaultSize}
+			width={size || defaultSize}
+			height={size || defaultSize}
 			set:html={icon}
 		/>
 	) : (

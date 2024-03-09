@@ -7,3 +7,15 @@ const { title, url } = Astro.props;
 	<a target="_blank" href={url}>{title}</a>
 	<Icon name="arrow-right-up" />
 </li>
+
+<style>
+	.links__list_items {
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		gap: 10px;
+	}
+	a {
+		color: var(--text-color);
+	}
+</style>
