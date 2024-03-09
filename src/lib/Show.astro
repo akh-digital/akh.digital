@@ -1,0 +1,11 @@
+---
+const { when } = Astro.props;
+---
+
+{
+	when && (
+		<Fragment>
+			<slot />
+		</Fragment>
+	)
+}

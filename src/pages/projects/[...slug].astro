@@ -8,6 +8,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import MetaData from "../../components/post/MetaData.astro";
 import Pagination from "../../components/post/Pagination.astro";
 import { global } from "../../lib/config.js";
+import Post from "../../components/post/Post.astro";
 
 export async function getStaticPaths() {
 	const projects = await getCollection("projects");
@@ -33,7 +34,9 @@ const title = `${globalData.title} | ${post.data.title}`;
 
 		<MetaData />
 
-		<Content />
+		<Post>
+			<Content />
+		</Post>
 
 		<Pagination />
 

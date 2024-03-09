@@ -1,16 +1,20 @@
 ---
 import { about } from "../../lib/config.js";
-import Skills from "./Skill.astro";
 
 const skills = about().skills;
 ---
 
 <section class="skills">
-	<div class="skills__wrapper">
+	<div class="wrapper">
 		{
 			skills.map((skill) => (
-				<div>
-					<Skills title={skill.title} skills={skill.list} />
+				<div class="item">
+					<div class="item-name">{skill.title}</div>
+					<ul class="list">
+						{skill.list.map((item) => (
+							<li class="list-item">{item}</li>
+						))}
+					</ul>
 				</div>
 			))
 		}
@@ -21,8 +25,21 @@ const skills = about().skills;
 	.skills {
 		margin-top: 160px;
 	}
-	.skills__wrapper {
+
+	.wrapper {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+
+		@media (width < 1024px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.item-name {
+		font-size: var(--font-size-h1);
+		font-family: var(--font-family-heading);
+	}
+	.list-item {
+		font-size: var(--font-size-h2);
 	}
 </style>
