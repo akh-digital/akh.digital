@@ -1,3 +1,15 @@
+export interface GlobalYaml {
+	title: string;
+	description: string;
+	domain: string;
+	developer: string;
+	developer_link: string;
+	email: string;
+	location: string;
+	cords: string[];
+	language: string;
+}
+
 type Brand = { title: string; image: string; url: string };
 type Tag = { text: string } | { icon: string };
 
