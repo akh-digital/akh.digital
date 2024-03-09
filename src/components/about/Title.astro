@@ -1,8 +1,6 @@
 ---
-import { Image } from "astro:assets";
 import { about } from "../../lib/config.js";
 import { parseDescription } from "../../lib/parseDescription.js";
-import Aleks from "../../images/aleks-about@2x.webp";
 import Icon from "../Icon.astro";
 
 const aboutData = about().about;
@@ -19,7 +17,7 @@ const descList = parseDescription(aboutData.desc);
 			{descList.map((d) => <p>{d}</p>)}
 		</div>
 		<div class="avatar-wrapper">
-			<Image src={Aleks} alt="Aleks" class="avatar" />
+			<img src="/aleks-about@2x.webp" alt="Aleks" class="avatar" />
 		</div>
 	</div>
 </section>
