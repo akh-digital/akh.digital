@@ -6,3 +6,13 @@ const { skills, title } = Astro.props;
 <ul class="skills__list">
 	{skills.map((item) => <li class="skills__list_item">{item}</li>)}
 </ul>
+
+<style>
+	.skills__list_item-name {
+		font-size: var(--font-size-h1);
+		font-family: var(--font-family-heading);
+	}
+	li {
+		font-size: var(--font-size-h2);
+	}
+</style>
