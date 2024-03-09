@@ -1,11 +1,11 @@
 :root {
-	--font-size-site-name: 4.5rem;
-	--font-size-footer-name: 6rem;
-	--font-size-h1: 2.5rem;
-	--font-size-h2: 1.5rem;
-	--font-size-normal: 1rem;
-	--font-size-small: 0.75rem;
-	--font-size-extra-small: 0.5rem;
+	--font-size-site-name: 108px;
+	--font-size-footer-name: 144px;
+	--font-size-h1: 60px;
+	--font-size-h2: 36px;
+	--font-size-normal: 24px;
+	--font-size-small: 18px;
+	--font-size-extra-small: 12px;
 }
 
 @media (width >= 1760px) {

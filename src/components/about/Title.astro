@@ -10,7 +10,7 @@ const descList = parseDescription(aboutData.desc);
 ---
 
 <section class="about">
-	<div class="about__about-me_wrapper">
+	<div class="wrapper">
 		<div class="about__about-me_text">
 			<h2>
 				{aboutData.title}
@@ -18,26 +18,29 @@ const descList = parseDescription(aboutData.desc);
 			<Icon size="90" name="arrow-right-long" />
 			{descList.map((d) => <p>{d}</p>)}
 		</div>
-		<div class="about__about-me_img_wrapper">
-			<Image src={Aleks} alt="Aleks" class="about__about-me_img" />
+		<div class="avatar-wrapper">
+			<Image src={Aleks} alt="Aleks" class="avatar" />
 		</div>
 	</div>
 </section>
 
 <style>
-	.about {
-	}
-	.about__about-me_wrapper {
+	.wrapper {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
 		justify-items: center;
 		align-items: center;
 		gap: 10px;
 		margin-top: 160px;
+
+		@media (width < 1024px) {
+			margin-top: 60px;
+		}
 	}
-	.about__about-me_img {
-		width: 360px;
+	.avatar {
+		width: 280px;
 		height: auto;
+		box-shadow: 0 8px 32px rgba(0, 14, 75, 0.24);
 		border-radius: 200px;
 	}
 

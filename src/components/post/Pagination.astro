@@ -1,37 +1,70 @@
 ---
+import { getCollection } from "astro:content";
+import Show from "../../lib/Show.astro";
+import Icon from "../Icon.astro";
+const { slug } = Astro.params;
 
+const projects = await getCollection("projects");
+const sortedProjects = projects.sort((a, b) => {
+	return b.data.date - a.data.date;
+});
+const currentProjectIndex = sortedProjects.findIndex(
+	(project) => project.slug === slug,
+);
+const prevPage = sortedProjects[currentProjectIndex - 1]?.slug;
+const nextPage = sortedProjects[currentProjectIndex + 1]?.slug;
 ---
 
 <section class="pagination">
-	<!--<div class="pagination__wrapper">-->
-	<!--	<div class="pagination__divider"></div>-->
-	<!--	<div class="pagination__list">-->
-	<!--		{{ $list := sort (.Site.GetPage "section" "projects").Pages ".File.Dir" "asc" }}-->
-	<!--		{{$curr_idx := sub (int (first 1 .File.ContentBaseName)) 1}}-->
-	<!--		{{$next_page := index $list (add $curr_idx 1)}}-->
-	<!--		{{$prev_page := index $list (sub $curr_idx 1)}}-->
-	<!--		{{ with $prev_page }}-->
-	<!--		<a class="pagination__item" href="">-->
-	<!--			<svg width="33" height="12" viewBox="0 0 33 12"  xmlns="http://www.w3.org/2000/svg">-->
-	<!--				<path d="M7.20726 1.70718L5.79304 0.292969L0.0859375 6.00007L5.79304 11.7072L7.20726 10.293L3.91443 7.00014L32.5002 7.00012V5.00012L3.9143 5.00014L7.20726 1.70718Z" fill="#1E1E1E"/>-->
-	<!--			</svg>-->
-	<!--			<div>-->
-	<!--				PREVIOUS PROJECT-->
-	<!--			</div>-->
-	<!--		</a>-->
-	<!--		{{ end }}-->
+	<div class="wrapper">
+		<div class="divider"></div>
+		<div class="list">
+			<Show when={prevPage}>
+				<div class="item">
+					<Icon size="33" name="navigation-arrow-left" />
+					<a href={`/projects/${[prevPage]}`}> PREVIOUS PROJECT </a>
+				</div>
+			</Show>
 
-	<!--		{{ with $next_page }}-->
-	<!--		<a class="pagination__item" href="">-->
-	<!--			<div>-->
-	<!--				NEXT PROJECT-->
-	<!--			</div>-->
-	<!--			<svg width="33" height="12" viewBox="0 0 33 12"  xmlns="http://www.w3.org/2000/svg">-->
-	<!--				<path d="M25.7929 10.293L27.2071 11.7072L32.9142 6.00008L27.2071 0.292969L25.7929 1.70718L29.0858 5.00009L0.5 5.0001V7.0001L29.0858 7.00009L25.7929 10.293Z" fill="#1E1E1E"/>-->
-	<!--			</svg>-->
-	<!--		</a>-->
-	<!--		{{ end }}-->
-	<!--	</div>-->
-	<!--	<div class="pagination__divider"></div>-->
-	<!--</div>-->
+			<Show when={nextPage}>
+				<div class="item">
+					<a href={`/projects/${nextPage}`}> NEXT PROJECT </a>
+					<Icon size="33" name="navigation-arrow-right" />
+				</div>
+			</Show>
+		</div>
+		<div class="divider"></div>
+	</div>
 </section>
+
+<style>
+	.list {
+		place-content: center;
+		display: flex;
+		gap: 40px;
+
+		@media (width < 1024px) {
+			flex-wrap: wrap;
+			gap: 10px;
+			font-size: var(--font-size-small);
+		}
+
+		.item {
+			position: relative;
+			display: inline-flex;
+			align-items: center;
+			gap: 24px;
+			padding: 10px 0;
+			a {
+				color: var(--black);
+				text-decoration: none;
+
+				&::before {
+					content: "";
+					position: absolute;
+					inset: 0;
+				}
+			}
+		}
+	}
+</style>
