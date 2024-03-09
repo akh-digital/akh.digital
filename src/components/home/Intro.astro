@@ -1,0 +1,67 @@
+---
+function generateGoogleMapsLink(lat, lng) {
+	return `https://www.google.com/maps?q=${lat},${lng}`;
+}
+
+function convertDMSToDecimal(dmsStr) {
+	let parts = dmsStr.split(/[°'"]/);
+	let degrees = parseFloat(parts[0]);
+	let minutes = parseFloat(parts[1]);
+	let seconds = parseFloat(parts[2]);
+
+	return degrees + minutes / 60 + seconds / 3600;
+}
+
+let latitude = "59°56'19.07\" N";
+let longitude = "30°18'50.87\" E";
+
+const lat = convertDMSToDecimal(latitude); // 59.93863
+const long = convertDMSToDecimal(longitude); // 30.3144083
+
+const locationLink = generateGoogleMapsLink(lat, long);
+---
+
+<section class="intro__additional">
+	<div class="intro__additional-location">
+		<p>Based in Saint-Peterburg, Russia</p>
+		<p>*Available Worldwide</p>
+	</div>
+	<h1 class="intro__additional-name">Product Designer</h1>
+	<a target="_blank" href={locationLink} class="intro__additional-cords">
+		<span>59°56'19.07' N</span>
+		<span>30°18'50.87' E</span>
+	</a>
+</section>
+
+<style>
+	.intro__additional {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 25px;
+		margin-top: 20px;
+		line-height: 110%;
+		text-transform: uppercase;
+		font-size: var(--font-size-extra-small);
+
+		.intro__additional-name {
+			grid-column: span 1 / span 1;
+			text-align: center;
+		}
+
+		.intro__additional-cords {
+			display: flex;
+			flex-direction: column;
+			text-align: right;
+		}
+
+		h1,
+		p,
+		a {
+			margin: 0;
+			color: var(--text-color);
+			text-decoration: none;
+			font-weight: normal;
+			font-size: var(--font-size-extra-small);
+		}
+	}
+</style>
