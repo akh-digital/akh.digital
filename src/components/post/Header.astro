@@ -1,0 +1,56 @@
+---
+import { getCollection } from "astro:content";
+
+const { slug } = Astro.params;
+
+const projects = await getCollection("projects");
+const sortedProjects = projects.sort((a, b) => {
+	return b.data.date - a.data.date;
+});
+const currentProjectNumber =
+	sortedProjects.findIndex((project) => project.slug === slug) + 1;
+
+const currentProject = projects.find((project) => project.slug === slug);
+const { title } = currentProject.data;
+---
+
+<section class="post-header">
+	<div class="post-header__divider"></div>
+	<div class="post-header__wrapper">
+		<div class="post-header__number">
+			<span class="post-header__number__first">
+				{String(currentProjectNumber).padStart(2, "0")}
+			</span>
+			/
+			<span>
+				{String(projects.length).padStart(2, "0")}
+			</span>
+		</div>
+		<div class="post-header__title">
+			{title}
+		</div>
+	</div>
+	<div class="post-header__divider"></div>
+</section>
+
+<style>
+	.post-header__divider {
+		margin: 40px 0;
+		border-top: 2px solid var(--black);
+	}
+	.post-header__number {
+		font-weight: 500;
+		font-size: var(--font-size-h2);
+	}
+	.post-header__number__first {
+		color: var(--primary);
+	}
+	.post-header__title {
+		word-break: break-all;
+		display: inline-block;
+		margin-top: 70px;
+		margin-bottom: 10px;
+		font-weight: 500;
+		font-size: var(--font-size-h1);
+	}
+</style>
