@@ -205,9 +205,8 @@ const myOrder = [
 ];
 /** @type {import("prettier").Config} */
 export default {
-	plugins: ["./prettier-sort-css/index.js", "prettier-plugin-astro"],
-	cssDeclarationSorterOrder: "custom",
-	customOrder: myOrder,
+	plugins: ["prettier-plugin-css-order", "prettier-plugin-astro"],
+	cssDeclarationSorterCustomOrder: myOrder,
 	overrides: [
 		{
 			files: "*.astro",

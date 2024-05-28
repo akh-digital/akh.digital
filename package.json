@@ -15,9 +15,9 @@
 		"tsxml": "^0.1.0"
 	},
 	"devDependencies": {
-		"css-declaration-sorter": "^7.1.1",
 		"postcss": "^8.4.35",
 		"prettier": "^3.2.5",
-		"prettier-plugin-astro": "^0.13.0"
+		"prettier-plugin-astro": "^0.13.0",
+		"prettier-plugin-css-order": "^2.1.2"
 	}
 }
