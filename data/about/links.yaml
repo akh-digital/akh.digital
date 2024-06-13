@@ -1,8 +1,8 @@
 - big_title: "Get in touch"
   title: "Say hi!"
   list:
-    - label: "ashtimus@gmail.com"
-      link: "mailto:ashtimus@gmail.com"
+    - label: "aleks@akh-digital.ru"
+      link: "mailto:aleks@akh-digital.ru"
     - label: "telegram"
       link: "https://t.me/akhdigital"
       icon: true
@@ -16,6 +16,6 @@
   title: "My CV"
   list:
     - label: "download eng / pdf"
-      link: "/cv/aleks_kholopov_en_cv_2023.pdf"
+      link: "/cv/aleks_kholopov_en_cv_2024.pdf"
     - label: "download rus / pdf"
-      link: "/cv/aleks_kholopov_ru_cv_2023.pdf"
+      link: "/cv/aleks_kholopov_ru_cv_2024.pdf"
