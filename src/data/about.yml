@@ -9,10 +9,10 @@ social:
   title: Get in touch
   second_title: Say hi!
   list:
-    - title: "ashtimus@gmail.com"
-      url: "mailto:ashtimus@gmail.com"
+    - title: "aleks@akh-digital.ru"
+      url: "mailto:aleks@akh-digital.ru"
     - title: "telegram"
-      url: "https://t.me/ashtimus"
+      url: "https://t.me/akhdigital"
     - title: "linkedin"
       url: "http://linkedin.com/in/aleksandr-kholopov/"
     - title: "instagram"
@@ -23,9 +23,9 @@ cv:
   second_title: My CV
   list:
     - title: "download eng / pdf"
-      url: "/cv/aleks_kholopov_en_cv_2023.pdf"
+      url: "/cv/aleks_kholopov_en_cv_2024.pdf"
     - title: "download rus / pdf"
-      url: "/cv/aleks_kholopov_ru_cv_2023.pdf"
+      url: "/cv/aleks_kholopov_ru_cv_2024.pdf"
 
 skills:
   - title: Hard Skills

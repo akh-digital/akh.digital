@@ -1,4 +1,8 @@
 import { defineConfig, squooshImageService } from "astro/config";
+import sitemap from "@astrojs/sitemap";
+import { global } from "./src/lib/config";
+
+console.log(global());
 
 function unwrapImg() {
 	return function (tree) {
@@ -11,12 +15,14 @@ function unwrapImg() {
 
 /** @param {import('astro').AstroConfig} */
 export default defineConfig({
+	site: global().domain,
 	outDir: "./dist",
 	cacheDir: "./.cache",
-	image: {
-		service: squooshImageService(),
-	},
-	markdown: {
-		remarkPlugins: [unwrapImg],
-	},
+	image: { service: squooshImageService() },
+	markdown: { remarkPlugins: [unwrapImg] },
+	integrations: [
+		sitemap({
+			canonicalURL: global().domain,
+		}),
+	],
 });
