@@ -1,5 +1,3 @@
-/* Suisse Int’l Static */
-
 @font-face {
 	src: url("/fonts/SuisseIntl.woff2") format("woff2");
 	font-weight: 400;
@@ -10,15 +8,14 @@
 
 @font-face {
 	src: url("/fonts/SuisseIntlBold.woff2") format("woff2");
-	font-weight: 700;
-	font-family: "Suisse Int’l Bold";
+	font-weight: bold;
+	font-family: "Suisse Int’l";
 	font-style: normal;
 	font-display: swap;
 }
 
-/* Variables */
-
 :root {
-	--font-family-text: "Suisse Int’l", sans-serif;
-	--font-family-heading: "Suisse Int’l Bold", sans-serif;
+	--font-family-heading: "Suisse Int’l", sans-serif;
+
+	font-family: "Suisse Int’l", sans-serif;
 }

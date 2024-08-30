@@ -46,7 +46,11 @@ const nextPage = sortedProjects[currentProjectIndex + 1]?.slug;
 		@media (width < 1024px) {
 			flex-wrap: wrap;
 			gap: 10px;
-			font-size: var(--font-size-small);
+			font-size: 2rem;
+
+			@media (max-width: 600px) {
+				font-size: 0.8rem;
+			}
 		}
 
 		.item {

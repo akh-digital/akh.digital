@@ -36,12 +36,20 @@ const list = socials.list;
 	}
 
 	h1 {
-		font-size: var(--font-size-h1);
-		font-family: var(--font-family-heading);
+		font-weight: bold;
+		font-size: 4rem;
+
+		@media (max-width: 600px) {
+			font-size: 2rem;
+		}
 	}
 	.links__lists_wrapper {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+
+		@media (max-width: 600px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 	.links__title_container {
 		display: flex;

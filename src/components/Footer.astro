@@ -23,7 +23,11 @@ import Icon from "./Icon.astro";
 		padding-top: 20px;
 		background: var(--black);
 		color: var(--white);
-		font-size: var(--font-size-extra-small);
+		font-size: 1rem;
+
+		@media (max-width: 600px) {
+			font-size: 0.5rem;
+		}
 	}
 
 	.footer__info {
@@ -57,14 +61,18 @@ import Icon from "./Icon.astro";
 		margin-bottom: 120px;
 		text-align: center;
 		line-height: 110%;
+		font-weight: bold;
 		font-size: var(--font-size-footer-name);
-		font-family: var(--font-family-heading);
 	}
 
 	.footer__project-author {
 		padding-bottom: 60px;
 		text-align: center;
-		font-size: var(--font-size-small);
+		font-size: 1.8rem;
+
+		@media (max-width: 600px) {
+			font-size: 0.7rem;
+		}
 
 		a {
 			color: var(--primary);
