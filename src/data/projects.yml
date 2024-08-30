@@ -1,0 +1,54 @@
+# Expertise
+
+expertise:
+  title: Expertise
+  desc: |
+    Laser-focused at bringing value to the product. I concentrate on a mix of lean design-systems for the product team, human-centric interfaces, and a little bit of design magic!
+    With 15+ years in the game I worked with clients in a wide array of industries in Russia and around the world.
+  tags:
+    - text: User Interface
+    - icon: sun
+    - text: UX Research
+    - text: Product
+    - icon: eye
+    - text: Digital
+    - text: Design Systems
+    - text: Web
+    - text: Communication
+    - icon: rose
+    - text: Print
+    - text: Visual Identity
+    - icon: layers
+    - text: Creative Strategy
+
+projects:
+  title: Recent Projects
+
+brands:
+  title: Trusted by (+)
+  post_fix: and many others
+  brands:
+    - title: SIEMENS
+      image: /icons/brand/SIEMENS.svg
+      url: http://www.siemens.com/global/en
+    - title: Essilor
+      image: /icons/brand/Essilor.svg
+      url: http://www.essilor.com/en
+    - title: SPIEF
+      image: /icons/brand/SPIEF.svg
+      url: http://www.forumspb.com/en
+    - title: CooperVision
+      image: /icons/brand/CooperVision.svg
+      url: http://www.coopervision.com
+    - title: Saprun
+      image: /icons/brand/Saprun.svg
+      url: http://www.saprun.com
+    - title: MoscowMetro
+      image: /icons/brand/MoscowMetro.svg
+      url: http://www.mosmetro.ru
+    - title: DaSignal
+      image: /icons/brand/DaSignal.svg
+      url: http://www.dasignal.ru
+    - title: Tassta
+      image: /icons/brand/Tassta.svg
+      url: http://www.tassta.com

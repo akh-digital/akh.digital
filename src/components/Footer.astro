@@ -1,0 +1,81 @@
+---
+import Icon from "./Icon.astro";
+---
+
+<footer class="footer column">
+	<div class="footer__info">
+		<span>ALEKS KHOLOPOV © 2022-2023</span>
+		<Icon name="logo" size="52" />
+		<span>ALL RIGHTS RESERVED</span>
+	</div>
+	<div class="divider is-white"></div>
+	<div class="footer__big-title">AKH.DIGITAL</div>
+	<div class="footer__project-author">
+		Developed by
+		<a href="https://www.linkedin.com/in/daniil-savitskii/">
+			Daniil Savitskii
+		</a>
+	</div>
+</footer>
+
+<style>
+	.footer {
+		padding-top: 20px;
+		background: var(--black);
+		color: var(--white);
+		font-size: 0.8rem;
+
+		@media (max-width: 600px) {
+			font-size: 0.5rem;
+		}
+	}
+
+	.footer__info {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+		align-items: center;
+
+		:first-child {
+			justify-self: left;
+		}
+
+		:last-child {
+			justify-self: right;
+			text-align: right;
+		}
+	}
+
+	.footer__info-credentials {
+		display: flex;
+		justify-self: end;
+		align-self: center;
+		gap: 28px;
+		width: min-content;
+	}
+
+	.footer__big-title {
+		word-wrap: anywhere;
+		text-wrap: balance;
+		margin-top: 130px;
+		margin-bottom: 120px;
+		text-align: center;
+		line-height: 110%;
+		font-weight: bold;
+		font-size: var(--font-size-footer-name);
+	}
+
+	.footer__project-author {
+		padding-bottom: 60px;
+		text-align: center;
+		font-size: 0.8rem;
+
+		@media (max-width: 600px) {
+			font-size: 0.5rem;
+		}
+
+		a {
+			color: var(--primary);
+		}
+	}
+</style>

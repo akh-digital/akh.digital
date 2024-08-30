@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import Project from "./Project.astro";
+const projects = await getCollection("projects");
+const sortedProjects = projects.sort((a, b) => {
+	return b.data.date - a.data.date;
+});
+---
+
+<section class="projects">
+	<div class="projects__wrapper">
+		<div class="projects__title-wrapper">
+			<h1 class="projects__big-title">
+				Recent Projects ({projects.length})
+			</h1>
+		</div>
+		<div class="projects__list">
+			{
+				sortedProjects.map((project, index) => (
+					<Project
+						slug={"/projects/" + project.slug}
+						number={String(index + 1).padStart(2, "0")}
+						project={project.data}
+					/>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<style>
+	.projects {
+		margin-bottom: 160px;
+	}
+	.projects__big-title {
+		color: var(--primary);
+		text-align: center;
+		font-weight: 400;
+		font-size: var(--font-size-h1);
+	}
+
+	.projects__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 50px;
+	}
+</style>

@@ -1,0 +1,18 @@
+:root {
+	font-size: 1.75vw;
+}
+
+@media (max-width: 600px) {
+	:root {
+		font-size: 7.466666666666668vw;
+	}
+}
+
+:root {
+	--font-size-footer-name: 144px;
+	--font-size-h1: 60px;
+	--font-size-h2: 36px;
+	--font-size-normal: 24px;
+	--font-size-small: 18px;
+	--font-size-extra-small: 12px;
+}

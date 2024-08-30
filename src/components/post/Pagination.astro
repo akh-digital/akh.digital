@@ -1,0 +1,74 @@
+---
+import { getCollection } from "astro:content";
+import Show from "../../lib/Show.astro";
+import Icon from "../Icon.astro";
+const { slug } = Astro.params;
+
+const projects = await getCollection("projects");
+const sortedProjects = projects.sort((a, b) => {
+	return b.data.date - a.data.date;
+});
+const currentProjectIndex = sortedProjects.findIndex(
+	(project) => project.slug === slug,
+);
+const prevPage = sortedProjects[currentProjectIndex - 1]?.slug;
+const nextPage = sortedProjects[currentProjectIndex + 1]?.slug;
+---
+
+<section class="pagination">
+	<div class="wrapper">
+		<div class="divider"></div>
+		<div class="list">
+			<Show when={prevPage}>
+				<div class="item">
+					<Icon size="33" name="navigation-arrow-left" />
+					<a href={`/projects/${[prevPage]}`}> PREVIOUS PROJECT </a>
+				</div>
+			</Show>
+
+			<Show when={nextPage}>
+				<div class="item">
+					<a href={`/projects/${nextPage}`}> NEXT PROJECT </a>
+					<Icon size="33" name="navigation-arrow-right" />
+				</div>
+			</Show>
+		</div>
+		<div class="divider"></div>
+	</div>
+</section>
+
+<style>
+	.list {
+		place-content: center;
+		display: flex;
+		gap: 40px;
+
+		@media (width < 1024px) {
+			flex-wrap: wrap;
+			gap: 10px;
+			font-size: 2rem;
+
+			@media (max-width: 600px) {
+				font-size: 0.8rem;
+			}
+		}
+
+		.item {
+			position: relative;
+			display: inline-flex;
+			align-items: center;
+			gap: 24px;
+			padding: 10px 0;
+			a {
+				color: var(--black);
+				text-decoration: none;
+
+				&::before {
+					content: "";
+					position: absolute;
+					inset: 0;
+				}
+			}
+		}
+	}
+</style>

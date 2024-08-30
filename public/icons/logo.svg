@@ -1,0 +1,11 @@
+<svg
+	id="logo"
+	xmlns="http://www.w3.org/2000/svg"
+	fill="currentColor"
+	viewBox="0 0 48 48"
+>
+	<path
+		fill-rule="evenodd"
+		d="M24 1C11 1 0 11 0 24s11 23 24 23 24-10 24-23S37 1 24 1Zm-2 4-7 2v14l7-4V5Zm-11 5c-3 2-5 4-6 7l6 4V10ZM4 21v3c0 6 3 11 7 14V25l-7-4Zm11 20a21 21 0 0 0 21-2L15 27v14Zm25-5a18 18 0 0 0-1-24l-13 7v10l14 7ZM36 9c-3-2-6-4-10-4v10l10-6ZM22 26v-4l-4 2 4 2Z"
+	></path>
+</svg>

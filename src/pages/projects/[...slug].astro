@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import PostHeader from "../../components/post/Header.astro";
+import Header from "../../components/Header.astro";
+import GoToTop from "../../components/GoToTop.astro";
+import Footer from "../../components/Footer.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import MetaData from "../../components/post/MetaData.astro";
+import Pagination from "../../components/post/Pagination.astro";
+import { global } from "../../lib/config.js";
+import Post from "../../components/post/Post.astro";
+
+export async function getStaticPaths() {
+	const projects = await getCollection("projects");
+
+	return projects.map((project) => ({
+		params: { slug: project.slug },
+		props: project,
+	}));
+}
+
+const post = Astro.props;
+
+const { Content } = await post.render();
+---
+
+<BaseLayout>
+	<slot slot="head">
+		<title>{`${global().title} | ${post.data.title}`}</title>
+	</slot>
+	<main class="main column">
+		<Header />
+
+		<PostHeader />
+
+		<MetaData />
+
+		<Post>
+			<Content />
+		</Post>
+
+		<Pagination />
+
+		<GoToTop />
+	</main>
+	<Footer />
+</BaseLayout>

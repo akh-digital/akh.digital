@@ -1,0 +1,47 @@
+about:
+  title: Hey! It’s me
+  desc: |
+    Born in Estonia, currently based in Saint-P, Russia.
+    Creating Design system, ERP systems, Web-ordering, B2C web apps, websites and digital illustrations. Specializing in Data Visualization, Web and UI/UX design using Figma.
+    Passionate about simplicity, constantly trying to build clean and simple products to make people’s lives easier.
+
+social:
+  title: Get in touch
+  second_title: Say hi!
+  list:
+    - title: "aleks@akh-digital.ru"
+      url: "mailto:aleks@akh-digital.ru"
+    - title: "telegram"
+      url: "https://t.me/akhdigital"
+    - title: "linkedin"
+      url: "http://linkedin.com/in/aleksandr-kholopov/"
+    - title: "instagram"
+      url: "https://www.instagram.com/akh.digital/"
+
+cv:
+  title: Check out
+  second_title: My CV
+  list:
+    - title: "download eng / pdf"
+      url: "/cv/aleks_kholopov_en_cv_2024.pdf"
+    - title: "download rus / pdf"
+      url: "/cv/aleks_kholopov_ru_cv_2024.pdf"
+
+skills:
+  - title: Hard Skills
+    list:
+      - Product Design, Brand & Communication Design, CJM Creation, User Flow Creation, A/B Testing, UX Research, Side-by-Side Testing, Corridor Testing, Interface Creation, Interactive Prototyping, Wireframing
+      - Design — Figma, Zeplin, Adobe (Photoshop, Illustrator, InDesign)
+      - Analytics — Google Analytics, Yandex.Metrica, Tableau
+      - WebDev — VSCode, GitHub, Atom/Typora, Notion
+      - Principles of “atomic design” and rules of working with and creating of modern design systems
+      - Human Interface (IOS) and Google Material Design Guidelines (Android)
+      - Basic knowledge of HTML / CSS
+  - title: Soft Skills
+    list:
+      - Quickly adapt for changes
+      - Ability and desire to work in a team
+      - Easily switch between different tasks
+      - Empathy, willingness to put oneself in the user's shoes to solve problems
+      - Responsibility and desire to achieve results
+      - Mentoring junior-level designers

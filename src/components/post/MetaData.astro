@@ -1,0 +1,98 @@
+---
+import { getCollection } from "astro:content";
+import Show from "../../lib/Show.astro";
+
+const { slug } = Astro.params;
+
+const projects = await getCollection("projects");
+const currentProject = projects.find((project) => project.slug === slug);
+const { date, tags, web } = currentProject.data;
+---
+
+<section class="meta-data">
+	<div class="item-wrapper">
+		<div class="item">
+			<div class="item-title">Year:</div>
+			<div>{new Date(date).getFullYear()}</div>
+		</div>
+		<div class="item">
+			<div class="item-title">Tags:</div>
+			<ul class="tags">
+				{tags.map((tag) => <li class="tag">{tag}</li>)}
+			</ul>
+		</div>
+	</div>
+	<div class="item-wrapper">
+		<Show when={web}>
+			<div class="item">
+				<div class="item-title">Web:</div>
+				<a target="_blank" href={`https://${web}`}>
+					{web}
+				</a>
+			</div>
+		</Show>
+	</div>
+</section>
+
+<style>
+	.meta-data {
+		display: grid;
+		gap: 60px;
+		margin-top: 60px;
+		margin-bottom: 80px;
+
+		@media (width < 1024px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	.item-wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 80px;
+
+		@media (width < 1024px) {
+			gap: 60px;
+		}
+
+		.item {
+			display: flex;
+			flex-wrap: nowrap;
+			gap: 100px;
+			font-size: var(--font-size-h2);
+
+			@media (width < 1024px) {
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			a {
+				color: var(--black);
+				text-decoration: none;
+			}
+
+			.tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+				margin: 0;
+				padding: 0;
+
+				list-style: none;
+				font-size: var(--font-size-extra-small);
+
+				.tag {
+					display: flex;
+					flex-wrap: wrap;
+					padding: 8px 16px;
+					border: 1px solid var(--black);
+					border-radius: 42px;
+					color: var(--black);
+					list-style: none;
+					text-decoration: none;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+</style>

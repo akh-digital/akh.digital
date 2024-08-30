@@ -1,0 +1,85 @@
+---
+import Icon from "../Icon.astro";
+import { project } from "../../lib/config.js";
+import { parseDescription } from "../../lib/parseDescription.js";
+
+const expertiseData = project().expertise;
+
+const tags = expertiseData.tags;
+const descList = parseDescription(expertiseData.desc);
+---
+
+<section class="tags">
+	<div class="tags__wrapper">
+		<div class="tags__title-wrapper">
+			<h2 class="tags__title">
+				{expertiseData.title}
+			</h2>
+		</div>
+		<ul class="tags__list">
+			{
+				tags.map((tag) =>
+					"icon" in tag ? (
+						<Icon class="tag__icon" name={tag.icon} />
+					) : (
+						<li class="tags__list_item">{tag.text}</li>
+					),
+				)
+			}
+		</ul>
+	</div>
+	<div class="tags__desc">
+		{descList.map((d) => <p>{d}</p>)}
+	</div>
+</section>
+
+<style>
+	.tags {
+		margin-bottom: 160px;
+	}
+	.tags__title {
+		color: var(--primary);
+		text-align: center;
+		font-weight: 400;
+		font-size: var(--font-size-h1);
+	}
+
+	.tags__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		row-gap: calc(var(--font-size-normal) / 2);
+		column-gap: calc(var(--font-size-normal) / 2);
+
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+		font-size: var(--font-size-h2);
+	}
+
+	.tags__list_item {
+		word-break: break-all;
+		display: flex;
+		padding: calc(var(--font-size-normal) / 2)
+			calc(var(--font-size-normal) * 1.5);
+
+		border: 2px solid var(--black);
+		border-radius: calc(var(--font-size-normal) * 1.5);
+
+		color: var(--black);
+	}
+
+	:global(.tag__icon) {
+		width: calc(var(--font-size-normal) * 2);
+		height: calc(var(--font-size-normal) * 2);
+	}
+
+	.tags__desc {
+		text-wrap: balance;
+		margin-top: 60px;
+		text-align: center;
+	}
+</style>

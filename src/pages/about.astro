@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import AboutTitle from "../components/about/Title.astro";
+import AboutSkills from "../components/about/Skills.astro";
+import AboutSocials from "../components/about/Socials.astro";
+import AboutCv from "../components/about/Links.astro";
+import GoToTop from "../components/GoToTop.astro";
+import { global } from "../lib/config";
+---
+
+<BaseLayout>
+	<slot slot="head">
+		<title>{global().title} | About</title>
+	</slot>
+	<main class="main column">
+		<Header />
+		<AboutTitle />
+		<AboutSkills />
+		<AboutSocials />
+		<AboutCv />
+		<GoToTop />
+	</main>
+	<Footer />
+</BaseLayout>
+
+<style>
+	:root {
+		--body-color: var(--primary);
+		--logo-color: var(--white);
+	}
+</style>

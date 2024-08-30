@@ -1,0 +1,63 @@
+---
+import { project } from "../../lib/config.js";
+
+const brandsData = project().brands;
+const brands = brandsData.brands;
+---
+
+<section class="brands-section">
+	<h1 class="brands__title">{brandsData.title}</h1>
+	<div class="brands__wrapper">
+		<div class="brands">
+			{
+				brands.map((brand) => (
+					<a class="brand" href={brand.url} target="_blank">
+						<img
+							src={brand.image}
+							alt={brand.title}
+							class="brand_image"
+						/>
+					</a>
+				))
+			}
+		</div>
+		<div class="brands_post-fix">{brandsData.post_fix}</div>
+	</div>
+</section>
+
+<style>
+	.brands__title {
+		color: var(--primary);
+		text-align: center;
+		font-weight: 400;
+		font-size: var(--font-size-h1);
+	}
+
+	.brands {
+		place-content: center;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		align-items: center;
+		gap: 40px;
+		margin: auto;
+		padding: 0 50px;
+		max-width: 1400px;
+	}
+
+	.brand_image {
+		object-fit: contain;
+		width: 100%;
+		height: auto;
+		max-height: 120px;
+	}
+
+	.brands_post-fix {
+		margin-top: 60px;
+		text-align: center;
+		font-size: 1rem;
+
+		@media (max-width: 600px) {
+			font-size: 1rem;
+		}
+	}
+</style>

@@ -1,0 +1,23 @@
+---
+import Icon from "../Icon.astro";
+const { title, url } = Astro.props;
+---
+
+<li class="links__list_items">
+	<a target="_blank" href={url}>{title}</a>
+	<div>
+		<Icon size="40px" name="arrow-right-up" />
+	</div>
+</li>
+
+<style>
+	.links__list_items {
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		gap: 10px;
+	}
+	a {
+		color: var(--text-color);
+	}
+</style>

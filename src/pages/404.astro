@@ -1,0 +1,37 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { global } from "../lib/config";
+---
+
+<BaseLayout>
+	<slot slot="head">
+		<title>{global().title} | 404</title>
+	</slot>
+	<main class="main column">
+		<Header />
+
+		<h1>404 — Page Not Found</h1>
+
+		<h1>¯\_(ツ)_/¯</h1>
+
+		<p>
+			Unfortunately, the requested page was not found. Either it doesn't
+			exist or it has been removed.
+		</p>
+
+		<p><a href="/">Go back to the home page</a></p>
+	</main>
+	<Footer />
+</BaseLayout>
+
+<style>
+	p {
+		margin-bottom: 100px;
+	}
+
+	a {
+		color: var(--primary);
+	}
+</style>

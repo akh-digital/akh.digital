@@ -1,0 +1,17 @@
+---
+const { title, url } = Astro.props;
+---
+
+<li class="links__list_items">
+	<a target="_blank" href={url}>{title}</a>
+</li>
+
+<style>
+	.links__list_items {
+		list-style: none;
+		padding: 15px 0;
+	}
+	a {
+		color: var(--text-color);
+	}
+</style>

@@ -1,0 +1,56 @@
+---
+import Icon from "../Icon.astro";
+import Social from "./Social.astro";
+import { about } from "../../lib/config.js";
+
+const socials = about().social;
+const list = socials.list;
+---
+
+<section class="links">
+	<div>
+		<h1 class="links__big-title">
+			{socials.title}
+		</h1>
+		<div class="links__lists_wrapper">
+			<span class="links__title">
+				<div class="links__title_container">
+					{socials.second_title}
+					<Icon name="arrow-right" />
+				</div>
+			</span>
+			<ul class="links__list">
+				{
+					list.map((social) => (
+						<Social url={social.url} title={social.title} />
+					))
+				}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<style>
+	.links {
+		margin-top: 160px;
+	}
+
+	.links__big-title {
+		font-weight: 400;
+		font-size: var(--font-size-h1);
+	}
+	.links__lists_wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+
+		@media (max-width: 600px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	.links__title_container {
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		font-size: var(--font-size-h1);
+	}
+</style>

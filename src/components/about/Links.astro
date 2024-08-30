@@ -1,0 +1,54 @@
+---
+import { about } from "../../lib/config.js";
+import Icon from "../Icon.astro";
+import Cv from "./Cv.astro";
+
+const cv = about().cv;
+const list = cv.list;
+---
+
+<section class="links">
+	<div>
+		<h1 class="links__big-title">
+			{cv.title}
+		</h1>
+		<div class="links__lists_wrapper">
+			<span class="links__title">
+				<div class="links__title_container">
+					{cv.second_title}
+					<Icon name="arrow-right" />
+				</div>
+			</span>
+			<ul class="links__list">
+				{
+					list.map((social) => (
+						<Cv url={social.url} title={social.title} />
+					))
+				}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<style>
+	.links__big-title {
+		font-weight: 400;
+		font-size: var(--font-size-h1);
+	}
+
+	.links__lists_wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+
+		@media (max-width: 600px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.links__title_container {
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		font-size: var(--font-size-h1);
+	}
+</style>

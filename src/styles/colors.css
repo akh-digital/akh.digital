@@ -1,0 +1,17 @@
+:root {
+	--primary: #f0622c;
+	--black: #1e1e1e;
+	--gray: #e5e5e5;
+	--light-gray: #f2f6fc;
+	--white: #ffffff;
+
+	--body-color: var(--white);
+	--text-color: var(--black);
+	--logo-color: var(--primary);
+	--color-focus-ring: var(--primary);
+
+	@supports (color: color(display-p3 1 0 0)) {
+		--primary: oklch(73.63% 0.2111 39.51);
+		--light-gray: oklch(98.18% 0.009 258.34);
+	}
+}
