@@ -12,7 +12,6 @@ export interface GlobalYaml {
 	language: string;
 }
 
-type Brand = { title: string; image: string; url: string };
 type Tag = { text: string } | { icon: string };
 
 export interface ProjectYaml {
@@ -23,11 +22,6 @@ export interface ProjectYaml {
 	};
 	projects: {
 		title: string;
-	};
-	brands: {
-		title: string;
-		post_fix: string;
-		brands: Brand[];
 	};
 }
 
