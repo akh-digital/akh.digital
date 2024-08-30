@@ -19,14 +19,15 @@ export async function getStaticPaths() {
 	}));
 }
 
-const globalData = global();
 const post = Astro.props;
 
 const { Content } = await post.render();
-const title = `${globalData.title} | ${post.data.title}`;
 ---
 
-<BaseLayout title={title}>
+<BaseLayout>
+	<slot slot="head">
+		<title>{`${global().title} | ${post.data.title}`}</title>
+	</slot>
 	<main class="main column">
 		<Header />
 

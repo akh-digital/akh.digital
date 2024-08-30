@@ -1,5 +1,6 @@
 # tmp & compiled output
 dist
+.cache
 /tmp
 /bundle-stats.html
 

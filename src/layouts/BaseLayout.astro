@@ -1,17 +1,13 @@
 ---
+import HeadMeta from "../components/HeadMeta.astro";
+import { global } from "../lib/config";
 import "../styles/index.css";
-const { title: propsTitle } = Astro.props;
-const title = import.meta.env.DEV ? `[DEV] ${propsTitle}` : propsTitle;
 ---
 
-<!doctype html>
-<html class="page" lang="en">
+<html class="page" lang={global().language}>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
+		<HeadMeta />
+
 		<link
 			rel="preload"
 			href="/fonts/SuisseIntl.woff2"
@@ -26,49 +22,50 @@ const title = import.meta.env.DEV ? `[DEV] ${propsTitle}` : propsTitle;
 			as="font"
 			type="font/woff2"
 		/>
-		<title>{title}</title>
+
+		<slot name="head" />
 	</head>
 	<body class="page__body">
 		<slot />
+
+		<style is:global>
+			.page {
+				background-color: var(--body-color);
+				color: var(--text-color);
+
+				@media (prefers-reduced-motion: no-preference) {
+					scroll-behavior: smooth;
+				}
+			}
+
+			.page__body {
+				margin: 0;
+				line-height: 1;
+				font-weight: 400;
+				font-size: var(--font-size-normal);
+			}
+
+			.column {
+				@media (width >= 1760px) {
+					padding-inline: calc((100% - 1676px) / 2);
+				}
+				@media (1024px <= width < 1760px) {
+					padding-inline: 42px;
+				}
+				@media (width < 1024px) {
+					padding-inline: 20px;
+				}
+			}
+
+			.divider {
+				margin: 20px 0;
+				width: 100%;
+				border-top: 2px solid var(--black);
+			}
+
+			.divider.is-white {
+				border-top: 2px solid var(--white);
+			}
+		</style>
 	</body>
 </html>
-
-<style is:global>
-	.page {
-		background-color: var(--body-color);
-		color: var(--text-color);
-
-		@media (prefers-reduced-motion: no-preference) {
-			scroll-behavior: smooth;
-		}
-	}
-
-	.page__body {
-		margin: 0;
-		line-height: 1;
-		font-weight: 400;
-		font-size: var(--font-size-normal);
-	}
-
-	.column {
-		@media (width >= 1760px) {
-			padding-inline: calc((100% - 1676px) / 2);
-		}
-		@media (1024px <= width < 1760px) {
-			padding-inline: 42px;
-		}
-		@media (width < 1024px) {
-			padding-inline: 20px;
-		}
-	}
-
-	.divider {
-		margin: 20px 0;
-		width: 100%;
-		border-top: 2px solid var(--black);
-	}
-
-	.divider.is-white {
-		border-top: 2px solid var(--white);
-	}
-</style>

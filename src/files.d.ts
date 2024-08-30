@@ -1,6 +1,8 @@
 export interface GlobalYaml {
 	title: string;
+	author: string;
 	description: string;
+	keywords: string;
 	domain: string;
 	developer: string;
 	developer_link: string;

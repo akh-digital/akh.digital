@@ -10,6 +10,7 @@
 		"astro": "astro"
 	},
 	"dependencies": {
+		"@astrojs/partytown": "^2.1.2",
 		"@astrojs/sitemap": "^3.1.6",
 		"astro": "^4.15.1",
 		"confbox": "^0.1.3",

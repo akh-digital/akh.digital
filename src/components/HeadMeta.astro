@@ -1,0 +1,40 @@
+---
+import { global } from "../lib/config";
+---
+
+<meta charset="UTF-8" />
+
+<meta name="keywords" content={global().keywords} />
+<meta name="description" content={global().description} />
+<meta name="author" content={global().author} />
+<meta name="copyright" content={global().author} />
+<meta name="robots" content="index, follow" />
+
+<!-- START - Open Graph and Twitter Tags -->
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content={global().title} />
+<meta property="og:title" content="Aleks Kholopov Portfolio" />
+<meta property="og:url" content={global().domain} />
+<meta property="og:type" content="website" />
+<meta
+	property="og:description"
+	content="A designer specializing in Product Design & UX Research."
+/>
+<meta property="og:image" content="/akh-opengraph-1.jpeg" />
+<meta property="og:image:url" content="/akh-opengraph-1.jpeg" />
+<meta property="og:image:secure_url" content="/akh-opengraph-1.jpeg" />
+<!-- Twitter -->
+<meta name="twitter:title" content="Aleks Kholopov Portfolio" />
+<meta name="twitter:url" content="https://akh.digital" />
+<meta
+	name="twitter:description"
+	content="A designer specializing in Product Design & UX Research."
+/>
+<meta name="twitter:image" content="/akh-opengraph-1.jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<!-- END - Open Graph and Twitter Tags -->
+
+<meta name="viewport" content="width=device-width" />
+<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+<meta name="generator" content={Astro.generator} />

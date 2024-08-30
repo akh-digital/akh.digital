@@ -9,9 +9,13 @@ import Expertise from "../components/home/Expertise.astro";
 import Intro from "../components/home/Intro.astro";
 import Hero from "../components/home/Hero.astro";
 import Photo from "../components/home/Photo.astro";
+import { global } from "../lib/config";
 ---
 
-<BaseLayout title="Aleks Kholopov — Digital Product Designer">
+<BaseLayout>
+	<slot slot="head">
+		<title>{global().title}</title>
+	</slot>
 	<main class="main column">
 		<Header />
 		<Hero />

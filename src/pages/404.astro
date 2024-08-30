@@ -2,9 +2,13 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { global } from "../lib/config";
 ---
 
-<BaseLayout title="404">
+<BaseLayout>
+	<slot slot="head">
+		<title>{global().title} | 404</title>
+	</slot>
 	<main class="main column">
 		<Header />
 
