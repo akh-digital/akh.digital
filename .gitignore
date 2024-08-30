@@ -1,6 +1,5 @@
 # tmp & compiled output
 dist
-.cache
 /tmp
 /bundle-stats.html
 
@@ -42,4 +41,4 @@ lerna-debug.log*
 .env.*.local
 
 .astro
-.cache
+.cache/
