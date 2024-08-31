@@ -23,32 +23,3 @@ expertise:
 
 projects:
   title: Recent Projects
-
-brands:
-  title: Trusted by (+)
-  post_fix: and many others
-  brands:
-    - title: SIEMENS
-      image: /icons/brand/SIEMENS.svg
-      url: http://www.siemens.com/global/en
-    - title: Essilor
-      image: /icons/brand/Essilor.svg
-      url: http://www.essilor.com/en
-    - title: SPIEF
-      image: /icons/brand/SPIEF.svg
-      url: http://www.forumspb.com/en
-    - title: CooperVision
-      image: /icons/brand/CooperVision.svg
-      url: http://www.coopervision.com
-    - title: Saprun
-      image: /icons/brand/Saprun.svg
-      url: http://www.saprun.com
-    - title: MoscowMetro
-      image: /icons/brand/MoscowMetro.svg
-      url: http://www.mosmetro.ru
-    - title: DaSignal
-      image: /icons/brand/DaSignal.svg
-      url: http://www.dasignal.ru
-    - title: Tassta
-      image: /icons/brand/Tassta.svg
-      url: http://www.tassta.com
