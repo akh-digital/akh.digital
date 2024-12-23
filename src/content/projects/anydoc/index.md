@@ -1,7 +1,7 @@
 ---
 title: Anydoc
 date: 2024-09-08
-web: www.alcon.com
+web: 
 tags: ["UI UX", "PRODUCT DESIGN", "DATA VISUALIZATION"]
 ---
 
