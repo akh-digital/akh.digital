@@ -1,6 +1,6 @@
 ---
 title: Optima BI Analytics Platform
-date: 2024-06-02
+date: 2024-11-02
 new:
 tags: ["UI UX", "UX RESEARCH"]
 ---
