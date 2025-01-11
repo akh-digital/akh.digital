@@ -2,7 +2,7 @@
 title: K&M Dating
 date: 2024-06-02
 web:
-tags: ["UI UX", "PRODUCT DESIGN"]
+tags: ["KEY UI UX DESIGN", "USER RESEARCH", "LOGO DESIGN"]
 ---
 
 KM Dating App is the place to be to meet a partner for sport activities and/or the perfect match for dinner and more. 
