@@ -4,7 +4,7 @@ date: 2024-06-02
 web:
 tags: ["KEY UI UX DESIGN", "USER RESEARCH", "LOGO DESIGN"]
 ---
-KM Dating App is the place to be to meet a partner for sport activities and/or the perfect match for dinner and more. Started with a concept of marketing app for local fitness club, now it becomes more popular and helps to connect people from different cities and sport clubs.
+KM Dating App is the place to be to meet a partner for sport activities and/or the perfect match for dinner and more. 
 
 ![km-case-1@2x](./km-case-1@2x.webp)
 
@@ -16,6 +16,7 @@ The webpage has two versions – light and dark (also designed in figma using va
 
 ![km-case-3@2x@2x](./km-case-3@2x.webp)
 
+Started with a concept of marketing app for local fitness club, now it becomes more popular and helps to connect people from different cities and sport clubs.
 
 ![km-case-4@2x@2x](./km-case-4@2x.webp)
 
