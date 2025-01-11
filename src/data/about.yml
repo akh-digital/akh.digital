@@ -1,9 +1,11 @@
 about:
   title: Hey! It’s me
   desc: |
-    Born in Estonia, currently based in Saint-P, Russia.
-    Creating Design system, ERP systems, Web-ordering, B2C web apps, websites and digital illustrations. Specializing in Data Visualization, Web and UI/UX design using Figma.
-    Passionate about simplicity, constantly trying to build clean and simple products to make people’s lives easier.
+    Originally from Tallinn, Estonia, I come from a family of tech enginners (railway & industrial construction). Although I studied cross-culture communications and romance languages in Saint-Petersburg, I never worked in linguistics.
+    In 2005, I started my first job as a graphic and packaging designer in federal wholesale company (hand and power tools for professional and household use). During my 8+ years there, I successfully created over 100 packaging and publishing projects. Then, I worked as a graphic designer in St. Petersburg International Economic Forum, creating a lot of in- and outdoor materials, printing stuff, illustrations.
+    Since 2014, I've been actively involved in a IT sphere - creating design systems, ERP systems, Web-ordering, B2C web apps, websites and digital illustrations using Figma. I successfully worked as a UI/UX designer, creating digital solutions for Siemens AG, Tassta GmbH, Alcon, Essilor, CooperVision, to name a few.
+    Here, at this particular website you'll can find an array of my latest commercial design works - realized and launched. Enjoy staying here!
+  
 
 social:
   title: Get in touch
@@ -28,20 +30,19 @@ cv:
       url: "/cv/aleks_kholopov_ru_cv_2025.pdf"
 
 skills:
-  - title: Hard Skills
+  - title: / CAPACITIES
     list:
-      - Product Design, Brand & Communication Design, CJM Creation, User Flow Creation, A/B Testing, UX Research, Side-by-Side Testing, Corridor Testing, Interface Creation, Interactive Prototyping, Wireframing
-      - Design — Figma, Zeplin, Adobe (Photoshop, Illustrator, InDesign)
-      - Analytics — Google Analytics, Yandex.Metrica, Tableau
-      - WebDev — VSCode, GitHub, Atom/Typora, Notion
-      - Principles of “atomic design” and rules of working with and creating of modern design systems
-      - Human Interface (IOS) and Google Material Design Guidelines (Android)
-      - Basic knowledge of HTML / CSS
-  - title: Soft Skills
+      - UX / UI Design, App Design
+      - UI Kits & Design Systems
+      - Web Design
+      - Interactive Prototyping
+      - Brand Identity, Creative / Art Direction
+      - Publication Design, Packaging & objects, Graphic design
+  - title: / TOOLS & SERVICES
     list:
-      - Quickly adapt for changes
-      - Ability and desire to work in a team
-      - Easily switch between different tasks
-      - Empathy, willingness to put oneself in the user's shoes to solve problems
-      - Responsibility and desire to achieve results
-      - Mentoring junior-level designers
+      - Figma, Pixso, Zeplin
+      - Adobe Suite
+      - Slack, Miro, Atlassian Jira, Notion, YouTrack
+      - AI: ChatGPT, Midjourney, Recraft
+      - VSCode, GitHub, Atom/Typora
+      - UI frameworks — Element UI, Ant Design, Apex Charts, Ant Charts
