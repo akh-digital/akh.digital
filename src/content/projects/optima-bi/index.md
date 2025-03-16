@@ -1,5 +1,5 @@
 ---
-title: Optima BI Analytics Platform
+title: Optima BI Analytics
 date: 2024-11-02
 new:
 tags: ["Key UI UX Design", "User Research", "Data Visualization"]
