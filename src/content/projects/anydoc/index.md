@@ -2,7 +2,7 @@
 title: Anydoc
 date: 2024-09-08
 web: 
-tags: ["Key UI/UX Design", "PRODUCT DESIGN", "Branding"]
+tags: ["KEY UI UX DESIGN", "PRODUCT DESIGN"]
 ---
 
 Indital Group is a leading provider of integrated customs transit clearance, integrated logistics and customs services, connecting businesses with new supply chain optimization opportunities in a dynamically changing market. 
