@@ -1,7 +1,11 @@
 ---
 import { Icon as AstroIcon } from "astro-icon/components";
 
-const { name, class: className, size = 60 } = Astro.props;
+const { name, class: className = "", size = 60 } = Astro.props;
 ---
 
-<AstroIcon name={name} size={size} />
+<AstroIcon
+	name={name}
+	size={size}
+	class:list={["color: currentColor", className]}
+/>
