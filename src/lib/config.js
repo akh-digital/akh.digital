@@ -1,19 +1,15 @@
-import AboutYaml from "../data/about.yml?raw";
-import ProjectYaml from "../data/projects.yml?raw";
-import GlobalYaml from "../data/global.yml?raw";
-import { parseYAML } from "confbox";
+import aboutYaml from "../data/about.yml";
+import projectYaml from "../data/projects.yml";
+import globalYaml from "../data/global.yml";
 
-/** @returns {import('../files.js').AboutYaml} */
 export function about() {
-	return parseYAML(AboutYaml);
+	return aboutYaml;
 }
 
-/** @returns {import('../files.js').ProjectYaml}} */
 export function project() {
-	return parseYAML(ProjectYaml);
+	return projectYaml;
 }
 
-/** @returns {import('../files.js').GlobalYaml}} */
 export function global() {
-	return parseYAML(GlobalYaml);
+	return globalYaml;
 }
