@@ -4,7 +4,7 @@ type: "about"
 draft: false
 imgSrc: '/photo/aleks-about@2x.webp'
 iconSrc: '/img/about/arrow-right-long.svg'
-header: 'Hey! It’s me'
+header: 'Hey!'
 iconWidth: 80 
 iconHeight: 48
 ---
