@@ -1,6 +1,6 @@
 ---
 title: Optima BI Analytics
-date: 2024-11-02
+date: 2025-01-04
 new:
 tags: ["KEY UI UX DDESIGN", "USER RESEARCH", "DATA VISUALIZATION"]
 ---

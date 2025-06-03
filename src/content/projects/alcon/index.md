@@ -1,6 +1,6 @@
 ---
 title: Alcon
-date: 2024-10-02
+date: 2025-01-01
 web: www.alcon.com
 tags: ["KEY UI UX DESIGN", "PRODUCT DESIGN", "DATA VISUALIZATION"]
 ---
