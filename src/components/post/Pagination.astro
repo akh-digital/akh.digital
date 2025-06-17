@@ -21,7 +21,7 @@ const nextPage = sortedProjects[currentProjectIndex + 1]?.slug;
 		<div class="list">
 			<Show when={prevPage}>
 				<div class="item">
-					<Icon size="33" name="navigation-arrow-left" />
+					<Icon size="33" name="arrow-left" />
 					<a href={`/projects/${[prevPage]}`}> PREVIOUS PROJECT </a>
 				</div>
 			</Show>
@@ -29,7 +29,7 @@ const nextPage = sortedProjects[currentProjectIndex + 1]?.slug;
 			<Show when={nextPage}>
 				<div class="item">
 					<a href={`/projects/${nextPage}`}> NEXT PROJECT </a>
-					<Icon size="33" name="navigation-arrow-right" />
+					<Icon size="33" name="arrow-right" />
 				</div>
 			</Show>
 		</div>
