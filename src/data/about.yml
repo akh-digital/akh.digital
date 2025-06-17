@@ -28,7 +28,7 @@ cv:
       url: "/cv/aleks_kholopov_ru_cv_2025.pdf"
 
 skills:
-  - title: / CAPACITIES
+  - title: / Capacities _
     list:
       - UX / UI Design, App Design
       - UI Kits & Design Systems
@@ -36,7 +36,7 @@ skills:
       - Interactive Prototyping
       - CustDev, User Interview, UX Tests
       - Publication Design, Packaging & objects, Graphic design
-  - title: / TOOLS & SERVICES
+  - title: / Tools & Services _
     list:
       - Figma, Pixso, Zeplin
       - Adobe Suite
