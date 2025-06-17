@@ -9,7 +9,7 @@ about:
 
 social:
   title: Get in touch
-  second_title: Say hi!
+  second_title: Say hi! 
   list:
     - title: "aleks@akh-digital.ru"
       url: "mailto:aleks@akh-digital.ru"
@@ -20,7 +20,7 @@ social:
 
 cv:
   title: Check out
-  second_title: My CV
+  second_title: My CV 
   list:
     - title: "download eng / pdf"
       url: "/cv/aleks_kholopov_en_cv_2025.pdf"
