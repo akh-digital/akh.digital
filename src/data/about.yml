@@ -20,7 +20,7 @@ social:
 
 cv:
   title: Check out
-  second_title: My CV  
+  second_title: My CV _
   list:
     - title: "download eng / pdf"
       url: "/cv/aleks_kholopov_en_cv_2025.pdf"
