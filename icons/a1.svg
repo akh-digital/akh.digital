@@ -1,4 +1,17 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 2V6H8V10H12V6H16V18H20V22H8V18H12V14H8V18H4V2H12Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
-<path d="M20 6H16V2H20V6Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<g clip-path="url(#clip0_868_2632)">
+<path d="M14 24H10V20H14V24Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M10 20H6V14H10V20Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M20 18H14V14H20V18Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M4 14H0V10H4V14Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M24 14H20V10H24V14Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M10 10H4V6H10V10Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M18 10H14V4H18V10Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M14 4H10V0H14V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+</g>
+<defs>
+<clipPath id="clip0_868_2632">
+<rect width="24" height="24" fill="white" style="fill:white;fill-opacity:1;"/>
+</clipPath>
+</defs>
 </svg>
