@@ -1,6 +1,6 @@
 ---
-import SocialLink from "./SocialLink.astro";
 import Links from "./components/Links.astro";
+import LinksLink from "./components/LinksLink.astro";
 import { about } from "../../lib/config.js";
 
 const socials = about().social;
@@ -17,7 +17,7 @@ const list = socials.list;
 	<Fragment slot="links-list">
 		{
 			list.map((social) => (
-				<SocialLink url={social.url} title={social.title} />
+				<LinksLink url={social.url} title={social.title} />
 			))
 		}
 	</Fragment>

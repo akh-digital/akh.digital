@@ -1,7 +1,7 @@
 ---
 import { about } from "../../lib/config.js";
 import Icon from "../Icon.astro";
-import ResumesLink from "./ResumesLink.astro";
+import LinksLink from "./components/LinksLink.astro";
 import Links from "./components/Links.astro";
 
 const cv = about().cv;
@@ -16,6 +16,6 @@ const list = cv.list;
 		{cv.second_title}
 	</Fragment>
 	<Fragment slot="links-list">
-		{list.map((cv) => <ResumesLink url={cv.url} title={cv.title} />)}
+		{list.map((cv) => <LinksLink url={cv.url} title={cv.title} />)}
 	</Fragment>
 </Links>
