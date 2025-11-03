@@ -1,30 +1,21 @@
 ---
-import { about } from "../../lib/config.js";
-import Icon from "../Icon.astro";
-import CvLink from "./CvLink.astro";
-
-const cv = about().cv;
-const list = cv.list;
+import Icon from "../../Icon.astro";
 ---
 
 <section class="links">
 	<div>
 		<h1 class="links__big-title">
-			{cv.title}
+			<slot name="title" />
 		</h1>
 		<div class="links__lists_wrapper">
 			<span class="links__title">
 				<div class="links__title_container">
-					{cv.second_title}
+					<slot name="second-title" />
 					<Icon size="32" name="arrow-right" />
 				</div>
 			</span>
 			<ul class="links__list">
-				{
-					list.map((social) => (
-						<CvLink url={social.url} title={social.title} />
-					))
-				}
+				<slot name="links-list" />
 			</ul>
 		</div>
 	</div>
