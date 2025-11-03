@@ -1,7 +1,7 @@
 ---
 import { about } from "../../lib/config.js";
 import Icon from "../Icon.astro";
-import Cv from "./Cv.astro";
+import CvLink from "./CvLink.astro";
 
 const cv = about().cv;
 const list = cv.list;
@@ -16,13 +16,13 @@ const list = cv.list;
 			<span class="links__title">
 				<div class="links__title_container">
 					{cv.second_title}
-						<Icon size="32" name="arrow-right" />
+					<Icon size="32" name="arrow-right" />
 				</div>
 			</span>
 			<ul class="links__list">
 				{
 					list.map((social) => (
-						<Cv url={social.url} title={social.title} />
+						<CvLink url={social.url} title={social.title} />
 					))
 				}
 			</ul>

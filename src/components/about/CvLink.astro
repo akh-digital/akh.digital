@@ -2,16 +2,16 @@
 const { title, url } = Astro.props;
 ---
 
-<li class="links__list_items">
+<li class="cv_link">
 	<a target="_blank" href={url}>{title}</a>
 </li>
 
 <style>
-	.links__list_items {
-		line-height: 1.15;
-		font-size: var(--font-size-normal);
+	.cv_link {
 		padding: 12px 0;
 		list-style: none;
+		line-height: 1.15;
+		font-size: var(--font-size-normal);
 	}
 	a {
 		color: var(--text-color);
