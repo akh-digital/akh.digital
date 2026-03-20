@@ -14,7 +14,7 @@ social:
     - title: "aleks@akh-digital.ru"
       url: "mailto:aleks@akh-digital.ru"
     - title: "telegram"
-      url: "https://t.me/akhdigital"
+      url: "https://t.me/ashtimus"
     - title: "linkedin"
       url: "https://linkedin.com/in/aleksandr-kholopov/"
 
@@ -23,9 +23,9 @@ cv:
   second_title: / My CV _
   list:
     - title: "download eng / pdf"
-      url: "/cv/aleks_kholopov_en_cv_2025.pdf"
+      url: "/cv/aleks_kholopov_en_cv_2026.pdf"
     - title: "download rus / pdf"
-      url: "/cv/aleks_kholopov_ru_cv_2025.pdf"
+      url: "/cv/aleks_kholopov_ru_cv_2026.pdf"
 
 skills:
   - title: / Capacities _
@@ -41,6 +41,6 @@ skills:
       - Figma, Pixso, Zeplin
       - Adobe Suite
       - Slack, Miro, Atlassian Jira, Notion, YouTrack
-      - ChatGPT, Midjourney, Recraft
+      - Figma Make, ChatGPT, Midjourney, Recraft
       - VSCode, GitHub, Atom/Typora
       - UI frameworks — Element UI, Ant Design, Apex Charts, Ant Charts
