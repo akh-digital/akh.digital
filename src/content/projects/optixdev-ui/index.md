@@ -1,7 +1,6 @@
 ---
 title: OptiDev UI
 date: 2026-01-01
-web: www.alcon.com
 tags: ["UI KIT", "DESIGN SYSTEM"]
 ---
 
