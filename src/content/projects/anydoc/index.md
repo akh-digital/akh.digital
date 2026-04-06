@@ -1,7 +1,6 @@
 ---
 title: Anydoc
 date: 2024-09-08
-web: no link
 tags: ["KEY UI UX DESIGN", "PRODUCT DESIGN"]
 ---
 
