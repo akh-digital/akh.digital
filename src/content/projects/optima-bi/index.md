@@ -4,7 +4,7 @@ date: 2025-01-04
 Client: Itigris Optima LLC
 Role: Art director
 Team: +1 designer
-Responsibilities: Art-direction and design-ops, Formation of design-product strategy, Creation and development of the design-system, Conceptual design, Communication design: branding, merch design
+Responsibilities: Art-direction and design-ops, Formation of design-product strategy, Creation and development of the design-system, Conceptual design, Communication design - branding, merch design
 tags: ["KEY UI UX DDESIGN", "USER RESEARCH", "DATA VISUALIZATION"]
 ---
 
