@@ -17,3 +17,4 @@ Optima BI is an analytics service created specially for optic businesses. It all
 
 ![optima-bi-case-5@2x](./optima-bi-case-5@2x.webp)
 
+![optima-bi-case-6@2x](./optima-bi-case-6@2x.webp)
