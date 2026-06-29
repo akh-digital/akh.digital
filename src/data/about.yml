@@ -38,10 +38,8 @@ skills:
       - Publication Design, Packaging & objects, Graphic design
   - title: / Tools & Services _
     list:
-      - Figma, Pixso, Zeplin
-      - Tokens Studio, Zeroheight, Storybook
-      - Adobe Suite
-      - Slack, Miro, Atlassian Jira, Notion, YouTrack
-      - Figma Make, ChatGPT, Midjourney, Recraft
+      - Figma, Pixso, Adobe Photoshop, Illustrator, InDesign
+      - Figma Make, ChatGPT, Claude, Cursor
       - VSCode, GitHub, Atom/Typora
       - UI frameworks — Element UI, Ant Design, Apex Charts, Ant Charts
+      - Slack, Miro, Atlassian Jira, Notion, YouTrack
