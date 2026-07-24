@@ -15,7 +15,8 @@
 		}
 
 		> p {
-			margin: 0;
+			margin: 0 0 24px;
+			grid-column: span 1;
 		}
 
 		> p:not(:has(img)) {
@@ -28,6 +29,7 @@
 			width: 100%;
 			overflow: clip;
 			border-radius: 0px;
+			margin-bottom: 24px;
 
 			@media (width < 1024px) {
 				border-radius: 0px;
