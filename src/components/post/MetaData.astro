@@ -87,12 +87,17 @@ const responsibilitiesList = Array.isArray(responsibilities)
 		.item {
 			display: flex;
 			flex-wrap: nowrap;
-			gap: 40px;
+			align-items: flex-start;
+			gap: 24px;
 			font-size: var(--font-size-normal);
 
 			@media (width < 1024px) {
 				flex-direction: column;
 				gap: 20px;
+			}
+
+			.item-title {
+				flex: 0 0 120px;
 			}
 
 			a {
