@@ -7,7 +7,7 @@ const { slug } = Astro.params;
 const projects = await getCollection("projects");
 const currentProject = projects.find((project) => project.slug === slug);
 const data = currentProject?.data ?? {};
-const { date, tags = [], web, client, role, responsibilities } = data;
+const { date, web, client, role, responsibilities } = data;
 const responsibilitiesList = Array.isArray(responsibilities)
 	? responsibilities
 	: responsibilities
@@ -36,8 +36,6 @@ const responsibilitiesList = Array.isArray(responsibilities)
 				<div>{role}</div>
 			</div>
 		</Show>
-	</div>
-	<div class="item-wrapper">
 		<Show when={web}>
 			<div class="item">
 				<div class="item-title">Web:</div>
