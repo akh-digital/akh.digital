@@ -5,23 +5,25 @@
 <style>
 	.post {
 		display: grid;
-		gap: 40px;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 24px;
+		align-items: start;
 
 		@media (max-width: 600px) {
-			gap: 40px;
+			grid-template-columns: 1fr;
+			gap: 24px;
 		}
 
 		> p {
-			margin: 0 0 24px;
+			margin: 0;
 		}
 
 		> p:not(:has(img)) {
-			column-count: 2;
-			column-gap: 24px;
-			column-fill: balance;
+			grid-column: span 1;
 		}
 
 		> p:has(img) {
+			grid-column: 1 / -1;
 			display: block;
 			width: 100%;
 			overflow: clip;
