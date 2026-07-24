@@ -6,7 +6,16 @@ const { slug } = Astro.params;
 
 const projects = await getCollection("projects");
 const currentProject = projects.find((project) => project.slug === slug);
-const { date, tags, web } = currentProject.data;
+const data = currentProject?.data ?? {};
+const { date, tags = [], web, client, role, responsibilities } = data;
+const responsibilitiesList = Array.isArray(responsibilities)
+	? responsibilities
+	: responsibilities
+		? responsibilities
+				.split(",")
+				.map((item) => item.trim())
+				.filter(Boolean)
+		: [];
 ---
 
 <section class="meta-data">
@@ -15,6 +24,18 @@ const { date, tags, web } = currentProject.data;
 			<div class="item-title">Year:</div>
 			<div>{new Date(date).getFullYear()}</div>
 		</div>
+		<Show when={client}>
+			<div class="item">
+				<div class="item-title">Client:</div>
+				<div>{client}</div>
+			</div>
+		</Show>
+		<Show when={role}>
+			<div class="item">
+				<div class="item-title">Role:</div>
+				<div>{role}</div>
+			</div>
+		</Show>
 		<div class="item">
 			<div class="item-title">Tags:</div>
 			<ul class="tags">
@@ -29,6 +50,14 @@ const { date, tags, web } = currentProject.data;
 				<a target="_blank" href={`https://${web}`}>
 					{web}
 				</a>
+			</div>
+		</Show>
+		<Show when={responsibilitiesList.length > 0}>
+			<div class="item">
+				<div class="item-title">Responsibilities:</div>
+				<ul class="responsibilities">
+					{responsibilitiesList.map((item) => <li>{item}</li>)}
+				</ul>
 			</div>
 		</Show>
 	</div>
@@ -92,6 +121,16 @@ const { date, tags, web } = currentProject.data;
 					text-decoration: none;
 					font-size: 14px;
 				}
+			}
+
+			.responsibilities {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-size: var(--font-size-normal);
 			}
 		}
 	}
