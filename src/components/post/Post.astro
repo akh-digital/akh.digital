@@ -15,6 +15,16 @@
 			margin: 0;
 		}
 
+		p:not(:has(img)) {
+			word-break: normal;
+			display: grid;
+			grid-template-columns: 1fr;
+			row-gap: 24px;
+			column-gap: 24px;
+			text-wrap: balance;
+			margin-top: 60px;
+			text-align: left;
+		}
 
 		p:has(img) {
 			display: block;
