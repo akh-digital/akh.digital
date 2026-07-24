@@ -79,7 +79,7 @@ const descList = parseDescription(expertiseData.desc);
 
 	.tags__desc {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: 1fr;
 		row-gap: 24px;
 		column-gap: 24px;
 		text-wrap: balance;
@@ -89,5 +89,11 @@ const descList = parseDescription(expertiseData.desc);
 
 	.tags__desc > p {
 		margin: 0;
+	}
+
+	@media (min-width: 768px) {
+		.tags__desc {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 </style>
