@@ -15,9 +15,13 @@
 			margin: 0;
 		}
 
+		p:not(:has(img)) {
+			column-count: 2;
+			column-gap: 24px;
+		}
+
 		p:has(img) {
 			display: block;
-			width: 100%;
 			width: 100%;
 			overflow: clip;
 			border-radius: 0px;
