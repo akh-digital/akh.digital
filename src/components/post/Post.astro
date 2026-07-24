@@ -6,17 +6,19 @@
 	.post {
 		display: grid;
 		gap: 60px;
-		column-count: 2;
-		column-gap: 24px;
 
 		@media (max-width: 600px) {
 			gap: 40px;
-			column-count: 1;
 		}
 
 		p {
 			margin: 0 0 24px;
 			break-inside: avoid;
+		}
+
+		p:not(:has(img)) {
+			column-count: 2;
+			column-gap: 24px;
 		}
 
 		p:has(img) {
