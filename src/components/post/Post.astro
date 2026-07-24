@@ -20,10 +20,14 @@
 		}
 
 		p:has(img) {
-			display: block;
-			width: 100%;
-			overflow: clip;
-			border-radius: 0px;
+			word-break: normal;
+			display: grid;
+			grid-template-columns: 1fr;
+			row-gap: 24px;
+			column-gap: 24px;
+			text-wrap: balance;
+			margin-top: 60px;
+			text-align: left;
 
 			@media (width < 1024px) {
 				border-radius: 0px;
