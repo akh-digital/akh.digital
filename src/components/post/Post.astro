@@ -5,24 +5,23 @@
 <style>
 	.post {
 		display: grid;
-		gap: 60px;
+		gap: 40px;
 
 		@media (max-width: 600px) {
 			gap: 40px;
 		}
 
-		p {
+		> p {
 			margin: 0 0 24px;
-			break-inside: avoid;
 		}
 
-		p:not(:has(img)) {
+		> p:not(:has(img)) {
 			column-count: 2;
 			column-gap: 24px;
-			break-before: column;
+			column-fill: balance;
 		}
 
-		p:has(img) {
+		> p:has(img) {
 			display: block;
 			width: 100%;
 			overflow: clip;
