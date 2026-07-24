@@ -86,7 +86,7 @@ const responsibilitiesList = Array.isArray(responsibilities)
 
 		.item {
 			display: grid;
-			grid-template-columns: 120px minmax(0, 1fr);
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 			align-items: start;
 			gap: 24px;
 			font-size: var(--font-size-normal);
@@ -107,7 +107,7 @@ const responsibilitiesList = Array.isArray(responsibilities)
 			color: var(--black);
 		}
 
-			.tags {
+		.tags {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 8px;
