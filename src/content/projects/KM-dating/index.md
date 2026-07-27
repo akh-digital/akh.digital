@@ -1,6 +1,9 @@
 ---
 title: K&M Dating
-date: 2024-01-01
+date: 2025-01-01
+client: Rossvik Club
+role: Lead Designer
+responsibilities: Principal Design, Design System and UI Kit, Logo design
 tags: ["KEY UI UX DESIGN", "USER RESEARCH"]
 ---
 KM Dating App is the place to be to meet a partner for sport activities and/or the perfect match for dinner and more. 
@@ -11,7 +14,7 @@ Keeping in mind an idea of both dating and sports, I aimed to provide a modern a
 
 ![km-case-2@2x](./km-case-2@2x.webp)
 
-The webpage has two versions – light and dark (also designed in figma using variants). From mobile to desktop, I worked with dev team on responsiveness for all devices, providing a stable and intuitive experience.
+The webapp has two versions – light and dark (also designed in figma using variants). From mobile to desktop, I worked with dev team on responsiveness for all devices, providing a stable and intuitive experience.
 
 ![km-case-3@2x](./km-case-3@2x.webp)
 
