@@ -1,6 +1,6 @@
 ---
 title: Optima BI Analytics
-date: 2025-01-04
+date: 2026-01-04
 client: Itigris Optima LLC
 role: Art director
 responsibilities: Art-direction and design-ops, Formation of design-product strategy, Creation and development of the design-system, Conceptual design, Communication design — branding & merch design

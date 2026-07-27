@@ -1,6 +1,6 @@
 ---
 title: Alcon
-date: 2025-01-01
+date: 2026-01-01
 web: www.alcon.com
 client: Alcon Pharmaceuticals LLC
 role: Lead Designer
