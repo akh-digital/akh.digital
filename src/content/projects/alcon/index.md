@@ -2,6 +2,9 @@
 title: Alcon
 date: 2025-01-01
 web: www.alcon.com
+client: Alcon Pharmaceuticals LLC
+role: Lead Designer
+responsibilities: Design-ops & design, Creation and support of a design system, Building user scenarios and hypotheses as well as JTBD & user flows
 tags: ["KEY UI UX DESIGN", "PRODUCT DESIGN", "DATA VISUALIZATION"]
 ---
 
