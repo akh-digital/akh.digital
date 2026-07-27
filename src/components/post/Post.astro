@@ -6,8 +6,6 @@
 	.post {
 		display: grid;
 		gap: 40px;
-		width: 100%;
-		max-width: 100%;
 
 		@media (max-width: 600px) {
 			gap: 40px;
@@ -17,14 +15,6 @@
 			margin: 0;
 		}
 
-		> p:not(:has(img)) {
-			width: min(50vw, 100%);
-			max-width: 100%;
-
-			@media (max-width: 600px) {
-				width: 100%;
-			}
-		}
 
 		p:has(img) {
 			display: block;
