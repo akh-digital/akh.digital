@@ -7,7 +7,7 @@ responsibilities: Creation and development of the design-system, UI UX design, U
 tags: ["KEY UI UX DESIGN", "PRODUCT DESIGN"]
 ---
 
-NDITAL is developing a digital ecosystem for international logistics, combining freight transportation, customs clearance, and value-added services into a unified platform. Designed for global supply chains, the platform streamlines cross-border operations and sets a new benchmark for speed, transparency, and customer experience.
+INDITAL is developing a digital ecosystem for international logistics, combining freight transportation, customs clearance, and value-added services into a unified platform. Designed for global supply chains, the platform streamlines cross-border operations and sets a new benchmark for speed, transparency, and customer experience.
 
 ![anydoc-case-1@2x](./anydoc-case-1@2x.webp)
 
