@@ -20,7 +20,6 @@ Ensured consistency with the company's standardized digital service patterns and
 Low-Fidelity Interactive Prototypes — Introduced interactive low-fidelity prototypes to validate new features, user flows, and product hypotheses through micro-interactions. Built prototypes using Figma Make and Claude Code. 
 
 Reduced design approval time by 3× by enabling stakeholders to experience functionality early in the design process, significantly improving collaboration across design, product analytics, and engineering teams. 
-
 Reduced the number of post-release redesigns by validating interactions before development, eliminating the need to wait for testing or production releases to evaluate user experience.
 
 ![optima-bi-case-3@2x](./optima-bi-case-3@2x.webp)
@@ -37,7 +36,6 @@ Maintained separate long-term vision and sprint-ready design artifacts, ensuring
 Built the company's and product's employer brand by hiring, mentoring, and growing the product design team. Evaluated the maturity of the design organization and defined the design strategy for the product's next phase. 
 
 Introduced product training for designers to deepen their understanding of user workflows and industry best practices. 
-
 Defined business and product KPIs, identified strategic opportunities for design and product growth, and aligned design efforts with business objectives.
 
 ![optima-bi-case-6@2x](./optima-bi-case-6@2x.webp)
