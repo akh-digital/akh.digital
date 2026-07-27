@@ -19,4 +19,7 @@ Optima BI is an analytics service created specially for optic businesses. It all
 
 ![optima-bi-case-5@2x](./optima-bi-case-5@2x.webp)
 
+Built the company's and product's employer brand by hiring, mentoring, and growing the product design team. Evaluated the maturity of the design organization and defined the design strategy for the product's next phase. Introduced product training for designers to deepen their understanding of user workflows and industry best practices. Defined business and product KPIs, identified strategic opportunities for design and product growth, and aligned design efforts with business objectives. Led product branding initiatives and the design of branded merchandise.
 ![optima-bi-case-6@2x](./optima-bi-case-6@2x.webp)
+
+Delivered internal lectures and webinars on product design, design methodology, and the evolution of design within the company. Developed the product's visual identity and branded merchandise. Advocated for design across the organization, fostering stronger relationships between designers and business stakeholders and increasing trust in the design function. Helped improve team motivation, collaboration, and cross-functional alignment.
