@@ -18,16 +18,19 @@ AnyDoc is a document recognition and management platform — users upload docume
 ![anydoc-case-2@2x](./anydoc-case-2@2x.webp)
 
 Problem
+
 Customs specialists spent a significant amount of time manually validating document packages. The repetitive workflow was slow, error-prone, and frequently led to customs delays and reprocessing.
 
 ![anydoc-case-3@2x](./anydoc-case-3@2x.webp)
 
 Solution
+
 I designed an AI-assisted document verification experience that combines automatic data extraction with human oversight. The system pre-fills document templates using OCR, surfaces confidence scores for each recognized field, and highlights uncertain values that require review. This dramatically reduces cognitive load while ensuring operators remain in control of every submission.
 
 ![anydoc-case-4@2x](./anydoc-case-4@2x.webp)
 
 Impact
+
 4–5× faster document processing
 60% reduction in fully manual document reviews
 8× increase in operator throughput
