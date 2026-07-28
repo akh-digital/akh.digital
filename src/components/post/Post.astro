@@ -16,6 +16,13 @@
 			margin: 0;
 		}
 
+		p:not(:has(img)) {
+			@media (min-width: 1024px) {
+				width: 50%;
+				margin-left: 50%;
+			}
+		}
+
 		p:not(:has(img)) + p:has(img) {
 			margin-top: 24px;
 		}
