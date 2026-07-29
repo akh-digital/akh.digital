@@ -18,6 +18,8 @@ Originally designed as a web-ordering portal for Alcon contact lenses, it has gr
 
 ![alcon-case-2@2x](./alcon-case-2@2x.webp)
 
+Originally designed as a web-ordering portal for Alcon contact lenses, it has grown into a multifunctional back office system for the company’s partners, with a CRM, marketing, financial and other modules. As part of its strategy to keep enhancing the distributor experience, Alcon wanted to simplify the ordering process.
+
 ![alcon-case-3@2x](./alcon-case-3@2x.webp)
 
 ![alcon-case-4@2x](./alcon-case-4@2x.webp)
