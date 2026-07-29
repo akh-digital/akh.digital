@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Photo from "../components/home/Photo.astro";
 import { global } from "../lib/config";
 ---
 
@@ -11,8 +12,9 @@ import { global } from "../lib/config";
 	</slot>
 	<main class="main column">
 		<Header />
+		<Photo src="/404-img@2x.webp" alt="404 illustration" />
 
-		<h1>404 — Page Not Found</h1>
+		<h1>404 err or — Page Not Found</h1>
 
 		<h1>¯\_(ツ)_/¯</h1>
 
