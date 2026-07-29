@@ -25,7 +25,7 @@ Solution — I designed an AI-assisted document verification experience that com
 
 ![anydoc-case-4@2x](./anydoc-case-4@2x.webp)
 
-Impact — 4–5× faster document processing, 60% reduction in fully manual document reviews, 8× increase in operator throughput
+Impact — 4–5× faster document processing, 60% reduction in fully manual document reviews, 8× increase in operator throughput.
 
 ![anydoc-case-5@2x](./anydoc-case-5@2x.webp)
 
