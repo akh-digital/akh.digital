@@ -22,4 +22,6 @@ Started with a concept of marketing app for local fitness club, now it becomes m
 
 ![km-case-4@2x](./km-case-4@2x.webp)
 
+Started with a concept of marketing app for local fitness club, now it becomes more popular and helps to connect people from different cities and sport clubs.
+
 ![km-case-5@2x](./km-case-5@2x.webp)
