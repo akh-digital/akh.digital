@@ -24,7 +24,7 @@ const { src = "/aleks-main@2x.webp", hoverSrc, alt = "Aleks" } = Astro.props;
 		width: 400px;
 		height: auto;
 		border-radius: 0px;
-		transition: opacity 420ms cubic-bezier(0.22, 1, 0.36, 1), transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+		transition: opacity 520ms ease 80ms;
 
 		@media (width >= 1760px) {
 			width: 600px;
@@ -39,16 +39,13 @@ const { src = "/aleks-main@2x.webp", hoverSrc, alt = "Aleks" } = Astro.props;
 		inset: 0;
 		opacity: 0;
 		pointer-events: none;
-		transform: scale(0.98);
 	}
 
 	.photo-container:hover .image--default {
 		opacity: 0;
-		transform: scale(0.98);
 	}
 
 	.photo-container:hover .image--hover {
 		opacity: 1;
-		transform: scale(1);
 	}
 </style>
