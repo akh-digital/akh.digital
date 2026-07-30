@@ -22,8 +22,10 @@ I designed and built the entire B2B cabinet — "My Eyes for Business" — from 
 
 ![alcon-case-3@2x](./alcon-case-3@2x.webp)
 
-The B2B cabinet became part of "My Eyes" ("МоиГлаза") — an omnichannel platform now connecting consumers, ophthalmologists, and partner opticians. By late 2022, the platform united 300,000 consumers with engagement significantly above the segment average. Across the platform, offline foot traffic at partner locations grew by 40% and average purchase value rose by 10% after launch, with over 90% of partner opticians rating their collaboration with Alcon at the highest score.
+I designed the entire ordering workflow opticians use to order product from the distributor — contact lenses, trial fitting sets, and lens care solutions — end to end, from browsing the catalog to order confirmation and tracking. On top of that, I designed the mechanism for discounts, promotions, special offers, and pre-orders, giving opticians a single place to see and act on every commercial offer from Alcon instead of tracking them through separate emails or calls.
 
 ![alcon-case-4@2x](./alcon-case-4@2x.webp)
+
+The B2B cabinet became part of "My Eyes" ("МоиГлаза") — an omnichannel platform now connecting consumers, ophthalmologists, and partner opticians. By late 2022, the platform united 300,000 consumers with engagement significantly above the segment average. Across the platform, offline foot traffic at partner locations grew by 40% and average purchase value rose by 10% after launch, with over 90% of partner opticians rating their collaboration with Alcon at the highest score.
 
 ![alcon-case-5@2x](./alcon-case-5@2x.webp)
