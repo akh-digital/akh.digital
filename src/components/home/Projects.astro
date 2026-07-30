@@ -7,14 +7,14 @@ const sortedProjects = projects.sort((a, b) => {
 });
 ---
 
-<section class="projects" data-reveal>
+<section class="projects">
 	<div class="projects__wrapper">
 		<div class="projects__title-wrapper">
-			<h1 class="projects__big-title" data-reveal-text>
+			<h1 class="projects__big-title">
 				Recent Projects ({projects.length})
 			</h1>
 		</div>
-		<div class="projects__list" data-reveal>
+		<div class="projects__list">
 			{
 				sortedProjects.map((project, index) => (
 					<Project

@@ -9,14 +9,14 @@ const tags = expertiseData.tags;
 const descList = parseDescription(expertiseData.desc);
 ---
 
-<section class="tags" data-reveal>
+<section class="tags">
 	<div class="tags__wrapper">
 		<div class="tags__title-wrapper">
-			<h2 class="tags__title" data-reveal-text>
+			<h2 class="tags__title">
 				{expertiseData.title}
 			</h2>
 		</div>
-		<ul class="tags__list" data-reveal>
+		<ul class="tags__list">
 			{
 				tags.map((tag) =>
 					"icon" in tag ? (

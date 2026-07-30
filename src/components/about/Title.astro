@@ -7,16 +7,16 @@ const aboutData = about().about;
 const descList = parseDescription(aboutData.desc);
 ---
 
-<section class="about" data-reveal>
+<section class="about">
 	<div class="wrapper">
 		<div class="about__about-me_text">
-			<h2 data-reveal-text>
+			<h2>
 				{aboutData.title}
 			</h2>
 			<Icon size="32" name="arrow-right" />
-			{descList.map((d) => <p data-reveal-text>{d}</p>)}
+			{descList.map((d) => <p>{d}</p>)}
 		</div>
-		<div class="avatar-wrapper" data-reveal>
+		<div class="avatar-wrapper">
 			<img src="/aleks-about@2x.webp" alt="Aleks" class="avatar" />
 		</div>
 	</div>
