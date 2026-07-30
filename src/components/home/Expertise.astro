@@ -57,7 +57,7 @@ const descList = parseDescription(expertiseData.desc);
 		padding: 0;
 
 		list-style: none;
-		font-size: var(font-size-normal);
+		font-size: var(--font-size-normal);
 	}
 
 	.tags__list_item {
@@ -74,15 +74,14 @@ const descList = parseDescription(expertiseData.desc);
 
 	:global(.tag__icon) {
 		width: calc(var(--font-size-normal) * 2);
-		height: calc(var(--font-size-normal * 2);
+		height: calc(var(--font-size-normal) * 2);
 	}
 
 	.tags__desc {
 		word-break: normal;
 		display: grid;
 		grid-template-columns: 1fr;
-		row-gap: 24px;
-		column-gap: 24px;
+		gap: 24px;
 		text-wrap: balance;
 		margin-top: 60px;
 		text-align: justify;
