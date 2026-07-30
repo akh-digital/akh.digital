@@ -34,18 +34,25 @@ const descList = parseDescription(aboutData.desc);
 		@media (max-width: 600px) {
 			grid-template-columns: repeat(1, 1fr);
 			margin-top: 60px;
+			gap: 20px;
 		}
 	}
 	.avatar {
-		width: 400px;
+		width: min(100%, 400px);
 		height: auto;
 		border-radius: 0px;
+		display: block;
 	}
 
 	.about__about-me_text {
+		max-width: 100%;
+		min-width: 0;
+
 		h2 {
 			font-weight: 400;
 			font-size: var(--font-size-h2);
+			line-height: 1.1;
+			word-break: break-word;
 		}
 
 		p {
@@ -53,6 +60,10 @@ const descList = parseDescription(aboutData.desc);
 			text-indent: 80px;
 			line-height: 1.15;
 			font-size: var(--font-size-normal);
+			overflow-wrap: anywhere;
+			word-break: break-word;
+			max-width: 100%;
+			margin: 0 0 12px;
 		}
 	}
 </style>
