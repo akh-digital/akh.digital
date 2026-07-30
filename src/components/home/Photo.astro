@@ -1,12 +1,13 @@
 ---
-const { src = "/aleks-main@2x.webp", alt = "Aleks" } = Astro.props;
+const { src = "/aleks-main@2x.webp", hoverSrc, alt = "Aleks" } = Astro.props;
 ---
 
 <section class="photo">
 	<div class="photo-container">
 		<div class="gradient-1"></div>
 		<div class="gradient-2"></div>
-		<img src={src} alt={alt} class="image" />
+		<img src={src} alt={alt} class="image image--default" />
+		{hoverSrc && <img src={hoverSrc} alt={`${alt} hover`} class="image image--hover" />}
 	</div>
 </section>
 
@@ -19,11 +20,11 @@ const { src = "/aleks-main@2x.webp", alt = "Aleks" } = Astro.props;
 	.photo-container {
 		position: relative;
 	}
-	img {
+	.image {
 		width: 400px;
 		height: auto;
-		
 		border-radius: 0px;
+		transition: opacity 180ms ease;
 
 		@media (width >= 1760px) {
 			width: 600px;
@@ -33,5 +34,18 @@ const { src = "/aleks-main@2x.webp", alt = "Aleks" } = Astro.props;
 		}
 	}
 
-	
+	.image--hover {
+		position: absolute;
+		inset: 0;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.photo-container:hover .image--default {
+		opacity: 0;
+	}
+
+	.photo-container:hover .image--hover {
+		opacity: 1;
+	}
 </style>
