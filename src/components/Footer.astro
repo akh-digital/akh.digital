@@ -13,6 +13,7 @@ import Icon from "./Icon.astro";
 		<div class="footer__marquee-track">
 			<span class="footer__big-title">MAKING PIXELS GREAT AGAIN</span>
 			<span class="footer__big-title" aria-hidden="true">MAKING PIXELS GREAT AGAIN</span>
+			<span class="footer__big-title" aria-hidden="true">MAKING PIXELS GREAT AGAIN</span>
 		</div>
 	</div>
 	<div class="footer__project-author">
@@ -75,29 +76,30 @@ import Icon from "./Icon.astro";
 		width: max-content;
 		min-width: 100%;
 		will-change: transform;
-		animation: footer-marquee 10s linear infinite;
+		animation: footer-marquee 14s linear infinite;
+		gap: 0;
 	}
 
 	.footer__big-title {
 		display: inline-block;
-		min-width: 100vw;
+		min-width: max(100vw, 100%);
 		word-wrap: anywhere;
 		text-wrap: nowrap;
 		text-align: left;
 		line-height: 110%;
 		font-weight: bold;
 		font-size: var(--font-size-footer-name);
-		padding-right: 0.5em;
+		padding-right: 0;
 		flex-shrink: 0;
 	}
 
 	@keyframes footer-marquee {
-		from {
+		0% {
 			transform: translate3d(0, 0, 0);
 		}
 
-		to {
-			transform: translate3d(-50%, 0, 0);
+		100% {
+			transform: translate3d(-33.3333%, 0, 0);
 		}
 	}
 
