@@ -1,5 +1,6 @@
 ---
 import HeadMeta from "../components/HeadMeta.astro";
+import ScrollReveal from "../components/ScrollReveal.astro";
 import YaMetrika from "../components/third-party-script/YaMetrika.astro";
 import { global } from "../lib/config";
 import "../styles/index.css";
@@ -27,6 +28,7 @@ import "../styles/index.css";
 		<slot name="head" />
 	</head>
 	<body class="page__body">
+		<ScrollReveal />
 		<slot />
 
 		<style is:global>

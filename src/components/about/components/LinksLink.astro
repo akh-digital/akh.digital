@@ -2,8 +2,8 @@
 const { title, url } = Astro.props;
 ---
 
-<li class="links__list_link">
-	<a target="_blank" href={url}>{title}</a>
+<li class="links__list_link" data-reveal>
+	<a target="_blank" href={url} data-reveal-text>{title}</a>
 </li>
 
 <style>

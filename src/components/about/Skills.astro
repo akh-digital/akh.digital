@@ -4,15 +4,15 @@ import { about } from "../../lib/config.js";
 const skills = about().skills;
 ---
 
-<section class="skills">
+<section class="skills" data-reveal>
 	<div class="wrapper">
 		{
 			skills.map((skill) => (
-				<div class="item">
-					<div class="item-name">{skill.title}</div>
+				<div class="item" data-reveal>
+					<div class="item-name" data-reveal-text>{skill.title}</div>
 					<ul class="list">
 						{skill.list.map((item) => (
-							<li class="list-item">{item}</li>
+							<li class="list-item" data-reveal-text>{item}</li>
 						))}
 					</ul>
 				</div>

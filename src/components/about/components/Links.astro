@@ -2,19 +2,19 @@
 import Icon from "../../Icon.astro";
 ---
 
-<section class="links">
+<section class="links" data-reveal>
 	<div>
-		<h1 class="links__big-title">
+		<h1 class="links__big-title" data-reveal-text>
 			<slot name="title" />
 		</h1>
 		<div class="links__lists_wrapper">
 			<span class="links__title">
-				<div class="links__title_container">
+				<div class="links__title_container" data-reveal-text>
 					<slot name="second-title" />
 					<Icon size="32" name="arrow-right" />
 				</div>
 			</span>
-			<ul class="links__list">
+			<ul class="links__list" data-reveal>
 				<slot name="links-list" />
 			</ul>
 		</div>
