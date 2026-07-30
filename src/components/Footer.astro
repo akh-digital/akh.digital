@@ -9,7 +9,12 @@ import Icon from "./Icon.astro";
 		<span>SOME RIGHTS RESERVED</span>
 	</div>
 	<div class="divider is-white"></div>
-	<div class="footer__big-title">MAKING PIXELS GREAT AGAIN</div>
+	<div class="footer__marquee" aria-label="MAKING PIXELS GREAT AGAIN">
+		<div class="footer__marquee-track">
+			<span class="footer__big-title">MAKING PIXELS GREAT AGAIN</span>
+			<span class="footer__big-title" aria-hidden="true">MAKING PIXELS GREAT AGAIN</span>
+		</div>
+	</div>
 	<div class="footer__project-author">
 		Developed by
 		<a href="https://www.linkedin.com/in/velopsey/">
@@ -54,15 +59,38 @@ import Icon from "./Icon.astro";
 		width: min-content;
 	}
 
+	.footer__marquee {
+		overflow: hidden;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		white-space: nowrap;
+	}
+
+	.footer__marquee-track {
+		display: inline-flex;
+		width: max-content;
+		will-change: transform;
+		animation: footer-marquee 18s linear infinite;
+	}
+
 	.footer__big-title {
 		word-wrap: anywhere;
 		text-wrap: balance;
-		margin-top: 40px;
-		margin-bottom: 40px;
 		text-align: center;
 		line-height: 110%;
 		font-weight: bold;
 		font-size: var(--font-size-footer-name);
+		padding-right: 0.5em;
+	}
+
+	@keyframes footer-marquee {
+		from {
+			transform: translate3d(0, 0, 0);
+		}
+
+		to {
+			transform: translate3d(-50%, 0, 0);
+		}
 	}
 
 	.footer__project-author {
