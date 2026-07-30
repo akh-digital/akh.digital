@@ -20,11 +20,11 @@ social:
 
 cv:
   title: Check out
-  second_title: (My CV) 
+  second_title: (Download CV) 
   list:
-    - title: "download eng / pdf"
+    - title: "PDF / ENGLISH"
       url: "/cv/aleks_kholopov_en_cv_2026.pdf"
-    - title: "download rus / pdf"
+    - title: "PDF / RUSSIAN"
       url: "/cv/aleks_kholopov_ru_cv_2026.pdf"
 
 skills:
