@@ -20,7 +20,7 @@ const descList = parseDescription(expertiseData.desc);
 			{
 				tags.map((tag) =>
 					"icon" in tag ? (
-						<Icon class="tag__icon" name={tag.icon} size="24" />
+						<Icon class="tag__icon" name={tag.icon} />
 					) : (
 						<li class="tags__list_item">{tag.text}</li>
 					),
@@ -73,8 +73,8 @@ const descList = parseDescription(expertiseData.desc);
 	}
 
 	:global(.tag__icon) {
-		width: var(--font-size-normal);
-		height: var(--font-size-normal);
+		width: calc(var(--font-size-normal) * 2);
+		height: calc(var(--font-size-normal * 2);
 	}
 
 	.tags__desc {
