@@ -1,6 +1,48 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_868_2632)">
-<path d="M14 24H10V20H14V24Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<style>
+@keyframes kf_Union_transform_0 {
+  0% {
+    transform: translateY(6px);
+  }
+  24% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(6px);
+  }
+  49% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes kf_Union_opacity_0 {
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+  24% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0;
+  }
+  44% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_transform_0 2s linear infinite,
+    kf_Union_opacity_0 2s linear infinite;
+}
+</style>
+<g id="ic___a1" clip-path="url(#clip0_1025_3368)">
+<g id="Union">
+<path d="M14 24H10V20H14V24Z" id="Union_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
+</path>
 <path d="M10 20H6V14H10V20Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 <path d="M20 18H14V14H20V18Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 <path d="M4 14H0V10H4V14Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
@@ -9,8 +51,9 @@
 <path d="M18 10H14V4H18V10Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 <path d="M14 4H10V0H14V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 </g>
+</g>
 <defs>
-<clipPath id="clip0_868_2632">
+<clipPath id="clip0_1025_3368">
 <rect width="24" height="24" fill="white" style="fill:white;fill-opacity:1;"/>
 </clipPath>
 </defs>

@@ -1,6 +1,52 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 22H10V18H6V14H18V18H14V22Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
-<path d="M6 14H2V10H6V14Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
-<path d="M22 14H18V10H22V14Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
-<path d="M14 6H18V10H6V6H10V2H14V6Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<style>
+svg { overflow: visible; }
+@keyframes kf_Union_transform_0 {
+  0% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(1.571rad) translate(-10px, -10px);
+  }
+  6% {
+    animation-timing-function: linear(0, 0.0188, 0.0679, 0.1374, 0.2195, 0.308, 0.3978, 0.4856, 0.5686, 0.6452, 0.7142, 0.7753, 0.8283, 0.8735, 0.9113, 0.9423, 0.9671, 0.9866, 1.0014, 1.0123, 1.0198, 1.0247, 1.0274, 1.0283, 1.0281, 1.0268, 1.025, 1.0227, 1.0202, 1.0177, 1.0152, 1.0128, 1.0106, 1.0085, 1.0068, 1.0052, 1.0039, 1.0028, 1.0018, 1.0011, 1.0005, 1, 0.9997, 0.9995, 0.9993, 0.9992, 0.9992, 0.9992, 0.9992, 0.9993, 0.9993);
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(1.571rad) translate(-10px, -10px);
+  }
+  31% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) translate(-10px, -10px);
+  }
+  100% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) translate(-10px, -10px);
+  }
+}
+@keyframes kf_Union_opacity_0 {
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+  6% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0;
+  }
+  23.5% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_transform_0 2s linear infinite,
+    kf_Union_opacity_0 2s linear infinite;
+}
+</style>
+<g id="ic___cross-alt-hole">
+<g id="Union" transform="translate(2 2)">
+<path d="M12 20H8V16H4V12H16V16H12V20Z" id="Union_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
+</path>
+<path d="M4 12H0V8H4V12Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M20 12H16V8H20V12Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M12 4H16V8H4V4H8V0H12V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+</g>
+</g>
 </svg>

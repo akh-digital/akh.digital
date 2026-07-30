@@ -1,0 +1,291 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+svg { overflow: visible; }
+@keyframes kf_Union_transform_0 {
+  0% {
+    transform: translateX(10px) translateY(6px) translateX(0px) translateY(-3px);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(10px) translateY(6px) translateX(0px) translateY(-3px);
+  }
+  27.5% {
+    transform: translateX(10px) translateY(6px) translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(10px) translateY(6px) translateX(0px) translateY(0px);
+  }
+}
+@keyframes kf_Union_opacity_0 {
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+  }
+  25% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_transform_0 2s linear infinite,
+    kf_Union_opacity_0 2s linear infinite;
+}
+@keyframes kf_Union_2_transform_0 {
+  0% {
+    transform: translateX(10px) translateY(14px) translateX(0px) translateY(3px);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(10px) translateY(14px) translateX(0px) translateY(3px);
+  }
+  27.5% {
+    transform: translateX(10px) translateY(14px) translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(10px) translateY(14px) translateX(0px) translateY(0px);
+  }
+}
+@keyframes kf_Union_2_opacity_0 {
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+  }
+  25% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union_2 {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_2_transform_0 2s linear infinite,
+    kf_Union_2_opacity_0 2s linear infinite;
+}
+@keyframes kf_Union_3_transform_0 {
+  0% {
+    transform: translateX(6px) translateY(10px) translateX(-3px) translateY(0px);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(6px) translateY(10px) translateX(-3px) translateY(0px);
+  }
+  27.5% {
+    transform: translateX(6px) translateY(10px) translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(6px) translateY(10px) translateX(0px) translateY(0px);
+  }
+}
+@keyframes kf_Union_3_opacity_0 {
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+  }
+  25% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union_3 {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_3_transform_0 2s linear infinite,
+    kf_Union_3_opacity_0 2s linear infinite;
+}
+@keyframes kf_Union_4_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(2px) translateY(2px) translateX(-6px) translateY(-6px);
+  }
+  20% {
+    transform: translateX(2px) translateY(2px) translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(2px) translateY(2px) translateX(0px) translateY(0px);
+  }
+}
+@keyframes kf_Union_4_opacity_0 {
+  0% {
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+  7.5% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union_4 {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_4_transform_0 2s linear infinite,
+    kf_Union_4_opacity_0 2s linear infinite;
+}
+@keyframes kf_Union_5_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(18px) translateY(2px) translateX(6px) translateY(-6px);
+  }
+  20% {
+    transform: translateX(18px) translateY(2px) translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(18px) translateY(2px) translateX(0px) translateY(0px);
+  }
+}
+@keyframes kf_Union_5_opacity_0 {
+  0% {
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+  7.5% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union_5 {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_5_transform_0 2s linear infinite,
+    kf_Union_5_opacity_0 2s linear infinite;
+}
+@keyframes kf_Union_6_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(18px) translateY(18px) translateX(6px) translateY(6px);
+  }
+  20% {
+    transform: translateX(18px) translateY(18px) translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(18px) translateY(18px) translateX(0px) translateY(0px);
+  }
+}
+@keyframes kf_Union_6_opacity_0 {
+  0% {
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+  7.5% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union_6 {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_6_transform_0 2s linear infinite,
+    kf_Union_6_opacity_0 2s linear infinite;
+}
+@keyframes kf_Union_7_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(2px) translateY(18px) translateX(-6px) translateY(6px);
+  }
+  20% {
+    transform: translateX(2px) translateY(18px) translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(2px) translateY(18px) translateX(0px) translateY(0px);
+  }
+}
+@keyframes kf_Union_7_opacity_0 {
+  0% {
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+  7.5% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union_7 {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_7_transform_0 2s linear infinite,
+    kf_Union_7_opacity_0 2s linear infinite;
+}
+@keyframes kf_Union_8_transform_0 {
+  0% {
+    transform: translateX(14px) translateY(10px) translateX(3px) translateY(0px);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(14px) translateY(10px) translateX(3px) translateY(0px);
+  }
+  27.5% {
+    transform: translateX(14px) translateY(10px) translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(14px) translateY(10px) translateX(0px) translateY(0px);
+  }
+}
+@keyframes kf_Union_8_opacity_0 {
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+  }
+  25% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union_8 {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_8_transform_0 2s linear infinite,
+    kf_Union_8_opacity_0 2s linear infinite;
+}
+</style>
+<g id="ic___aim">
+<path id="Union" transform="translate(10 6)" d="M4 4H0V0H4V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path id="Union_2" transform="translate(10 14)" d="M4 4H0V0H4V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path id="Union_3" transform="translate(6 10)" d="M4 4H0V0H4V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path id="Union_4" transform="translate(2 2)" d="M4 4H0V0H4V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path id="Union_5" transform="translate(18 2)" d="M4 4H0V0H4V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path id="Union_6" transform="translate(18 18)" d="M4 4H0V0H4V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path id="Union_7" transform="translate(2 18)" d="M4 4H0V0H4V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path id="Union_8" transform="translate(14 10)" d="M4 4H0V0H4V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+</g>
+</svg>
