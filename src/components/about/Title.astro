@@ -17,7 +17,8 @@ const descList = parseDescription(aboutData.desc);
 			{descList.map((d) => <p>{d}</p>)}
 		</div>
 		<div class="avatar-wrapper">
-			<img src="/aleks-about@2x.webp" alt="Aleks" class="avatar" />
+			<img src="/aleks-about@2x.webp" alt="Aleks" class="avatar avatar--default" />
+			<img src="/aleks-about-alt@2x.webp" alt="Aleks alternate" class="avatar avatar--hover" />
 		</div>
 	</div>
 </section>
@@ -39,6 +40,7 @@ const descList = parseDescription(aboutData.desc);
 	}
 
 	.avatar-wrapper {
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -50,6 +52,27 @@ const descList = parseDescription(aboutData.desc);
 		height: auto;
 		border-radius: 0px;
 		display: block;
+		transition: opacity 0.2s ease;
+	}
+
+	.avatar--default {
+		opacity: 1;
+	}
+
+	.avatar--hover {
+		position: absolute;
+		inset: 0;
+		margin: 0 auto;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.avatar-wrapper:hover .avatar--default {
+		opacity: 0;
+	}
+
+	.avatar-wrapper:hover .avatar--hover {
+		opacity: 1;
 	}
 
 	.about__about-me_text {
