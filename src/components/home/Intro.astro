@@ -37,6 +37,7 @@ const locationLink = generateGoogleMapsLink(lat, long);
 	.intro__additional {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-rows: auto auto;
 		gap: 24px;
 		margin-top: 20px;
 		line-height: 110%;
@@ -44,8 +45,13 @@ const locationLink = generateGoogleMapsLink(lat, long);
 		font-size: var(--font-size-extra-small);
 
 		.intro__additional-name {
-			grid-column: span 1 / span 1;
+			grid-column: 1 / -1;
+			grid-row: 1;
 			text-align: center;
+			justify-self: center;
+			width: min(100%, 30rem);
+			overflow-wrap: anywhere;
+			word-break: break-word;
 		}
 
 		.intro__additional-cords {
