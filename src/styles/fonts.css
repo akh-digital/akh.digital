@@ -7,9 +7,9 @@
 }
 
 @font-face {
-	src: url("/fonts/FunnelDisplay-Bold.woff2") format("woff2");
+	src: url("/fonts/SuisseIntlBold.woff2") format("woff2");
 	font-weight: bold;
-	font-family: "FunnelDisplay-Bold";
+	font-family: "SuisseIntlBold";
 	font-style: normal;
 	font-display: swap;
 }
