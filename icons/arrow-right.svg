@@ -4,14 +4,14 @@ svg { overflow: visible; }
 @keyframes arrow-right__kf_vector_transform_0 {
   0% {
     animation-timing-function: ease-out;
-    transform: translateX(0px) translateY(22px) translateX(0px) rotate(-1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+    transform: translateX(0px) translateY(2px) translateX(0px) rotate(0rad);
   }
   50% {
     animation-timing-function: ease-in-out;
-    transform: translateX(0px) translateY(22px) translateX(4px) rotate(-1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+    transform: translateX(0px) translateY(2px) translateX(4px) rotate(0rad);
   }
   100% {
-    transform: translateX(0px) translateY(22px) translateX(0px) rotate(-1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+    transform: translateX(0px) translateY(2px) translateX(0px) rotate(0rad);
   }
 }
 #arrow-right__vector {
@@ -19,12 +19,12 @@ svg { overflow: visible; }
   animation: arrow-right__kf_vector_transform_0 0.5s linear infinite;
 }
 </style>
-<g id="arrow-right__ic___arrow-right-a">
-<g id="arrow-right__vector" transform="translate(1.9233e-06 22) rotate(-90)">
-<path d="M8 0H12V4H16V8H12V24H8V8H4V4H8V0Z" id="arrow-right__vector_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
+<g id="arrow-right__ic___arrow-right">
+<g id="arrow-right__vector" transform="translate(-5.24538e-07 2)">
+<path d="M24 8V12L20 12V16H16V12L0 12L1.74849e-07 8L16 8V4L20 4V8L24 8Z" id="arrow-right__vector_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
 </path>
-<path d="M4 8V12H0V8H4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
-<path d="M16 8H20V12H16V8Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M16 4H12L12 0L16 1.74845e-07V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M16 16V20H12V16H16Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 </g>
 </g>
 </svg>
