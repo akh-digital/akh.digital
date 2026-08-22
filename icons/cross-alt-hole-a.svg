@@ -1,0 +1,221 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+svg { overflow: visible; }
+@keyframes kf_Union_transform_0 {
+  0% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(3.142rad) scaleX(0) scaleY(0) translate(-10px, -10px);
+  }
+  1.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(2.639rad) scaleX(0.241) scaleY(0.241) translate(-10px, -10px);
+  }
+  3.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(1.641rad) scaleX(0.653) scaleY(0.653) translate(-10px, -10px);
+  }
+  5% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0.676rad) scaleX(0.967) scaleY(0.967) translate(-10px, -10px);
+  }
+  6.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0.007rad) scaleX(1.108) scaleY(1.108) translate(-10px, -10px);
+  }
+  8.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.324rad) scaleX(1.121) scaleY(1.121) translate(-10px, -10px);
+  }
+  10% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.395rad) scaleX(1.075) scaleY(1.075) translate(-10px, -10px);
+  }
+  11.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.317rad) scaleX(1.025) scaleY(1.025) translate(-10px, -10px);
+  }
+  13.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.189rad) scaleX(0.995) scaleY(0.995) translate(-10px, -10px);
+  }
+  15% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.071rad) scaleX(0.984) scaleY(0.984) translate(-10px, -10px);
+  }
+  16.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0.007rad) scaleX(0.987) scaleY(0.987) translate(-10px, -10px);
+  }
+  18.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0.044rad) scaleX(0.993) scaleY(0.993) translate(-10px, -10px);
+  }
+  20% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0.049rad) scaleX(0.999) scaleY(0.999) translate(-10px, -10px);
+  }
+  21.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0.038rad) scaleX(1.001) scaleY(1.001) translate(-10px, -10px);
+  }
+  23.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0.022rad) scaleX(1.002) scaleY(1.002) translate(-10px, -10px);
+  }
+  25% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0.007rad) scaleX(1.001) scaleY(1.001) translate(-10px, -10px);
+  }
+  26.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.002rad) scaleX(1.001) scaleY(1.001) translate(-10px, -10px);
+  }
+  27.5% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.004rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  28.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.006rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  30% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.006rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  31.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.005rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  33.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.002rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  35% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(-0.001rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  36.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  38.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  40% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  41.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  43.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  45% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  46.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  48.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  50% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  51.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  53.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  55% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  56.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  58.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  60% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  61.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  63.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  65% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  66.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  68.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  70% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  71.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  73.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  75% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  76.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  78.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  80% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  81.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  83.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  85% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  86.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  88.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  90% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  91.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  93.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  95% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  96.67% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  98.33% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+  100% {
+    transform: translateX(2px) translateY(2px) translate(10px, 10px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -10px);
+  }
+}
+@keyframes kf_Union_opacity_0 {
+  0% {
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+  7.5% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Union {
+  transform-origin: 0 0;
+  animation:
+    kf_Union_transform_0 2s linear infinite,
+    kf_Union_opacity_0 2s linear infinite;
+}
+</style>
+<g id="ic___cross-alt-hole-a">
+<g id="Union" transform="translate(2 2)">
+<path d="M12 20H8V16H4V12H16V16H12V20Z" id="Union_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
+</path>
+<path d="M4 12H0V8H4V12Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M20 12H16V8H20V12Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M12 4H16V8H4V4H8V0H12V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+</g>
+</g>
+</svg>
