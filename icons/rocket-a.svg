@@ -1,6 +1,6 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
-@keyframes kf_Union_transform_0 {
+@keyframes rocket-a__kf_Union_transform_0 {
   0% {
     transform: translateX(2px) translateY(1px) translateX(0px) translateY(0px) translate(10px, 11px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -11px);
   }
@@ -197,14 +197,14 @@
     transform: translateX(2px) translateY(1px) translateX(0px) translateY(0px) translate(10px, 11px) rotate(0rad) scaleX(1) scaleY(1) translate(-10px, -11px);
   }
 }
-#Union {
+#rocket-a__Union {
   transform-origin: 0 0;
-  animation: kf_Union_transform_0 2s linear infinite;
+  animation: rocket-a__kf_Union_transform_0 2s linear infinite;
 }
 </style>
-<g id="ic___rocket-a" clip-path="url(#clip0_1042_23273)">
-<g id="Union" transform="translate(2 1)">
-<path d="M4 22H0V18H4V22Z" id="Union_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
+<g id="rocket-a__ic___rocket-a" clip-path="url(#rocket-a__clip0_1042_23273)">
+<g id="rocket-a__Union" transform="translate(2 1)">
+<path d="M4 22H0V18H4V22Z" id="rocket-a__Union_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
 </path>
 <path d="M12 22H8V18H4V14H16V18H12V22Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 <path d="M20 22H16V18H20V22Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
@@ -216,7 +216,7 @@
 </g>
 </g>
 <defs>
-<clipPath id="clip0_1042_23273">
+<clipPath id="rocket-a__clip0_1042_23273">
 <rect width="24" height="24" fill="white" style="fill:white;fill-opacity:1;"/>
 </clipPath>
 </defs>

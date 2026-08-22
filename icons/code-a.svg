@@ -1,6 +1,6 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
-@keyframes kf_Union_transform_0 {
+@keyframes code-a__kf_Union_transform_0 {
   0% {
     animation-timing-function: ease;
     transform: translateX(14px) translateY(2px) translateX(-5px);
@@ -12,7 +12,7 @@
     transform: translateX(14px) translateY(2px) translateX(0px);
   }
 }
-@keyframes kf_Union_opacity_0 {
+@keyframes code-a__kf_Union_opacity_0 {
   0% {
     animation-timing-function: ease;
     opacity: 0;
@@ -25,13 +25,13 @@
     opacity: 1;
   }
 }
-#Union {
+#code-a__Union {
   transform-origin: 0 0;
   animation:
-    kf_Union_transform_0 2s linear infinite,
-    kf_Union_opacity_0 2s linear infinite;
+    code-a__kf_Union_transform_0 2s linear infinite,
+    code-a__kf_Union_opacity_0 2s linear infinite;
 }
-@keyframes kf_Union_2_transform_0 {
+@keyframes code-a__kf_Union_2_transform_0 {
   0% {
     transform: translateX(2px) translateY(2px) translateX(5px);
   }
@@ -46,7 +46,7 @@
     transform: translateX(2px) translateY(2px) translateX(0px);
   }
 }
-@keyframes kf_Union_2_opacity_0 {
+@keyframes code-a__kf_Union_2_opacity_0 {
   0% {
     animation-timing-function: linear;
     opacity: 0;
@@ -63,24 +63,24 @@
     opacity: 1;
   }
 }
-#Union_2 {
+#code-a__Union_2 {
   transform-origin: 0 0;
   animation:
-    kf_Union_2_transform_0 2s linear infinite,
-    kf_Union_2_opacity_0 2s linear infinite;
+    code-a__kf_Union_2_transform_0 2s linear infinite,
+    code-a__kf_Union_2_opacity_0 2s linear infinite;
 }
 </style>
-<g id="ic___code-a" clip-path="url(#clip0_1042_23323)">
-<g id="Union" transform="translate(14 2)">
-<path d="M8 20H4V16H8V20Z" id="Union_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
+<g id="code-a__ic___code-a" clip-path="url(#code-a__clip0_1042_23323)">
+<g id="code-a__Union" transform="translate(14 2)">
+<path d="M8 20H4V16H8V20Z" id="code-a__Union_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
 </path>
 <path d="M4 16H0V12H4V16Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 <path d="M8 12H4V8H8V12Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 <path d="M4 8H0V4H4V8Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 <path d="M8 4H4V0H8V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 </g>
-<g id="Union_2" transform="translate(2 2)">
-<path d="M4 20H0V16H4V20Z" id="Union_2_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
+<g id="code-a__Union_2" transform="translate(2 2)">
+<path d="M4 20H0V16H4V20Z" id="code-a__Union_2_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
 </path>
 <path d="M8 16H4V12H8V16Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
 <path d="M4 12H0V8H4V12Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
@@ -89,7 +89,7 @@
 </g>
 </g>
 <defs>
-<clipPath id="clip0_1042_23323">
+<clipPath id="code-a__clip0_1042_23323">
 <rect width="24" height="24" fill="white" style="fill:white;fill-opacity:1;"/>
 </clipPath>
 </defs>
