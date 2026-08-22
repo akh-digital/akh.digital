@@ -14,7 +14,7 @@ Alcon is the global leader in eye care, dedicated to helping people see brillian
 
 “MoiGlaza for Business” is a dedicated B2B workspace built into Alcon’s digital platform for optical retailers and business partners. The service enables partners to manage sales operations, pricing strategies, and product portfolios through a unified digital solution.
 
-![gpn-10-ui](./gpn-10-ui.png) ![gpn-15-ui](./gpn-15-ui.png)
+
 
 Originally designed as a web-ordering portal for Alcon contact lenses, the platform grew into a multifunctional back-office system for the company's partners, with a CRM, marketing, financial and other modules. As part of its strategy to keep enhancing the distributor experience, Alcon wanted to simplify the ordering process for partner opticians.
 
