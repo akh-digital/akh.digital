@@ -17,6 +17,8 @@ Design Library — Built a component library based on Element UI, ApexCharts, an
 
 Ensured consistency with the company's standardized digital service patterns and established a single source of truth for design assets, enabling continuous updates and synchronization across projects. Created a scalable foundation for extending the library to future client products.
 
+![optima-bi-case-2-1@2x](./optima-bi-case-2-1@2x.webp) ![optima-bi-case-2-2@2x](./optima-bi-case-2-2@2x.webp)
+
 ![optima-bi-case-2@2x](./optima-bi-case-2@2x.webp)
 
 Low-Fidelity Interactive Prototypes — Introduced interactive low-fidelity prototypes to validate new features, user flows, and product hypotheses through micro-interactions. Built prototypes using Figma Make and Claude Code. 
