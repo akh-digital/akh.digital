@@ -1,4 +1,4 @@
-<svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
 svg { overflow: visible; }
 @keyframes arrow-right__kf_vector_transform_0 {
@@ -16,7 +16,7 @@ svg { overflow: visible; }
 }
 #arrow-right__vector {
   transform-origin: 0 0;
-  animation: arrow-right__kf_vector_transform_0 0.7s ease-in-out infinite;
+  animation: arrow-right__kf_vector_transform_0 0.5s linear infinite;
 }
 </style>
 <g id="arrow-right__ic___arrow-right">
