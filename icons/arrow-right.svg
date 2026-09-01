@@ -8,7 +8,7 @@ svg { overflow: visible; }
   }
   50% {
     animation-timing-function: ease-in-out;
-    transform: translateX(0px) translateY(2px) translateX(4px) rotate(0rad);
+    transform: translateX(0px) translateY(2px) translateX(2px) rotate(0rad);
   }
   100% {
     transform: translateX(0px) translateY(2px) translateX(0px) rotate(0rad);
@@ -16,7 +16,7 @@ svg { overflow: visible; }
 }
 #arrow-right__vector {
   transform-origin: 0 0;
-  animation: arrow-right__kf_vector_transform_0 0.5s linear infinite;
+  animation: arrow-right__kf_vector_transform_0 0.7s ease-in-out infinite;
 }
 </style>
 <g id="arrow-right__ic___arrow-right">
