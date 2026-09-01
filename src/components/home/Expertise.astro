@@ -18,19 +18,26 @@ const descList = parseDescription(expertiseData.desc);
 		</div>
 		<ul class="tags__list">
 			{
-				tags.map((tag) =>
-					"icon" in tag ? (
+				tags.map((tag) => {
+					if (!("icon" in tag)) {
+						return <li class="tags__list_item">{tag.text}</li>;
+					}
+
+					const defaultIcon = tag.icon.endsWith("-a") ? tag.icon.replace(/-a$/, "") : tag.icon;
+					const animatedIcon =
+						tag.icon === "a1" || tag.icon === "a1-a"
+							? "a1_a"
+							: tag.icon.endsWith("-a")
+								? tag.icon
+								: `${defaultIcon}-a`;
+
+					return (
 						<span class="tag__icon-wrapper">
-							<Icon class="tag__icon tag__icon--default" name={tag.icon} />
-							<Icon
-								class="tag__icon tag__icon--animated"
-								name={tag.icon === "a1" ? "a1_a" : `${tag.icon}-a`}
-							/>
+							<Icon class="tag__icon tag__icon--default" name={defaultIcon} />
+							<Icon class="tag__icon tag__icon--animated" name={animatedIcon} />
 						</span>
-					) : (
-						<li class="tags__list_item">{tag.text}</li>
-					),
-				)
+					);
+				})
 			}
 		</ul>
 	</div>
