@@ -9,17 +9,17 @@ expertise:
     (4) As a design lead, I build teams as carefully as I build products. I develop design processes, strengthen collaboration across disciplines, and mentor designers, helping individuals and teams grow while raising the overall quality of design.
   tags:
     - text: User Interface
-    - icon: rocket
+    - icon: rocket-a
     - text: UX Research
-    - icon: aim
+    - icon: aim-a
     - text: Product Design
-    - icon: cross-alt-hole
+    - icon: cross-alt-hole-a
     - text: AI Tools
-    - icon: code
+    - icon: code-a
     - text: Design Systems
-    - icon: eye
+    - icon: eye-a
     - text: Visual Identity & Print
-    - icon: a1
+    - icon: a1-a
     - text: DesignOps
 
 projects:
