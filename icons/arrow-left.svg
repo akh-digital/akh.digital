@@ -1,6 +1,30 @@
-<svg width="24" height="24" viewBox="0 0 24 24"
-  xmlns="http://www.w3.org/2000/svg">
-  <path d="M-3.49691e-07 14L-5.24537e-07 10L4 10L4 6L8 6L8 10L24 10L24 14L8 14L8 18L4 18L4 14L-3.49691e-07 14Z" />
-  <path d="M8 18L12 18L12 22L8 22L8 18Z" />
-  <path d="M8 6L8 2L12 2L12 6L8 6Z" />
+<svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+svg { overflow: visible; }
+@keyframes arrow-left__kf_vector_transform_0 {
+  0% {
+    animation-timing-function: ease-out;
+    transform: translateY(22px) translateX(0px) rotate(-1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+  50% {
+    animation-timing-function: ease-in-out;
+    transform: translateY(22px) translateX(-4px) rotate(-1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+  100% {
+    transform: translateY(22px) translateX(0px) rotate(-1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+}
+#arrow-left__vector {
+  transform-origin: 0 0;
+  animation: arrow-left__kf_vector_transform_0 0.5s linear infinite;
+}
+</style>
+<g id="arrow-left__ic___arrow-left">
+<g id="arrow-left__vector" transform="translate(0 22) rotate(-90)">
+<path d="M8 0H12V4H16V8H12V24H8V8H4V4H8V0Z" id="arrow-left__vector_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
+</path>
+<path d="M4 8V12H0V8H4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M16 8H20V12H16V8Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+</g>
+</g>
 </svg>
