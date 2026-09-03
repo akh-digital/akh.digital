@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap");
+
 @font-face {
 	src: url("/fonts/SuisseIntl.woff2") format("woff2");
 	font-weight: 400;
@@ -15,7 +17,16 @@
 }
 
 :root {
-	--font-family-heading: "Suisse Int’l", sans-serif;
+	--font-family-heading: "Geist Pixel", sans-serif;
 
 	font-family: "Suisse Int’l", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family-heading);
 }
