@@ -15,16 +15,7 @@
 }
 
 :root {
-	--font-family-heading: "Geist Pixel", sans-serif;
+	--font-family-heading: "Suisse Int’l", sans-serif;
 
 	font-family: "Suisse Int’l", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: var(--font-family-heading);
 }
