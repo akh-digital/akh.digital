@@ -26,24 +26,25 @@ Low-Fidelity Interactive Prototypes — Introduced interactive low-fidelity prot
 Reduced design approval time by 3× by enabling stakeholders to experience functionality early in the design process, significantly improving collaboration across design, product analytics, and engineering teams. 
 Reduced the number of post-release redesigns by validating interactions before development, eliminating the need to wait for testing or production releases to evaluate user experience.
 
-![optima-bi-case-3@2x](./optima-bi-case-3@2x.webp)
+![optima-bi-case-3-1@2x](./optima-bi-case-3-1@2x.webp) ![optima-bi-case-3-2@2x](./optima-bi-case-3-2@2x.webp)
 
 Product Vision Framework — Partnered with cross-functional teams to define and maintain the product's target-state experience as a single source of truth for business, analytics, and engineering. Structured design assets around user journeys and semantic architecture, enabling teams to work from a shared understanding of the product vision. 
 
 Maintained separate long-term vision and sprint-ready design artifacts, ensuring strategic alignment without slowing delivery. Created a centralized design workflow and task source used consistently across internal product teams and external design contractors.
 
-![optima-bi-case-4@2x](./optima-bi-case-4@2x.webp)
+![optima-bi-case-4-1@2x](./optima-bi-case-4-1@2x.webp) ![optima-bi-case-4-2@2x](./optima-bi-case-4-2@2x.webp)
 
 Grew the design team from a single designer to a small, self-sufficient team, building the hiring pipeline, onboarding process, and mentoring structure from the ground up. 
 Introduced product training for designers to deepen their understanding of user workflows and industry best practices. 
 Defined business and product KPIs, identified strategic opportunities for design and product growth, and aligned design efforts with business objectives.
 
-![optima-bi-case-5@2x](./optima-bi-case-5@2x.webp)
+![optima-bi-case-5-1@2x](./optima-bi-case-5-1@2x.webp) ![optima-bi-case-5-2@2x](./optima-bi-case-5-2@2x.webp)
 
 Built the company's and product's employer brand by hiring, mentoring, and growing the product design team. Evaluated the maturity of the design organization and defined the design strategy for the product's next phase. 
 
 Delivered internal lectures and webinars on product design, design methodology, and the evolution of design within the company. Developed the product's visual identity and branded merchandise. 
 
-![optima-bi-case-6-1@2x](./optima-bi-case-6-1@2x.webp) ![optima-bi-case-6-2@2x](./optima-bi-case-6-2@2x.webp)
+![optima-bi-case-6@2x](./optima-bi-case-6@2x.webp)
+![optima-bi-case-7-1@2x](./optima-bi-case-7-1@2x.webp) ![optima-bi-case-7-2@2x](./optima-bi-case-7-2@2x.webp)
 
 Advocated for design across the organization, fostering stronger relationships between designers and business stakeholders and increasing trust in the design function. Helped improve team motivation, collaboration, and cross-functional alignment.
