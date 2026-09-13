@@ -2,7 +2,7 @@
 title: Optima BI Analytics
 date: 2026-01-04
 client: Itigris Optima LLC
-role: Art director
+role: Lead Designer
 responsibilities: Art-direction and design-ops, Formation of design-product strategy, Creation and development of the design-system, Conceptual design, Communication design — branding & merch design
 tags: ["KEY UI UX DESIGN", "USER RESEARCH", "DATA VISUALIZATION"]
 ---
@@ -43,6 +43,7 @@ Built the company's and product's employer brand by hiring, mentoring, and growi
 Delivered internal lectures and webinars on product design, design methodology, and the evolution of design within the company. Developed the product's visual identity and branded merchandise. 
 
 ![optima-bi-case-6@2x](./optima-bi-case-6@2x.webp)
+
 ![optima-bi-case-7-1@2x](./optima-bi-case-7-1@2x.webp) ![optima-bi-case-7-2@2x](./optima-bi-case-7-2@2x.webp)
 
 Advocated for design across the organization, fostering stronger relationships between designers and business stakeholders and increasing trust in the design function. Helped improve team motivation, collaboration, and cross-functional alignment.
