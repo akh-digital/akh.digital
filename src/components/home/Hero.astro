@@ -3,8 +3,12 @@
 <div class="intro__wrapper">
 	<div class="intro__marquee" aria-label="[AKH]">
 		<div class="intro__marquee-track">
-			<span class="intro__site-name">[AKH]</span>
-			<span class="intro__site-name" aria-hidden="true">[AKH]</span>
+			<span class="intro__site-name">[akh]</span>
+			<span class="intro__site-name" aria-hidden="true">[akh]</span>
+			<span class="intro__site-name" aria-hidden="true">[akh]</span>
+			<span class="intro__site-name" aria-hidden="true">[akh]</span>
+			<span class="intro__site-name" aria-hidden="true">[akh]</span>
+			<span class="intro__site-name" aria-hidden="true">[akh]</span>
 		</div>
 	</div>
 	<h1 class="intro__name">Aleks Kholopov</h1>
@@ -31,14 +35,14 @@
 		display: inline-flex;
 		width: max-content;
 		will-change: transform;
-		animation: intro-marquee 8s linear infinite;
+		animation: intro-marquee 4s linear infinite;
 	}
 
 	.intro__site-name {
 		display: inline-block;
 		padding-right: 0.4em;
 		white-space: nowrap;
-		font-weight: bold;
+		font-weight: 500;
 		font-size: 4rem;
 
 		@media (max-width: 600px) {
@@ -64,5 +68,5 @@
 		to {
 			transform: translate3d(-50%, 0, 0);
 		}
-		}
+	}
 </style>
