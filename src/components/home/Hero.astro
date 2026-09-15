@@ -1,7 +1,12 @@
 <div class="divider"></div>
 
 <div class="intro__wrapper">
-	<p class="intro__site-name">AKH</p>
+	<div class="intro__marquee" aria-label="[AKH]">
+		<div class="intro__marquee-track">
+			<span class="intro__site-name">[AKH]</span>
+			<span class="intro__site-name" aria-hidden="true">[AKH]</span>
+		</div>
+	</div>
 	<h1 class="intro__name">Aleks Kholopov</h1>
 </div>
 
@@ -17,24 +22,27 @@
 		padding-bottom: 20px;
 	}
 
+	.intro__marquee {
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.intro__marquee-track {
+		display: inline-flex;
+		width: max-content;
+		will-change: transform;
+		animation: intro-marquee 8s linear infinite;
+	}
+
 	.intro__site-name {
-		position: relative;
-		margin: 0;
-		width: min-content;
+		display: inline-block;
+		padding-right: 0.4em;
+		white-space: nowrap;
 		font-weight: bold;
 		font-size: 4rem;
 
 		@media (max-width: 600px) {
 			font-size: 3.8rem;
-		}
-
-		&:after {
-			content: "©";
-			transform: translate(-50%, 50%);
-			position: absolute;
-			right: -30px;
-			bottom: 50%;
-			font-size: var(--font-size-small);
 		}
 	}
 
@@ -47,4 +55,14 @@
 			font-size: 1.3rem;
 		}
 	}
+
+	@keyframes intro-marquee {
+		from {
+			transform: translate3d(0, 0, 0);
+		}
+
+		to {
+			transform: translate3d(-50%, 0, 0);
+		}
+		}
 </style>
