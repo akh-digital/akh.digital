@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 	const russianProjects = projects.filter((project) => project.id.endsWith("index.ru.md"));
 
 	return russianProjects.map((project) => ({
-		params: { slug: project.id.split("/").slice(-2, -1)[0] },
+		params: { slug: project.id.split("/").slice(-2, -1)[0].toLowerCase() },
 		props: project,
 	}));
 }

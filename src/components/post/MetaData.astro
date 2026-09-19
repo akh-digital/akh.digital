@@ -11,7 +11,7 @@ const projects = (await getCollection("projects")).filter((project) =>
 );
 const currentProject = projects.find((project) =>
 	locale === "ru"
-		? project.id.split("/").slice(-2, -1)[0] === slug
+		? project.id.split("/").slice(-2, -1)[0].toLowerCase() === slug
 		: project.slug === slug,
 );
 const data = { ...(currentProject?.data ?? {}), ...(projectTranslation(slug, locale) ?? {}) };

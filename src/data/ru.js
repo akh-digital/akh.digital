@@ -36,7 +36,7 @@ export const project = {
 			{ text: "DesignOps" },
 		],
 	},
-	projects: { title: "Избранные проекты" },
+	projects: { title: "Проекты" },
 };
 
 export const projectTranslations = {

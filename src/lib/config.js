@@ -26,5 +26,10 @@ export function global(locale = "en") {
 }
 
 export function projectTranslation(slug, locale = "en") {
-	return locale === "ru" ? russian.projectTranslations[slug] : undefined;
+	if (locale !== "ru") return undefined;
+
+	const translationKey = Object.keys(russian.projectTranslations).find(
+		(key) => key.toLowerCase() === slug?.toLowerCase(),
+	);
+	return translationKey ? russian.projectTranslations[translationKey] : undefined;
 }
