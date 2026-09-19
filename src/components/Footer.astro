@@ -1,12 +1,15 @@
 ---
 import Icon from "./Icon.astro";
+import { localeFromPath } from "../lib/config.js";
+
+const locale = localeFromPath(Astro.url.pathname);
 ---
 
 <footer class="footer column">
 	<div class="footer__info">
 		<span>ALEKS KHOLOPOV © 2022-2026</span>
 		<Icon name="logo" size="52" />
-		<span>SOME RIGHTS RESERVED</span>
+		<span>{locale === "ru" ? "САМ РАЙТС РЕЗЕРВД" : "SOME RIGHTS RESERVED"}</span>
 	</div>
 	<div class="divider is-white"></div>
 	<div class="footer__marquee" aria-label="MAKING PIXELS GREAT AGAIN">
