@@ -1,13 +1,17 @@
 ---
 import { getCollection } from "astro:content";
 import Project from "./Project.astro";
-import { localeFromPath, project as projectConfig, projectTranslation } from "../../lib/config.js";
+import { localeFromPath, project as projectConfig } from "../../lib/config.js";
 const locale = localeFromPath(Astro.url.pathname);
 const prefix = locale === "ru" ? "/ru" : "";
-const projects = (await getCollection("projects")).filter((project) => project.id.endsWith("index.md"));
+const projects = (await getCollection("projects")).filter((project) =>
+	locale === "ru" ? project.id.endsWith("index.ru.md") : project.id.endsWith("index.md"),
+);
 const sortedProjects = projects.sort((a, b) => {
 	return b.data.date - a.data.date;
 });
+const getProjectSlug = (project) =>
+	locale === "ru" ? project.id.split("/").slice(-2, -1)[0].toLowerCase() : project.slug;
 ---
 
 <section class="projects">
@@ -21,9 +25,9 @@ const sortedProjects = projects.sort((a, b) => {
 			{
 				sortedProjects.map((project, index) => (
 					<Project
-						slug={prefix + "/projects/" + project.slug}
+							slug={prefix + "/projects/" + getProjectSlug(project)}
 						number={String(index + 1).padStart(2, "0")}
-						project={{ ...project.data, ...(projectTranslation(project.slug, locale) ?? {}) }}
+							project={project.data}
 					/>
 				))
 			}

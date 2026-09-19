@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import { localeFromPath, projectTranslation } from "../../lib/config.js";
+import { localeFromPath } from "../../lib/config.js";
 
 const { slug } = Astro.params;
 const locale = localeFromPath(Astro.url.pathname);
@@ -21,7 +21,7 @@ const currentProject = projects.find((project) =>
 		? project.id.split("/").slice(-2, -1)[0].toLowerCase() === slug
 		: project.slug === slug,
 );
-const { title } = { ...currentProject.data, ...(projectTranslation(slug, locale) ?? {}) };
+const { title } = currentProject.data;
 ---
 
 <section class="post-header">

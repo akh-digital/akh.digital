@@ -24,12 +24,3 @@ export function project(locale = "en") {
 export function global(locale = "en") {
 	return locale === "ru" ? russian.global : globalYaml;
 }
-
-export function projectTranslation(slug, locale = "en") {
-	if (locale !== "ru") return undefined;
-
-	const translationKey = Object.keys(russian.projectTranslations).find(
-		(key) => key.toLowerCase() === slug?.toLowerCase(),
-	);
-	return translationKey ? russian.projectTranslations[translationKey] : undefined;
-}

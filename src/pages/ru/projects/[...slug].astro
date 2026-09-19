@@ -7,7 +7,7 @@ import Footer from "../../../components/Footer.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import MetaData from "../../../components/post/MetaData.astro";
 import Pagination from "../../../components/post/Pagination.astro";
-import { global, projectTranslation } from "../../../lib/config.js";
+import { global } from "../../../lib/config.js";
 import Post from "../../../components/post/Post.astro";
 
 export async function getStaticPaths() {
@@ -21,14 +21,12 @@ export async function getStaticPaths() {
 }
 
 const post = Astro.props;
-const { slug } = Astro.params;
-const translation = projectTranslation(slug, "ru") ?? {};
 const { Content } = await post.render();
 ---
 
 <BaseLayout>
 	<slot slot="head">
-		<title>{`${global("ru").title} | ${translation.title ?? post.data.title}`}</title>
+		<title>{`${global("ru").title} | ${post.data.title}`}</title>
 	</slot>
 	<main class="main column">
 		<Header />

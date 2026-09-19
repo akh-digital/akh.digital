@@ -38,34 +38,3 @@ export const project = {
 	},
 	projects: { title: "Проекты" },
 };
-
-export const projectTranslations = {
-	alcon: {
-		title: "Alcon",
-		client: "Alcon Pharmaceuticals LLC",
-		role: "Ведущий дизайнер",
-		responsibilities: "Дизайн-операции и дизайн, создание и поддержка дизайн-системы, пользовательские сценарии и гипотезы, JTBD и пользовательские потоки",
-		tags: ["KEY UI UX DESIGN", "PRODUCT DESIGN", "DATA VISUALIZATION"],
-	},
-	anydoc: {
-		title: "Anydoc",
-		client: "Indital Group",
-		role: "Ведущий продуктовый дизайнер",
-		responsibilities: "Создание и развитие дизайн-системы, UI/UX-дизайн, пользовательские исследования, пользовательские потоки",
-		tags: ["KEY UI UX DESIGN", "PRODUCT DESIGN"],
-	},
-	"KM-dating": {
-		title: "K&M Dating",
-		client: "Rossvik Club",
-		role: "Ведущий дизайнер",
-		responsibilities: "Концепция и дизайн, дизайн-система и UI-кит, дизайн логотипа",
-		tags: ["KEY UI UX DESIGN", "USER RESEARCH"],
-	},
-	"optima-bi": {
-		title: "Optima BI Analytics",
-		client: "Itigris Optima LLC",
-		role: "Ведущий дизайнер",
-		responsibilities: "Арт-дирекшн и дизайн-операции, продуктовая стратегия, создание и развитие дизайн-системы, концептуальный дизайн, коммуникационный дизайн, брендинг и мерч",
-		tags: ["KEY UI UX DESIGN", "USER RESEARCH", "DATA VISUALIZATION"],
-	},
-};
