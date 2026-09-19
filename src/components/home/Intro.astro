@@ -6,12 +6,10 @@ const copy = locale === "ru"
 	? {
 		location: "Санкт-Петербург, Россия",
 		worldwide: "*Доступен по всему миру",
-		title: "Ведущий продуктовый дизайнер, специализируюсь на B2B и сложных корпоративных системах",
 	}
 	: {
 		location: "Based in Saint-P, Russia",
 		worldwide: "*Available Worldwide",
-		title: "Lead Product Designer specializing in B2B and complex enterprise systems",
 	};
 
 function generateGoogleMapsLink(lat, lng) {
@@ -41,7 +39,6 @@ const locationLink = generateGoogleMapsLink(lat, long);
 		<p>{copy.location}</p>
 		<p>{copy.worldwide}</p>
 	</div>
-	<h1 class="intro__additional-name">{copy.title}</h1>
 	<a target="_blank" href={locationLink} class="intro__additional-cords">
 		<span>59°56'19.07' N</span>
 		<span>30°18'50.87' E</span>
@@ -57,15 +54,6 @@ const locationLink = generateGoogleMapsLink(lat, long);
 		line-height: 110%;
 		text-transform: uppercase;
 		font-size: var(--font-size-extra-small);
-
-		.intro__additional-name {
-			grid-column: span 1 / span 1;
-			min-width: 0;
-			text-align: center;
-			hyphens: auto;
-			overflow-wrap: break-word;
-			word-break: normal;
-		}
 
 		.intro__additional-cords {
 			display: flex;

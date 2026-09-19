@@ -1,8 +1,17 @@
+---
+import { localeFromPath } from "../../lib/config.js";
+
+const locale = localeFromPath(Astro.url.pathname);
+const title = locale === "ru"
+	? "Ведущий продуктовый дизайнер, специализируюсь на B2B и сложных корпоративных системах"
+	: "Lead Product Designer specializing in B2B and complex enterprise systems";
+---
+
 <div class="divider"></div>
 
 <div class="intro__wrapper">
 	<p class="intro__site-name">Aleks Kholopov</p>
-	<h1 class="intro__name">(making pixels great again)</h1>
+	<h1 class="intro__name">{title}</h1>
 </div>
 
 <div class="divider"></div>
