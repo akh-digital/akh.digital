@@ -11,11 +11,11 @@ const alternatePath = localizedPath(Astro.url.pathname, alternateLocale);
 <header id="header" class="header">
 	<nav class="navigation">
 		<div class="navigation__list">
-			<a class="navigation__link" href={locale === "ru" ? "/ru" : "/"}>{locale === "ru" ? "(Главная)" : "(Home)"}</a>
+			<a class="navigation__link" href={locale === "ru" ? "/ru" : "/"}>{locale === "ru" ? "(МЭЙН)" : "(MAIN)"}</a>
 			<a class="navigation__logo" href={locale === "ru" ? "/ru" : "/"}>
 				<Icon name="logo" size="52" />
 			</a>
-			<a class="navigation__link" href={locale === "ru" ? "/ru/about" : "/about"}>{locale === "ru" ? "(Обо мне)" : "(About)"}</a>
+			<a class="navigation__link" href={locale === "ru" ? "/ru/about" : "/about"}>{locale === "ru" ? "(ЭБАУТ)" : "(About)"}</a>
 			<a class="navigation__link" href={alternatePath} aria-label={`Switch to ${alternateLabel}`}>({alternateLabel})</a>
 		</div>
 	</nav>
