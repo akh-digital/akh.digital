@@ -1,9 +1,9 @@
 ---
 import Links from "./components/Links.astro";
 import LinksLink from "./components/LinksLink.astro";
-import { about } from "../../lib/config.js";
+import { about, localeFromPath } from "../../lib/config.js";
 
-const socials = about().social;
+const socials = about(localeFromPath(Astro.url.pathname)).social;
 const list = socials.list;
 ---
 

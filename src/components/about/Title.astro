@@ -1,9 +1,9 @@
 ---
-import { about } from "../../lib/config.js";
+import { about, localeFromPath } from "../../lib/config.js";
 import { parseDescription } from "../../lib/parseDescription.js";
 import Icon from "../Icon.astro";
 
-const aboutData = about().about;
+const aboutData = about(localeFromPath(Astro.url.pathname)).about;
 const descList = parseDescription(aboutData.desc);
 ---
 

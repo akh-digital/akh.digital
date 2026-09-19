@@ -7,12 +7,14 @@ import AboutSkills from "../components/about/Skills.astro";
 import AboutSocials from "../components/about/Socials.astro";
 import Resumes from "../components/about/Resumes.astro";
 import GoToTop from "../components/GoToTop.astro";
-import { global } from "../lib/config";
+import { global, localeFromPath } from "../lib/config";
+
+const locale = localeFromPath(Astro.url.pathname);
 ---
 
 <BaseLayout>
 	<slot slot="head">
-		<title>{global().title} | About</title>
+		<title>{global(locale).title} | {locale === "ru" ? "Обо мне" : "About"}</title>
 	</slot>
 	<main class="main column">
 		<Header />

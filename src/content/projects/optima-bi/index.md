@@ -38,11 +38,11 @@ Defined business and product KPIs, identified strategic opportunities for design
 
 ![optima-bi-case-5-1@2x](./optima-bi-case-5-1@2x.webp) ![optima-bi-case-5-2@2x](./optima-bi-case-5-2@2x.webp)
 
+![optima-bi-case-6@2x](./optima-bi-case-6@2x.webp)
+
 Built the company's and product's employer brand by hiring, mentoring, and growing the product design team. Evaluated the maturity of the design organization and defined the design strategy for the product's next phase. 
 
 Delivered internal lectures and webinars on product design, design methodology, and the evolution of design within the company. Developed the product's visual identity and branded merchandise. 
-
-![optima-bi-case-6@2x](./optima-bi-case-6@2x.webp)
 
 ![optima-bi-case-7-1@2x](./optima-bi-case-7-1@2x.webp) ![optima-bi-case-7-2@2x](./optima-bi-case-7-2@2x.webp)
 

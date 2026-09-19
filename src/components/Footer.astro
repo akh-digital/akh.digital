@@ -1,31 +1,37 @@
 ---
 import Icon from "./Icon.astro";
+import { localeFromPath } from "../lib/config.js";
+
+const locale = localeFromPath(Astro.url.pathname);
+const copy = locale === "ru"
+	? { rights: "НЕКОТОРЫЕ ПРАВА СОХРАНЕНЫ", developed: "Разработал", website: "сайт", marquee: "ДЕЛАЮ ПИКСЕЛИ ВЕЛИКИМИ СНОВА" }
+	: { rights: "SOME RIGHTS RESERVED", developed: "Developed by", website: "website" };
 ---
 
 <footer class="footer column">
 	<div class="footer__info">
 		<span>ALEKS KHOLOPOV © 2022-2026</span>
 		<Icon name="logo" size="52" />
-		<span>SOME RIGHTS RESERVED</span>
+		<span>{copy.rights}</span>
 	</div>
 	<div class="divider is-white"></div>
-	<div class="footer__marquee" aria-label="MAKING PIXELS GREAT AGAIN">
+	<div class="footer__marquee" aria-label={locale === "ru" ? "ДЕЛАЮ ПИКСЕЛИ ВЕЛИКИМИ СНОВА" : "MAKING PIXELS GREAT AGAIN"}>
 		<div class="footer__marquee-track">
-			<span class="footer__big-title">MAKING PIXELS GREAT AGAIN</span>
-			<span class="footer__big-title" aria-hidden="true">MAKING PIXELS GREAT AGAIN</span>
-			<span class="footer__big-title" aria-hidden="true">MAKING PIXELS GREAT AGAIN</span>
-			<span class="footer__big-title" aria-hidden="true">MAKING PIXELS GREAT AGAIN</span>
-			<span class="footer__big-title" aria-hidden="true">MAKING PIXELS GREAT AGAIN</span>
-			<span class="footer__big-title" aria-hidden="true">MAKING PIXELS GREAT AGAIN</span>
+			<span class="footer__big-title">{copy.marquee ?? "MAKING PIXELS GREAT AGAIN"}</span>
+			<span class="footer__big-title" aria-hidden="true">{copy.marquee ?? "MAKING PIXELS GREAT AGAIN"}</span>
+			<span class="footer__big-title" aria-hidden="true">{copy.marquee ?? "MAKING PIXELS GREAT AGAIN"}</span>
+			<span class="footer__big-title" aria-hidden="true">{copy.marquee ?? "MAKING PIXELS GREAT AGAIN"}</span>
+			<span class="footer__big-title" aria-hidden="true">{copy.marquee ?? "MAKING PIXELS GREAT AGAIN"}</span>
+			<span class="footer__big-title" aria-hidden="true">{copy.marquee ?? "MAKING PIXELS GREAT AGAIN"}</span>
 		</div>
 	</div>
 	<div class="footer__project-author">
-		Developed by
+		{copy.developed}
 		<a href="https://www.linkedin.com/in/velopsey/">
 			Daniil Savitskii
 		</a>
 		<br />
-		<span style="display: inline-block; margin-top: 24px;">website — <a href="https://akh.digital/">akh</a> — 072026 — v2.6 — rm</span>
+		<span style="display: inline-block; margin-top: 24px;">{copy.website} — <a href={locale === "ru" ? "/ru" : "/"}>akh</a> — 072026 — v2.6 — rm</span>
 	</div>
 </footer>
 

@@ -1,9 +1,9 @@
 ---
 import Icon from "../Icon.astro";
-import { project } from "../../lib/config.js";
+import { localeFromPath, project } from "../../lib/config.js";
 import { parseDescription } from "../../lib/parseDescription.js";
 
-const expertiseData = project().expertise;
+const expertiseData = project(localeFromPath(Astro.url.pathname)).expertise;
 
 const tags = expertiseData.tags;
 const descList = parseDescription(expertiseData.desc);

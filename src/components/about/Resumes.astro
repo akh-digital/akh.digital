@@ -1,10 +1,10 @@
 ---
-import { about } from "../../lib/config.js";
+import { about, localeFromPath } from "../../lib/config.js";
 import Icon from "../Icon.astro";
 import LinksLink from "./components/LinksLink.astro";
 import Links from "./components/Links.astro";
 
-const cv = about().cv;
+const cv = about(localeFromPath(Astro.url.pathname)).cv;
 const list = cv.list;
 ---
 

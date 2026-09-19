@@ -1,15 +1,29 @@
 import aboutYaml from "../data/about.yml";
 import projectYaml from "../data/projects.yml";
 import globalYaml from "../data/global.yml";
+import * as russian from "../data/ru.js";
 
-export function about() {
-	return aboutYaml;
+export function localeFromPath(pathname = "/") {
+	return pathname === "/ru" || pathname.startsWith("/ru/") ? "ru" : "en";
 }
 
-export function project() {
-	return projectYaml;
+export function localizedPath(pathname, locale) {
+	const path = pathname.replace(/^\/ru(?=\/|$)/, "") || "/";
+	return locale === "ru" ? `/ru${path === "/" ? "" : path}` : path;
 }
 
-export function global() {
-	return globalYaml;
+export function about(locale = "en") {
+	return locale === "ru" ? russian.about : aboutYaml;
+}
+
+export function project(locale = "en") {
+	return locale === "ru" ? russian.project : projectYaml;
+}
+
+export function global(locale = "en") {
+	return locale === "ru" ? russian.global : globalYaml;
+}
+
+export function projectTranslation(slug, locale = "en") {
+	return locale === "ru" ? russian.projectTranslations[slug] : undefined;
 }

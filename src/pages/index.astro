@@ -8,12 +8,14 @@ import Expertise from "../components/home/Expertise.astro";
 import Intro from "../components/home/Intro.astro";
 import Hero from "../components/home/Hero.astro";
 import Photo from "../components/home/Photo.astro";
-import { global } from "../lib/config";
+import { global, localeFromPath } from "../lib/config";
+
+const locale = localeFromPath(Astro.url.pathname);
 ---
 
 <BaseLayout>
 	<slot slot="head">
-		<title>{global().title}</title>
+		<title>{global(locale).title}</title>
 	</slot>
 	<main class="main column">
 		<Header />

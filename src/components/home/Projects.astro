@@ -1,6 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 import Project from "./Project.astro";
+import { localeFromPath, project as projectConfig, projectTranslation } from "../../lib/config.js";
+const locale = localeFromPath(Astro.url.pathname);
+const prefix = locale === "ru" ? "/ru" : "";
 const projects = await getCollection("projects");
 const sortedProjects = projects.sort((a, b) => {
 	return b.data.date - a.data.date;
@@ -11,16 +14,16 @@ const sortedProjects = projects.sort((a, b) => {
 	<div class="projects__wrapper">
 		<div class="projects__title-wrapper">
 			<h1 class="projects__big-title">
-				Recent Projects ({projects.length})
+				{projectConfig(locale).projects.title} ({projects.length})
 			</h1>
 		</div>
 		<div class="projects__list">
 			{
 				sortedProjects.map((project, index) => (
 					<Project
-						slug={"/projects/" + project.slug}
+						slug={prefix + "/projects/" + project.slug}
 						number={String(index + 1).padStart(2, "0")}
-						project={project.data}
+						project={{ ...project.data, ...(projectTranslation(project.slug, locale) ?? {}) }}
 					/>
 				))
 			}

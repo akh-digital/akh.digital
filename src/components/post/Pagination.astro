@@ -2,7 +2,10 @@
 import { getCollection } from "astro:content";
 import Show from "../../lib/Show.astro";
 import Icon from "../Icon.astro";
+import { localeFromPath } from "../../lib/config.js";
 const { slug } = Astro.params;
+const locale = localeFromPath(Astro.url.pathname);
+const prefix = locale === "ru" ? "/ru" : "";
 
 const projects = await getCollection("projects");
 const sortedProjects = projects.sort((a, b) => {
@@ -22,13 +25,13 @@ const nextPage = sortedProjects[currentProjectIndex + 1]?.slug;
 			<Show when={prevPage}>
 				<div class="item">
 					<Icon size="33" name="arrow-left" />
-					<a href={`/projects/${[prevPage]}`}> PREVIOUS PROJECT </a>
+					<a href={`${prefix}/projects/${prevPage}`}> {locale === "ru" ? "ПРЕДЫДУЩИЙ ПРОЕКТ" : "PREVIOUS PROJECT"} </a>
 				</div>
 			</Show>
 
 			<Show when={nextPage}>
 				<div class="item">
-					<a href={`/projects/${nextPage}`}> NEXT PROJECT </a>
+					<a href={`${prefix}/projects/${nextPage}`}> {locale === "ru" ? "СЛЕДУЮЩИЙ ПРОЕКТ" : "NEXT PROJECT"} </a>
 					<Icon size="33" name="arrow-right" />
 				</div>
 			</Show>

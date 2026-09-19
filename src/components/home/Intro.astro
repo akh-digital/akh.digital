@@ -1,4 +1,19 @@
 ---
+import { localeFromPath } from "../../lib/config.js";
+
+const locale = localeFromPath(Astro.url.pathname);
+const copy = locale === "ru"
+	? {
+		location: "Санкт-Петербург, Россия",
+		worldwide: "*Доступен по всему миру",
+		title: "Ведущий продуктовый дизайнер, специализирующийся на B2B и сложных корпоративных системах",
+	}
+	: {
+		location: "Based in Saint-P, Russia",
+		worldwide: "*Available Worldwide",
+		title: "Lead Product Designer specializing in B2B and complex enterprise systems",
+	};
+
 function generateGoogleMapsLink(lat, lng) {
 	return `https://www.google.com/maps?q=${lat},${lng}`;
 }
@@ -23,10 +38,10 @@ const locationLink = generateGoogleMapsLink(lat, long);
 
 <section class="intro__additional">
 	<div class="intro__additional-location">
-		<p>Based in Saint-P, Russia</p>
-		<p>*Available Worldwide</p>
+		<p>{copy.location}</p>
+		<p>{copy.worldwide}</p>
 	</div>
-	<h1 class="intro__additional-name">Lead Product Designer specializing in B2B and complex enterprise systems</h1>
+	<h1 class="intro__additional-name">{copy.title}</h1>
 	<a target="_blank" href={locationLink} class="intro__additional-cords">
 		<span>59°56'19.07' N</span>
 		<span>30°18'50.87' E</span>
