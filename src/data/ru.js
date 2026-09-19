@@ -13,59 +13,6 @@ export const global = {
 	language: "ru",
 };
 
-export const about = {
-	about: {
-		title: "Привет! Это я",
-		desc: `Родом из Таллина, Эстония, я вырос в семье технических специалистов. Я изучал межкультурные коммуникации и романские языки в Санкт-Петербурге, но в лингвистике не работал — зато эти знания сильно помогли мне в дизайне.
-
-В 2005 году я начал карьеру графического и упаковочного дизайнера. За 8 с лишним лет создал более 100 проектов упаковки и полиграфии. Затем работал графическим дизайнером на Петербургском международном экономическом форуме, создавая материалы для помещений и улицы, печатную продукцию и иллюстрации.
-
-С 2014 года я активно работаю в IT: создаю дизайн-системы, ERP-системы, сервисы веб-заказов, B2C-приложения, сайты и цифровые иллюстрации в Figma. Я работал UI/UX-дизайнером над цифровыми решениями для Siemens AG, Tassta GmbH, Alcon, Essilor и CooperVision.
-
-Когда я не занимаюсь дизайном, меня можно найти на корте для падела, за бильярдным столом или на велосипеде. Я люблю электронную музыку, крафтовое пиво и много готовлю. А ещё совершенно не умею устоять перед котами.`,
-	},
-	social: {
-		title: "Связаться",
-		second_title: "(Давайте знакомиться)",
-		list: [
-			{ title: "aleks@akh-digital.ru", url: "mailto:aleks@akh-digital.ru" },
-			{ title: "telegram", url: "https://t.me/ashtimus" },
-			{ title: "linkedin", url: "https://linkedin.com/in/aleksandr-kholopov/" },
-		],
-	},
-	cv: {
-		title: "Посмотреть",
-		second_title: "(Скачать резюме)",
-		list: [
-			{ title: "PDF / ENGLISH", url: "/cv/aleks_kholopov_en_cv_2026.pdf" },
-			{ title: "PDF / RUSSIAN", url: "/cv/aleks_kholopov_ru_cv_2026.pdf" },
-		],
-	},
-	skills: [
-		{
-			title: "(Компетенции)",
-			list: [
-				"UX / UI-дизайн, дизайн приложений",
-				"UI-киты и дизайн-системы",
-				"Веб-дизайн",
-				"Интерактивное прототипирование",
-				"CustDev, интервью с пользователями, UX-тесты",
-				"Издательский дизайн, упаковка, предметный и графический дизайн",
-			],
-		},
-		{
-			title: "(Инструменты и сервисы)",
-			list: [
-				"Figma, Pixso, Adobe Photoshop, Illustrator, InDesign",
-				"Figma AI, Claude, Cursor, ChatGPT, Copilot",
-				"VSCode, GitHub, Atom/Typora",
-				"UI-фреймворки — Element UI, Ant Design, Apex Charts, Ant Charts",
-				"Slack, Miro, Atlassian Jira, Notion, YouTrack",
-			],
-		},
-	],
-};
-
 export const project = {
 	expertise: {
 		title: "Области экспертизы",

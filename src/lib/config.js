@@ -1,6 +1,7 @@
 import aboutYaml from "../data/about.yml";
 import projectYaml from "../data/projects.yml";
 import globalYaml from "../data/global.yml";
+import aboutRuYaml from "../data/about.ru.yml";
 import * as russian from "../data/ru.js";
 
 export function localeFromPath(pathname = "/") {
@@ -13,7 +14,7 @@ export function localizedPath(pathname, locale) {
 }
 
 export function about(locale = "en") {
-	return locale === "ru" ? russian.about : aboutYaml;
+	return locale === "ru" ? aboutRuYaml : aboutYaml;
 }
 
 export function project(locale = "en") {
