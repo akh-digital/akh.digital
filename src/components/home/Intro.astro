@@ -39,6 +39,7 @@ const locationLink = generateGoogleMapsLink(lat, long);
 		<p>{copy.location}</p>
 		<p>{copy.worldwide}</p>
 	</div>
+	<h1 class="intro__additional-name">MAKING PIXELS GREAT AGAIN</h1>
 	<a target="_blank" href={locationLink} class="intro__additional-cords">
 		<span>59°56'19.07' N</span>
 		<span>30°18'50.87' E</span>
@@ -56,11 +57,19 @@ const locationLink = generateGoogleMapsLink(lat, long);
 		font-size: var(--font-size-extra-small);
 
 		.intro__additional-cords {
-			grid-column: 2 / -1;
+			grid-column: 3;
 			justify-self: end;
 			display: flex;
 			flex-direction: column;
 			text-align: right;
+		}
+
+		.intro__additional-name {
+			grid-column: 2;
+			min-width: 0;
+			text-align: center;
+			overflow-wrap: anywhere;
+			word-break: break-word;
 		}
 
 		h1,
