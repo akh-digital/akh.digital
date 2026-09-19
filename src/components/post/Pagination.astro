@@ -7,15 +7,23 @@ const { slug } = Astro.params;
 const locale = localeFromPath(Astro.url.pathname);
 const prefix = locale === "ru" ? "/ru" : "";
 
-const projects = await getCollection("projects");
+const projects = (await getCollection("projects")).filter((project) =>
+	locale === "ru" ? project.id.endsWith("index.ru.md") : project.id.endsWith("index.md"),
+);
 const sortedProjects = projects.sort((a, b) => {
 	return b.data.date - a.data.date;
 });
+const getProjectSlug = (project) =>
+	locale === "ru" ? project.id.split("/").slice(-2, -1)[0] : project.slug;
 const currentProjectIndex = sortedProjects.findIndex(
-	(project) => project.slug === slug,
+	(project) => getProjectSlug(project) === slug,
 );
-const prevPage = sortedProjects[currentProjectIndex - 1]?.slug;
-const nextPage = sortedProjects[currentProjectIndex + 1]?.slug;
+const prevPage = sortedProjects[currentProjectIndex - 1]
+	? getProjectSlug(sortedProjects[currentProjectIndex - 1])
+	: undefined;
+const nextPage = sortedProjects[currentProjectIndex + 1]
+	? getProjectSlug(sortedProjects[currentProjectIndex + 1])
+	: undefined;
 ---
 
 <section class="pagination">

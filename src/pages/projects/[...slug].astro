@@ -12,8 +12,9 @@ import Post from "../../components/post/Post.astro";
 
 export async function getStaticPaths() {
 	const projects = await getCollection("projects");
+	const englishProjects = projects.filter((project) => project.id.endsWith("index.md"));
 
-	return projects.map((project) => ({
+	return englishProjects.map((project) => ({
 		params: { slug: project.slug },
 		props: project,
 	}));

@@ -4,7 +4,7 @@ import Project from "./Project.astro";
 import { localeFromPath, project as projectConfig, projectTranslation } from "../../lib/config.js";
 const locale = localeFromPath(Astro.url.pathname);
 const prefix = locale === "ru" ? "/ru" : "";
-const projects = await getCollection("projects");
+const projects = (await getCollection("projects")).filter((project) => project.id.endsWith("index.md"));
 const sortedProjects = projects.sort((a, b) => {
 	return b.data.date - a.data.date;
 });
