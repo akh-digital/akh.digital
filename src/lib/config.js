@@ -1,5 +1,6 @@
 import aboutYaml from "../data/about.yml";
 import projectYaml from "../data/projects.yml";
+import projectRuYaml from "../data/projects.ru.yml";
 import globalYaml from "../data/global.yml";
 import aboutRuYaml from "../data/about.ru.yml";
 import * as russian from "../data/ru.js";
@@ -18,7 +19,7 @@ export function about(locale = "en") {
 }
 
 export function project(locale = "en") {
-	return locale === "ru" ? russian.project : projectYaml;
+	return locale === "ru" ? projectRuYaml : projectYaml;
 }
 
 export function global(locale = "en") {
