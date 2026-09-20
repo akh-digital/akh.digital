@@ -11,7 +11,7 @@ const alternatePath = localizedPath(Astro.url.pathname, alternateLocale);
 <header id="header" class="header">
 	<nav class="navigation">
 		<div class="navigation__list">
-			<a class="navigation__link" href={locale === "ru" ? "/ru" : "/"}>{locale === "ru" ? "(МЭЙН)" : "(MAIN)"}</a>
+			<a class="navigation__link navigation__main" href={locale === "ru" ? "/ru" : "/"}>{locale === "ru" ? "(МЭЙН)" : "(MAIN)"}</a>
 			<a class="navigation__logo" href={locale === "ru" ? "/ru" : "/"}>
 				<Icon name="logo" size="52" />
 			</a>
@@ -34,7 +34,7 @@ const alternatePath = localizedPath(Astro.url.pathname, alternateLocale);
 		margin: 0;
 		padding: 0;
 
-		:first-child {
+		.navigation__main {
 			justify-self: start;
 			margin-right: 40px;
 		}
