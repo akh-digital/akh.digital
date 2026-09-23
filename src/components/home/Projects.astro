@@ -7,11 +7,21 @@ const prefix = locale === "ru" ? "/ru" : "";
 const projects = (await getCollection("projects")).filter((project) =>
 	locale === "ru" ? project.id.endsWith("index.ru.md") : project.id.endsWith("index.md"),
 );
+const projectPreviews = import.meta.glob(
+	"../../content/projects/*/preview.webp",
+	{ eager: true, query: "?url", import: "default" },
+);
 const sortedProjects = projects.sort((a, b) => {
 	return b.data.date - a.data.date;
 });
 const getProjectSlug = (project) =>
 	locale === "ru" ? project.id.split("/").slice(-2, -1)[0].toLowerCase() : project.slug;
+const getProjectPreview = (project) => {
+	const projectDirectory = project.id.split("/")[0];
+	return Object.entries(projectPreviews).find(([path]) =>
+		path.includes(`/${projectDirectory}/`),
+	)?.[1];
+};
 ---
 
 <section class="projects">
@@ -28,6 +38,7 @@ const getProjectSlug = (project) =>
 							slug={prefix + "/projects/" + getProjectSlug(project)}
 						number={String(index + 1).padStart(2, "0")}
 							project={project.data}
+							preview={getProjectPreview(project)}
 					/>
 				))
 			}

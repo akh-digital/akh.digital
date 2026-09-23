@@ -1,6 +1,6 @@
 ---
 import Icon from "../Icon.astro";
-const { project, number, slug } = Astro.props;
+const { project, number, slug, preview } = Astro.props;
 const tags = project.tags;
 ---
 
@@ -13,6 +13,7 @@ const tags = project.tags;
 			{new Date(project.date).getFullYear()}
 		</span>
 	</header>
+	{preview && <img class="project__preview" src={preview} alt="" aria-hidden="true" loading="lazy" />}
 	<h3 class="projects__title">
 		<a class="projects__link" href={slug}>
 			{project.title}
@@ -28,6 +29,35 @@ const tags = project.tags;
 	.project {
 		position: relative;
 	}
+	.project__preview {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		right: 12%;
+		width: min(34vw, 360px);
+		aspect-ratio: 16 / 10;
+		object-fit: cover;
+		box-shadow: 0 12px 32px rgb(0 0 0 / 18%);
+		opacity: 0;
+		pointer-events: none;
+		transform: translateY(-44%) rotate(3deg) scale(0.96);
+		transition:
+			opacity 220ms ease,
+			transform 220ms ease;
+	}
+
+	.project:hover .project__preview,
+	.project:focus-within .project__preview {
+		opacity: 1;
+		transform: translateY(-50%) rotate(-2deg) scale(1);
+	}
+
+	@media (width < 768px) {
+		.project__preview {
+			display: none;
+		}
+	}
+
 	.project_header {
 		display: flex;
 		justify-content: space-between;
