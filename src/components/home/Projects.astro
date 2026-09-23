@@ -7,12 +7,6 @@ const prefix = locale === "ru" ? "/ru" : "";
 const projects = (await getCollection("projects")).filter((project) =>
 	locale === "ru" ? project.id.endsWith("index.ru.md") : project.id.endsWith("index.md"),
 );
-const projectPreviews = {
-	alcon: new URL("../../content/projects/alcon/alcon-preview.webp", import.meta.url).href,
-	anydoc: new URL("../../content/projects/anydoc/anydoc-preview.webp", import.meta.url).href,
-	"KM-dating": new URL("../../content/projects/KM-dating/KM-dating-preview.webp", import.meta.url).href,
-	"optima-bi": new URL("../../content/projects/optima-bi/optima-bi-preview.webp", import.meta.url).href,
-};
 const sortedProjects = projects.sort((a, b) => {
 	return b.data.date - a.data.date;
 });
@@ -20,7 +14,7 @@ const getProjectSlug = (project) =>
 	locale === "ru" ? project.id.split("/").slice(-2, -1)[0].toLowerCase() : project.slug;
 const getProjectPreview = (project) => {
 	const projectDirectory = project.id.split("/").slice(-2, -1)[0];
-	return projectPreviews[projectDirectory];
+	return `/projects/${projectDirectory}/${projectDirectory}-preview.webp`;
 };
 ---
 
