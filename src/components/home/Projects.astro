@@ -17,7 +17,7 @@ const sortedProjects = projects.sort((a, b) => {
 const getProjectSlug = (project) =>
 	locale === "ru" ? project.id.split("/").slice(-2, -1)[0].toLowerCase() : project.slug;
 const getProjectPreview = (project) => {
-	const projectDirectory = project.id.split("/")[0];
+	const projectDirectory = project.id.split("/").slice(-2, -1)[0];
 	return Object.entries(projectPreviews).find(([path]) =>
 		path.includes(`/${projectDirectory}/`),
 	)?.[1];
