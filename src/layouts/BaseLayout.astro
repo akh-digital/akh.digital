@@ -69,7 +69,13 @@ const locale = localeFromPath(Astro.url.pathname);
 			import "lenis/dist/lenis.css";
 
 			if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-				new Lenis({ autoRaf: true, anchors: true });
+				new Lenis({
+					autoRaf: true,
+					anchors: {
+						duration: 1.8,
+						easing: (progress) => 1 - Math.pow(1 - progress, 3),
+					},
+				});
 			}
 		</script>
 
