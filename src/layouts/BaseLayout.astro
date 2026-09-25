@@ -35,10 +35,6 @@ const locale = localeFromPath(Astro.url.pathname);
 			.page {
 				background-color: var(--body-color);
 				color: var(--text-color);
-
-				@media (prefers-reduced-motion: no-preference) {
-					scroll-behavior: smooth;
-				}
 			}
 
 			.page__body {
@@ -67,6 +63,15 @@ const locale = localeFromPath(Astro.url.pathname);
 				border-top: 2px solid var(--white);
 			}
 		</style>
+
+		<script>
+			import Lenis from "lenis";
+			import "lenis/dist/lenis.css";
+
+			if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+				new Lenis({ autoRaf: true });
+			}
+		</script>
 
 		<YaMetrika />
 	</body>
