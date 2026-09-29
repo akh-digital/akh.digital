@@ -12,9 +12,15 @@ const sortedProjects = projects.sort((a, b) => {
 });
 const getProjectSlug = (project) =>
 	locale === "ru" ? project.id.split("/").slice(-2, -1)[0].toLowerCase() : project.slug;
+const projectPreviewFiles = {
+	alcon: "alcon-case-1@2x.webp",
+	anydoc: "anydoc-case-1@2x.webp",
+	"KM-dating": "km-case-1@2x.webp",
+	"optima-bi": "optima-bi-case-1@2x.webp",
+};
 const getProjectPreview = (project) => {
 	const projectDirectory = project.id.split("/").slice(-2, -1)[0];
-	return `/projects/${projectDirectory}/${projectDirectory}-preview.webp`;
+	return `/projects/${projectDirectory}/${projectPreviewFiles[projectDirectory]}`;
 };
 ---
 
