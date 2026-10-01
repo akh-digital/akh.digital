@@ -8,7 +8,9 @@ const locale = localeFromPath(Astro.url.pathname);
 <footer class="footer column">
 	<div class="footer__info">
 		<span>ALEKS KHOLOPOV © 2022-2026</span>
-		<Icon name="logo" size="52" />
+		<a href={locale === "ru" ? "/ru" : "/"} aria-label={locale === "ru" ? "На главную" : "Go to homepage"}>
+			<Icon name="logo" size="52" />
+		</a>
 		<span>{locale === "ru" ? "САМ РАЙТС РЕЗЕРВД" : "SOME RIGHTS RESERVED"}</span>
 	</div>
 	<div class="divider is-white"></div>
