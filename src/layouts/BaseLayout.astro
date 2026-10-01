@@ -1,6 +1,7 @@
 ---
 import HeadMeta from "../components/HeadMeta.astro";
 import YaMetrika from "../components/third-party-script/YaMetrika.astro";
+import { ClientRouter } from "astro:transitions";
 import { global, localeFromPath } from "../lib/config";
 import "../styles/index.css";
 
@@ -10,6 +11,7 @@ const locale = localeFromPath(Astro.url.pathname);
 <html class="page" lang={global(locale).language}>
 	<head>
 		<HeadMeta />
+		<ClientRouter />
 		<script is:inline>
 			const savedTheme = localStorage.getItem("theme");
 			const theme = savedTheme === "dark" || savedTheme === "light"
