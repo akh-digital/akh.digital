@@ -89,21 +89,25 @@ const alternatePath = localizedPath(Astro.url.pathname, alternateLocale);
 </style>
 
 <script>
-	const themeToggle = document.querySelector("[data-theme-toggle]");
+	const syncThemeToggle = () => {
+		const themeToggle = document.querySelector("[data-theme-toggle]");
+		if (!(themeToggle instanceof HTMLButtonElement)) return;
 
-	if (themeToggle instanceof HTMLButtonElement) {
-		const syncThemeToggle = () => {
-			const isDark = document.documentElement.dataset.theme === "dark";
-			themeToggle.textContent = isDark ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel;
-			themeToggle.setAttribute("aria-pressed", String(isDark));
-		};
+		const isDark = document.documentElement.dataset.theme === "dark";
+		themeToggle.textContent = isDark ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel;
+		themeToggle.setAttribute("aria-pressed", String(isDark));
+	};
 
+	syncThemeToggle();
+	document.addEventListener("astro:page-load", syncThemeToggle);
+	document.addEventListener("click", (event) => {
+		if (!(event.target instanceof Element)) return;
+		const themeToggle = event.target.closest("[data-theme-toggle]");
+		if (!(themeToggle instanceof HTMLButtonElement)) return;
+
+		const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+		document.documentElement.dataset.theme = nextTheme;
+		localStorage.setItem("theme", nextTheme);
 		syncThemeToggle();
-		themeToggle.addEventListener("click", () => {
-			const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-			document.documentElement.dataset.theme = nextTheme;
-			localStorage.setItem("theme", nextTheme);
-			syncThemeToggle();
-		});
-	}
+	});
 </script>

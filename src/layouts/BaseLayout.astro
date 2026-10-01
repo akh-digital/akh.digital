@@ -13,11 +13,15 @@ const locale = localeFromPath(Astro.url.pathname);
 		<HeadMeta />
 		<ClientRouter />
 		<script is:inline>
-			const savedTheme = localStorage.getItem("theme");
-			const theme = savedTheme === "dark" || savedTheme === "light"
-				? savedTheme
-				: "light";
-			document.documentElement.dataset.theme = theme;
+			(() => {
+				const applySavedTheme = () => {
+					const savedTheme = localStorage.getItem("theme");
+					document.documentElement.dataset.theme = savedTheme === "dark" ? "dark" : "light";
+				};
+
+				applySavedTheme();
+				document.addEventListener("astro:after-swap", applySavedTheme);
+			})();
 		</script>
 
 		<link
