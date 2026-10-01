@@ -21,10 +21,10 @@ svg { overflow: visible; }
 </style>
 <g id="arrow-right__ic___arrow-right">
 <g id="arrow-right__vector" transform="translate(-5.24538e-07 2)">
-<path d="M24 8V12L20 12V16H16V12L0 12L1.74849e-07 8L16 8V4L20 4V8L24 8Z" id="arrow-right__vector_bg_0" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;">
+<path d="M24 8V12L20 12V16H16V12L0 12L1.74849e-07 8L16 8V4L20 4V8L24 8Z" id="arrow-right__vector_bg_0" fill="currentColor">
 </path>
-<path d="M16 4H12L12 0L16 1.74845e-07V4Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
-<path d="M16 16V20H12V16H16Z" fill="#050505" style="fill:#050505;fill:color(display-p3 0.0196 0.0196 0.0196);fill-opacity:1;"/>
+<path d="M16 4H12L12 0L16 1.74845e-07V4Z" fill="currentColor"/>
+<path d="M16 16V20H12V16H16Z" fill="currentColor"/>
 </g>
 </g>
 </svg>
