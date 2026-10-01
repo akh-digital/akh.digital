@@ -8,7 +8,7 @@ const locale = localeFromPath(Astro.url.pathname);
 <footer class="footer column">
 	<div class="footer__info">
 		<span>ALEKS KHOLOPOV © 2022-2026</span>
-		<a href={locale === "ru" ? "/ru" : "/"} aria-label={locale === "ru" ? "На главную" : "Go to homepage"}>
+		<a class="footer__logo" href={locale === "ru" ? "/ru" : "/"} aria-label={locale === "ru" ? "На главную" : "Go to homepage"}>
 			<Icon name="logo" size="52" />
 		</a>
 		<span>{locale === "ru" ? "САМ РАЙТС РЕЗЕРВД" : "SOME RIGHTS RESERVED"}</span>
@@ -60,6 +60,11 @@ const locale = localeFromPath(Astro.url.pathname);
 			justify-self: right;
 			text-align: right;
 		}
+	}
+
+	.footer__logo {
+		color: var(--logo-color);
+		line-height: 0.5;
 	}
 
 	.footer__info-credentials {
