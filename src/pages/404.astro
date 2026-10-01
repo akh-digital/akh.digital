@@ -30,6 +30,22 @@ const locale = localeFromPath(Astro.url.pathname);
 	<Footer />
 </BaseLayout>
 
+<script>
+	const languageSwitch = document.querySelector("a[data-language-switch]");
+
+	if (languageSwitch instanceof HTMLAnchorElement) {
+		const isRussianPath =
+			window.location.pathname === "/ru" || window.location.pathname.startsWith("/ru/");
+
+		languageSwitch.href = isRussianPath ? "/" : "/ru";
+		languageSwitch.textContent = isRussianPath ? "(EN)" : "(RU)";
+		languageSwitch.setAttribute(
+			"aria-label",
+			isRussianPath ? "Switch to English" : "Switch to Russian",
+		);
+	}
+</script>
+
 <style>
 	p {
 		margin-bottom: 160px;

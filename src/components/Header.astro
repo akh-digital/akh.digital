@@ -28,7 +28,7 @@ const alternatePath = isNotFoundPage
 					aria-label={locale === "ru" ? "Переключить цветовую тему" : "Toggle color theme"}
 					aria-pressed="false"
 				>(DRK)</button>
-				<a class="navigation__link" href={alternatePath} aria-label={`Switch to ${alternateLabel}`}>({alternateLabel})</a>
+				<a class="navigation__link" href={alternatePath} aria-label={`Switch to ${alternateLabel}`} data-language-switch>({alternateLabel})</a>
 			</div>
 		</div>
 	</nav>
