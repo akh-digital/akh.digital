@@ -49,58 +49,63 @@ const copy = englishCopy;
 </BaseLayout>
 
 <script>
-	const languageSwitch = document.querySelector("a[data-language-switch]");
-	const currentPath = window.location.pathname;
-	const isRussianPath = currentPath === "/ru" || currentPath.startsWith("/ru/");
-	const pathWithoutLocale = currentPath.replace(/^\/ru(?=\/|$)/, "") || "/";
-	const alternatePath = isRussianPath
-		? pathWithoutLocale
-		: `/ru${currentPath === "/" ? "" : currentPath}`;
+	const localize404 = () => {
+		const languageSwitch = document.querySelector("a[data-language-switch]");
+		const currentPath = window.location.pathname;
+		const isRussianPath = currentPath === "/ru" || currentPath.startsWith("/ru/");
+		const pathWithoutLocale = currentPath.replace(/^\/ru(?=\/|$)/, "") || "/";
+		const alternatePath = isRussianPath
+			? pathWithoutLocale
+			: `/ru${currentPath === "/" ? "" : currentPath}`;
 
-	document.documentElement.lang = isRussianPath ? "ru" : "en";
-	const content = document.querySelector("[data-404-copy]");
-	const localizedText = (key) =>
-		content?.getAttribute(`data-${key}-${isRussianPath ? "ru" : "en"}`) ?? "";
-	const pageTitle = document.querySelector("[data-404-page-title]");
-	if (pageTitle) document.title = localizedText("page-title");
+		document.documentElement.lang = isRussianPath ? "ru" : "en";
+		const content = document.querySelector("[data-404-copy]");
+		const localizedText = (key) =>
+			content?.getAttribute(`data-${key}-${isRussianPath ? "ru" : "en"}`) ?? "";
+		const pageTitle = document.querySelector("[data-404-page-title]");
+		if (pageTitle) document.title = localizedText("page-title");
 
-	if (languageSwitch instanceof HTMLAnchorElement) {
-		languageSwitch.href = `${alternatePath}${window.location.search}${window.location.hash}`;
-		languageSwitch.textContent = isRussianPath ? "(EN)" : "(RU)";
-		languageSwitch.setAttribute("aria-label", localizedText("switch-aria"));
-	}
+		if (languageSwitch instanceof HTMLAnchorElement) {
+			languageSwitch.href = `${alternatePath}${window.location.search}${window.location.hash}`;
+			languageSwitch.textContent = isRussianPath ? "(EN)" : "(RU)";
+			languageSwitch.setAttribute("aria-label", localizedText("switch-aria"));
+		}
 
-	const infoLink = document.querySelector("a[data-info-link]");
-	if (infoLink instanceof HTMLAnchorElement) {
-		infoLink.href = isRussianPath ? "/ru/about" : "/about";
-	}
+		const infoLink = document.querySelector("a[data-info-link]");
+		if (infoLink instanceof HTMLAnchorElement) {
+			infoLink.href = isRussianPath ? "/ru/about" : "/about";
+		}
 
-	const themeToggle = document.querySelector("[data-theme-toggle]");
-	if (themeToggle instanceof HTMLButtonElement) {
-		themeToggle.setAttribute("aria-label", localizedText("theme-aria"));
-	}
+		const themeToggle = document.querySelector("[data-theme-toggle]");
+		if (themeToggle instanceof HTMLButtonElement) {
+			themeToggle.setAttribute("aria-label", localizedText("theme-aria"));
+		}
 
-	const homeLink = document.querySelector("a[data-404-home]");
-	if (homeLink instanceof HTMLAnchorElement) {
-		homeLink.href = isRussianPath ? "/ru" : "/";
-		homeLink.textContent = localizedText("home-link");
-		homeLink.setAttribute("aria-label", localizedText("home-aria"));
-	}
+		const homeLink = document.querySelector("a[data-404-home]");
+		if (homeLink instanceof HTMLAnchorElement) {
+			homeLink.href = isRussianPath ? "/ru" : "/";
+			homeLink.textContent = localizedText("home-link");
+			homeLink.setAttribute("aria-label", localizedText("home-aria"));
+		}
 
-	const title = document.querySelector("[data-404-title]");
-	if (title) title.textContent = localizedText("title");
+		const title = document.querySelector("[data-404-title]");
+		if (title) title.textContent = localizedText("title");
 
-	const description = document.querySelector("[data-404-description]");
-	if (description) description.textContent = localizedText("description");
+		const description = document.querySelector("[data-404-description]");
+		if (description) description.textContent = localizedText("description");
 
-	const footerHome = document.querySelector("a[data-footer-home]");
-	if (footerHome instanceof HTMLAnchorElement) {
-		footerHome.href = isRussianPath ? "/ru" : "/";
-		footerHome.setAttribute("aria-label", localizedText("home-aria"));
-	}
+		const footerHome = document.querySelector("a[data-footer-home]");
+		if (footerHome instanceof HTMLAnchorElement) {
+			footerHome.href = isRussianPath ? "/ru" : "/";
+			footerHome.setAttribute("aria-label", localizedText("home-aria"));
+		}
 
-	const footerRights = document.querySelector("[data-footer-rights]");
-	if (footerRights) footerRights.textContent = localizedText("footer-rights");
+		const footerRights = document.querySelector("[data-footer-rights]");
+		if (footerRights) footerRights.textContent = localizedText("footer-rights");
+	};
+
+	document.addEventListener("astro:page-load", localize404);
+	localize404();
 </script>
 
 <style>
