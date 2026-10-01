@@ -14,7 +14,7 @@ const locale = localeFromPath(Astro.url.pathname);
 			const savedTheme = localStorage.getItem("theme");
 			const theme = savedTheme === "dark" || savedTheme === "light"
 				? savedTheme
-				: window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+				: "light";
 			document.documentElement.dataset.theme = theme;
 		</script>
 
