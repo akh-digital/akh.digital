@@ -5,7 +5,10 @@ import { localeFromPath, localizedPath } from "../lib/config.js";
 const locale = localeFromPath(Astro.url.pathname);
 const alternateLocale = locale === "ru" ? "en" : "ru";
 const alternateLabel = locale === "ru" ? "EN" : "RU";
-const alternatePath = localizedPath(Astro.url.pathname, alternateLocale);
+const isNotFoundPage = Astro.url.pathname === "/404" || Astro.url.pathname === "/404.html";
+const alternatePath = isNotFoundPage
+	? alternateLocale === "ru" ? "/ru" : "/"
+	: localizedPath(Astro.url.pathname, alternateLocale);
 ---
 
 <header id="header" class="header">
