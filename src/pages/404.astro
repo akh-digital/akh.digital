@@ -1,49 +1,106 @@
 ---
+import { frontmatter as englishCopy } from "../data/404.en.md";
+import { frontmatter as russianCopy } from "../data/404.ru.md";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Photo from "../components/home/Photo.astro";
-import { global, localeFromPath } from "../lib/config";
-
-const locale = localeFromPath(Astro.url.pathname);
+const copy = englishCopy;
 ---
 
 <BaseLayout>
 	<slot slot="head">
-		<title>{global(locale).title} | 404</title>
+		<title data-404-page-title data-en={englishCopy.pageTitle} data-ru={russianCopy.pageTitle}>
+			{copy.pageTitle}
+		</title>
 	</slot>
 	<main class="main column">
 		<Header />
 		<Photo src="/404-img@2x.webp" hoverSrc="/404-img-alt@2x.webp" alt="404 illustration" />
 
-		<h1>404 err or — Page Not Found</h1>
+		<div
+			hidden
+			data-404-copy
+			data-title-en={copy.title}
+			data-title-ru={russianCopy.title}
+			data-description-en={copy.description}
+			data-description-ru={russianCopy.description}
+			data-home-link-en={copy.homeLink}
+			data-home-link-ru={russianCopy.homeLink}
+			data-home-aria-en={copy.homeAria}
+			data-home-aria-ru={russianCopy.homeAria}
+			data-switch-aria-en={copy.languageSwitchAria}
+			data-switch-aria-ru={russianCopy.languageSwitchAria}
+			data-theme-aria-en={copy.themeToggleAria}
+			data-theme-aria-ru={russianCopy.themeToggleAria}
+			data-footer-rights-en={copy.footerRights}
+			data-footer-rights-ru={russianCopy.footerRights}
+		></div>
+
+		<h1 data-404-title>{copy.title}</h1>
 
 		<h1>¯\_(ツ)_/¯</h1>
 
-		<p>
-			Unfortunately, the requested page was not found. Either it doesn't
-			exist or it has been removed.
-		</p>
+		<p data-404-description>{copy.description}</p>
 
-		<p><a href="/">Go back to the home page</a></p>
+		<p><a href="/" data-404-home>{copy.homeLink}</a></p>
 	</main>
 	<Footer />
 </BaseLayout>
 
 <script>
 	const languageSwitch = document.querySelector("a[data-language-switch]");
+	const currentPath = window.location.pathname;
+	const isRussianPath = currentPath === "/ru" || currentPath.startsWith("/ru/");
+	const pathWithoutLocale = currentPath.replace(/^\/ru(?=\/|$)/, "") || "/";
+	const alternatePath = isRussianPath
+		? pathWithoutLocale
+		: `/ru${currentPath === "/" ? "" : currentPath}`;
+
+	document.documentElement.lang = isRussianPath ? "ru" : "en";
+	const content = document.querySelector("[data-404-copy]");
+	const localizedText = (key) =>
+		content?.getAttribute(`data-${key}-${isRussianPath ? "ru" : "en"}`) ?? "";
+	const pageTitle = document.querySelector("[data-404-page-title]");
+	if (pageTitle) document.title = localizedText("page-title");
 
 	if (languageSwitch instanceof HTMLAnchorElement) {
-		const isRussianPath =
-			window.location.pathname === "/ru" || window.location.pathname.startsWith("/ru/");
-
-		languageSwitch.href = isRussianPath ? "/" : "/ru";
+		languageSwitch.href = `${alternatePath}${window.location.search}${window.location.hash}`;
 		languageSwitch.textContent = isRussianPath ? "(EN)" : "(RU)";
-		languageSwitch.setAttribute(
-			"aria-label",
-			isRussianPath ? "Switch to English" : "Switch to Russian",
-		);
+		languageSwitch.setAttribute("aria-label", localizedText("switch-aria"));
 	}
+
+	const infoLink = document.querySelector("a[data-info-link]");
+	if (infoLink instanceof HTMLAnchorElement) {
+		infoLink.href = isRussianPath ? "/ru/about" : "/about";
+	}
+
+	const themeToggle = document.querySelector("[data-theme-toggle]");
+	if (themeToggle instanceof HTMLButtonElement) {
+		themeToggle.setAttribute("aria-label", localizedText("theme-aria"));
+	}
+
+	const homeLink = document.querySelector("a[data-404-home]");
+	if (homeLink instanceof HTMLAnchorElement) {
+		homeLink.href = isRussianPath ? "/ru" : "/";
+		homeLink.textContent = localizedText("home-link");
+		homeLink.setAttribute("aria-label", localizedText("home-aria"));
+	}
+
+	const title = document.querySelector("[data-404-title]");
+	if (title) title.textContent = localizedText("title");
+
+	const description = document.querySelector("[data-404-description]");
+	if (description) description.textContent = localizedText("description");
+
+	const footerHome = document.querySelector("a[data-footer-home]");
+	if (footerHome instanceof HTMLAnchorElement) {
+		footerHome.href = isRussianPath ? "/ru" : "/";
+		footerHome.setAttribute("aria-label", localizedText("home-aria"));
+	}
+
+	const footerRights = document.querySelector("[data-footer-rights]");
+	if (footerRights) footerRights.textContent = localizedText("footer-rights");
 </script>
 
 <style>
