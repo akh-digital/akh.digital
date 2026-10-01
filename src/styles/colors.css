@@ -7,6 +7,9 @@
 
 	--body-color: var(--white);
 	--text-color: var(--black);
+	--border-color: var(--black);
+	--footer-background: var(--black);
+	--about-background: var(--primary);
 	--logo-color: var(--primary);
 	--color-focus-ring: var(--primary);
 
@@ -14,4 +17,16 @@
 		--primary: oklch(73.63% 0.2111 39.51);
 		--light-gray: oklch(98.18% 0.009 258.34);
 	}
+}
+
+:root[data-theme="dark"] {
+	color-scheme: dark;
+	--black: #f2f2f2;
+	--body-color: #171717;
+	--text-color: #f2f2f2;
+	--border-color: #f2f2f2;
+	--footer-background: #080808;
+	--about-background: #171717;
+	--light-gray: #242424;
+	--gray: #505050;
 }

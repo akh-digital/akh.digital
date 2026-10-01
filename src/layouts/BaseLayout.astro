@@ -10,6 +10,13 @@ const locale = localeFromPath(Astro.url.pathname);
 <html class="page" lang={global(locale).language}>
 	<head>
 		<HeadMeta />
+		<script is:inline>
+			const savedTheme = localStorage.getItem("theme");
+			const theme = savedTheme === "dark" || savedTheme === "light"
+				? savedTheme
+				: window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+			document.documentElement.dataset.theme = theme;
+		</script>
 
 		<link
 			rel="preload"
@@ -56,7 +63,7 @@ const locale = localeFromPath(Astro.url.pathname);
 			.divider {
 				margin: 20px 0;
 				width: 100%;
-				border-top: 2px solid var(--black);
+				border-top: 2px solid var(--border-color);
 			}
 
 			.divider.is-white {
