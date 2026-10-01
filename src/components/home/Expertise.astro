@@ -1,5 +1,4 @@
 ---
-import Icon from "../Icon.astro";
 import { localeFromPath, project } from "../../lib/config.js";
 import { parseDescription } from "../../lib/parseDescription.js";
 
@@ -17,28 +16,7 @@ const descList = parseDescription(expertiseData.desc);
 			</h2>
 		</div>
 		<ul class="tags__list">
-			{
-				tags.map((tag) => {
-					if (!("icon" in tag)) {
-						return <li class="tags__list_item">{tag.text}</li>;
-					}
-
-					const defaultIcon = tag.icon.endsWith("-a") ? tag.icon.replace(/-a$/, "") : tag.icon;
-					const animatedIcon =
-						tag.icon === "a1" || tag.icon === "a1-a"
-							? "a1_a"
-							: tag.icon.endsWith("-a")
-								? tag.icon
-								: `${defaultIcon}-a`;
-
-					return (
-						<span class="tag__icon-wrapper">
-							<Icon class="tag__icon tag__icon--default" name={defaultIcon} />
-							<Icon class="tag__icon tag__icon--animated" name={animatedIcon} />
-						</span>
-					);
-				})
-			}
+			{tags.map((tag) => <li class="tags__list_item">{tag.text}</li>)}
 		</ul>
 	</div>
 	<div class="tags__desc">
@@ -83,36 +61,6 @@ const descList = parseDescription(expertiseData.desc);
 		border-radius: calc(var(--font-size-normal) * 0);
 
 		color: var(--black);
-	}
-
-	.tag__icon-wrapper {
-		position: relative;
-		display: block;
-		overflow: visible;
-		width: calc(var(--font-size-normal) * 2);
-		height: calc(var(--font-size-normal) * 2);
-	}
-
-	:global(.tag__icon) {
-		position: absolute;
-		inset: 0;
-		overflow: visible;
-		width: 100%;
-		height: 100%;
-		transition: opacity 200ms ease;
-	}
-
-	:global(.tag__icon--animated) {
-		opacity: 0;
-		pointer-events: none;
-	}
-
-	.tag__icon-wrapper:hover :global(.tag__icon--default) {
-		opacity: 0;
-	}
-
-	.tag__icon-wrapper:hover :global(.tag__icon--animated) {
-		opacity: 1;
 	}
 
 	.tags__desc {
