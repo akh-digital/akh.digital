@@ -3,10 +3,8 @@
 </div>
 
 <script>
-	const projectImages = document.querySelectorAll(".post img");
-
-	if ("IntersectionObserver" in window) {
-		const imageObserver = new IntersectionObserver(
+	const imageObserver = "IntersectionObserver" in window
+		? new IntersectionObserver(
 			(entries, observer) => {
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
@@ -16,13 +14,21 @@
 				});
 			},
 			{ threshold: 0.12 },
-		);
+		)
+		: null;
 
-		projectImages.forEach((image) => {
+	const observeProjectImages = () => {
+		if (!imageObserver) return;
+
+		imageObserver.disconnect();
+		document.querySelectorAll(".post img").forEach((image) => {
 			image.classList.add("image-reveal");
 			imageObserver.observe(image);
 		});
-	}
+	};
+
+	observeProjectImages();
+	document.addEventListener("astro:page-load", observeProjectImages);
 </script>
 
 <style>

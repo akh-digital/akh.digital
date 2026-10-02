@@ -81,15 +81,27 @@ const locale = localeFromPath(Astro.url.pathname);
 			import Lenis from "lenis";
 			import "lenis/dist/lenis.css";
 
+			const scrollEasing = (progress) => 1 - Math.pow(1 - progress, 3);
+			let lenis;
+
 			if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-				new Lenis({
+				lenis = new Lenis({
 					autoRaf: true,
 					anchors: {
 						duration: 1.8,
-						easing: (progress) => 1 - Math.pow(1 - progress, 3),
+						easing: scrollEasing,
 					},
 				});
 			}
+
+			document.addEventListener("click", (event) => {
+				if (!(event.target instanceof Element)) return;
+				const link = event.target.closest(".go-to-top-link");
+				if (!(link instanceof HTMLAnchorElement) || !lenis) return;
+
+				event.preventDefault();
+				lenis.scrollTo("#header", { duration: 1.8, easing: scrollEasing });
+			}, true);
 		</script>
 
 		<YaMetrika />
