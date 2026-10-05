@@ -57,6 +57,15 @@ const locale = localeFromPath(Astro.url.pathname);
 				font-size: var(--font-size-normal);
 			}
 
+			.cursor-trail {
+				position: fixed;
+				inset: 0;
+				z-index: 99999;
+				width: 100vw;
+				height: 100vh;
+				pointer-events: none;
+			}
+
 			.column {
 				@media (width > 1024px) {
 					padding-inline: 40px;
@@ -80,6 +89,105 @@ const locale = localeFromPath(Astro.url.pathname);
 		<script>
 			import Lenis from "lenis";
 			import "lenis/dist/lenis.css";
+
+			const canRenderCursorTrail =
+				window.matchMedia("(hover: hover) and (pointer: fine)").matches &&
+				!window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+			if (canRenderCursorTrail) {
+				const cellSize = 8;
+				const trailLifetime = 450;
+				const trailPoints = [];
+				const canvas = document.createElement("canvas");
+				const context = canvas.getContext("2d");
+				let lastPoint = null;
+				let animationFrame = null;
+
+				canvas.className = "cursor-trail";
+				canvas.setAttribute("aria-hidden", "true");
+
+				const resizeCanvas = () => {
+					const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+					canvas.width = window.innerWidth * pixelRatio;
+					canvas.height = window.innerHeight * pixelRatio;
+				};
+
+				const renderTrail = (time) => {
+					const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+					context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+					context.clearRect(0, 0, window.innerWidth, window.innerHeight);
+					for (let index = trailPoints.length - 1; index >= 0; index--) {
+						const point = trailPoints[index];
+						const progress = (time - point.time) / trailLifetime;
+
+						if (progress >= 1) {
+							trailPoints.splice(index, 1);
+							continue;
+						}
+
+						const size = Math.max(2, Math.round(cellSize * (1 - progress)));
+						const offset = Math.floor((cellSize - size) / 2);
+						context.fillStyle = point.color;
+						context.globalAlpha = 1 - progress;
+						context.fillRect(
+							point.x * cellSize + offset,
+							point.y * cellSize + offset,
+							size,
+							size,
+						);
+					}
+
+					context.globalAlpha = 1;
+					animationFrame = trailPoints.length ? requestAnimationFrame(renderTrail) : null;
+				};
+
+				const scheduleRender = () => {
+					if (animationFrame === null) animationFrame = requestAnimationFrame(renderTrail);
+				};
+
+				const mountTrail = () => {
+					if (!canvas.isConnected) document.body.append(canvas);
+					resizeCanvas();
+				};
+
+				window.addEventListener("resize", resizeCanvas);
+				window.addEventListener("pointermove", (event) => {
+					if (event.pointerType && event.pointerType !== "mouse") return;
+
+					const x = Math.floor(event.clientX / cellSize);
+					const y = Math.floor(event.clientY / cellSize);
+					const previous = lastPoint || { x, y };
+					const steps = Math.max(Math.abs(x - previous.x), Math.abs(y - previous.y), 1);
+					const time = performance.now();
+					const target = document.elementFromPoint(event.clientX, event.clientY);
+					const color = target
+						? getComputedStyle(target).color
+						: getComputedStyle(document.documentElement).getPropertyValue("--text-color").trim() ||
+							"#1e1e1e";
+
+					for (let step = 1; step <= steps; step++) {
+						const point = {
+							x: Math.round(previous.x + ((x - previous.x) * step) / steps),
+							y: Math.round(previous.y + ((y - previous.y) * step) / steps),
+							time,
+							color,
+						};
+						const latest = trailPoints[trailPoints.length - 1];
+
+						if (latest?.x === point.x && latest.y === point.y) {
+							latest.time = time;
+							latest.color = color;
+						}
+						else trailPoints.push(point);
+					}
+
+					trailPoints.splice(0, Math.max(0, trailPoints.length - 400));
+					lastPoint = { x, y };
+					scheduleRender();
+				}, { passive: true });
+				document.addEventListener("astro:page-load", mountTrail);
+				mountTrail();
+			}
 
 			const scrollEasing = (progress) => 1 - Math.pow(1 - progress, 3);
 			let lenis;
