@@ -8,19 +8,19 @@ expertise:
     (3) My approach is systematic and business-driven. I believe design succeeds when it solves real problems, aligns with measurable objectives, and evolves through iteration. Every project starts with understanding its context and ends with a solution that is purposeful, refined, and built to last.
     (4) As a design lead, I build teams as carefully as I build products. I develop design processes, strengthen collaboration across disciplines, and mentor designers, helping individuals and teams grow while raising the overall quality of design.
   tags:
-    - text: User Interface
+    - text: User Interface
     - icon: rocket
-    - text: UX Research
+    - text: UX Research
     - icon: aim
     - text: Product Design
     - icon: cross-alt-hole
-    - text: AI Tools
-    - icon: code
-    - text: Design Systems
-    - icon: eye
-    - text: Visual Identity & Print
-    - icon: a1
     - text: DesignOps
+    - icon: code
+    - text: Design Systems / UI Kits
+    - icon: eye
+    - text: AI Tools
+    - icon: a1
+    - text: Visual Identity & Print
 
 projects:
   title: Selected Projects
