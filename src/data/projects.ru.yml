@@ -14,13 +14,13 @@ expertise:
     - icon: aim
     - text: Product Design
     - icon: cross-alt-hole
-    - text: AI Tools
-    - icon: code
-    - text: Design Systems
-    - icon: eye
-    - text: Visual Identity & Print
-    - icon: a1
     - text: DesignOps
+    - icon: code
+    - text: Design Systems / UI Kits
+    - icon: eye
+    - text: AI Tools
+    - icon: a1
+    - text: Visual Identity & Print
 
 projects:
   title: Проекты
