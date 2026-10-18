@@ -1,10 +1,10 @@
 ---
 title: Alcon
 date: 2026-01-01
-web: www.alcon.com
 client: Alcon Pharmaceuticals LLC
 role: Ведущий дизайнер
 responsibilities: Спроектировал с нуля B2B-продукт для оптических ритейлеров и бизнес-партнёров (10K+ MAU), Разработал веб-портал - UI/UX-дизайн / прототипирование / пользовательские пути (user journeys) и сценарии использования (use cases), Совместно с командами разработки / аналитики / продукта / бизнеса определял принципы дизайна и UX-решения, Создал дизайн-систему проекта на основе бренд-гайдлайнов компании
+web: www.alcon.com
 tags: ["KEY UI UX DESIGN", "PRODUCT DESIGN", "DATA VISUALIZATION"]
 ---
 
