@@ -4,7 +4,7 @@ date: 2026-01-04
 client: Itigris Optima LLC
 role: Lead Designer
 responsibilities: Art-direction and design-ops, Formation of design-product strategy, Creation and development of the design-system, Conceptual design, Communication design — branding & merch design
-tags: ["KEY UI UX DESIGN", "USER RESEARCH", "DATA VISUALIZATION"]
+tags: ["ART DIRECTION", "DESIGN OPS", "DESIGN SYSTEM", "KEY UI UX DESIGN", "USER RESEARCH & TESTING", "DATA VISUALIZATION", "BRANDING & GUIDELINES"]
 ---
 
 Led design and redesign of B2C and B2B products (2200+ companies in Russia, CIS and Africa, 19K+ DAU)

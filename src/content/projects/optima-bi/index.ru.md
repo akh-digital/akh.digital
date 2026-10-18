@@ -4,7 +4,7 @@ date: 2026-01-04
 client: Itigris Optima LLC
 role: Ведущий дизайнер
 responsibilities: Арт-дирекшн и дизайн-операции, продуктовая стратегия, создание и развитие дизайн-системы, концептуальный дизайн, коммуникационный дизайн, брендинг и мерч
-tags: ["KEY UI UX DESIGN", "USER RESEARCH", "DATA VISUALIZATION"]
+tags: ["ART DIRECTION", "DESIGN OPS", "DESIGN SYSTEM", "KEY UI UX DESIGN", "USER RESEARCH & TESTING", "DATA VISUALIZATION", "BRANDING & GUIDELINES"]
 ---
 
 - Руководил дизайном и редизайном B2C- и B2B-продуктов (2200+ компаний в России, СНГ и Африке, 19K+ DAU)
