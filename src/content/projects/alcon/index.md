@@ -4,7 +4,6 @@ date: 2026-01-01
 client: Alcon Pharmaceuticals LLC
 role: Lead Designer
 responsibilities: Designed a B2B product for optical retailers and business partners from scratch (10K+ MAU), Designed the web portal - UI/UX design / prototyping / user journeys and use cases, Collaborated with development / analytics / product / business teams to define design principles and UX decisions, Created the project's design system based on the company's brand guidelines
-web: www.alcon.com
 tags: ["KEY UI UX DESIGN", "PRODUCT DESIGN", "DATA VISUALIZATION"]
 ---
 
