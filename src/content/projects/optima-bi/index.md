@@ -3,18 +3,9 @@ title: Optima BI Analytics
 date: 2026-01-04
 client: Itigris Optima LLC
 role: Lead Designer
-responsibilities: Art-direction and design-ops, Formation of design-product strategy, Creation and development of the design-system, Conceptual design, Communication design — branding & merch design
+responsibilities: Led design and redesign of B2C and B2B products (2200+ companies in Russia, CIS and Africa, 19K+ DAU),  Hired designers on the projects (onsite + outstaff), Organized design department, Established cross-team and internal-team processes, Established and defined brand guidelines, Created and set up design system for Russian & CIS markets products (B2B, B2C), Created corporate website + wesites for products, Made some cool merch
 tags: ["ART DIRECTION", "DESIGN OPS", "DESIGN SYSTEM", "KEY UI UX DESIGN", "USER RESEARCH & TESTING", "DATA VISUALIZATION", "BRANDING & GUIDELINES"]
 ---
-
-- Led design and redesign of B2C and B2B products (2200+ companies in Russia, CIS and Africa, 19K+ DAU)
-- Hired designers on the projects (onsite + outstaff)
-- Organized design department
-- Established cross-team and internal-team processes
-- Established and defined brand guidelines
-- Created and set up design system for Russian & CIS markets products (B2B, B2C)
-- Created corporate website + wesites for products
-- Made some cool merch
 
 Optima BI is an analytics service created for optic businesses. It allows to analize data from various sources, provide different kinds of business reports, visualize data, create dashboards and share the results. With this solution business owners and managers can track any product and business metrics directly from the platform to make data-driven decisions.
 
