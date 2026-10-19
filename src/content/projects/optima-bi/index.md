@@ -3,7 +3,7 @@ title: Optima BI Analytics
 date: 2026-01-04
 client: Itigris Optima LLC
 role: Art Director + Lead Designer
-responsibilities: Led design and redesign of B2C and B2B products (2200+ companies in Russia CIS and Africa / 19K+ DAU),  Hired designers on the projects (onsite + outstaff), Organized design department, Established cross-team and internal-team processes, Established and defined brand guidelines, Created and set up design system for Russian & CIS markets products (B2B & B2C), Implemented and validated a number of features into legacy interface, Created corporate website + websites for products, Created collaterals - business cards / presentations / documents, Made some cool merch
+responsibilities: Led design and redesign of B2C and B2B products (2200+ companies in Russia CIS and Africa / 19K+ DAU),  Hired designers on the projects (onsite + outstaff), Organized design department, Established cross-team and internal-team processes, Established and defined brand guidelines, Created and set up design system for Russian & CIS markets products (B2B & B2C), Implemented and validated a number of features into legacy interface, Created corporate website + websites for products, Implemented AI tools into the design workflow, Created collaterals - business cards / presentations / documents, Made some cool merch
 tags: ["ART DIRECTION", "DESIGN OPS", "DESIGN SYSTEM", "KEY UI UX DESIGN", "USER RESEARCH & TESTING", "DATA VISUALIZATION", "BRANDING & GUIDELINES"]
 ---
 
