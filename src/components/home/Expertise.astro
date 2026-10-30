@@ -15,9 +15,10 @@ const findSocialUrl = (title) => {
 	}
 	return socialLink.url;
 };
-const englishCv = aboutData.cv.list.find((cv) => cv.title === "PDF / ENGLISH");
-if (!englishCv) {
-	throw new Error("Missing English CV link");
+const cvTitle = locale === "ru" ? "PDF / RUSSIAN" : "PDF / ENGLISH";
+const cv = aboutData.cv.list.find((item) => item.title === cvTitle);
+if (!cv) {
+	throw new Error(`Missing ${locale} CV link`);
 }
 const contactLinks = new Map(
 	locale === "ru"
@@ -25,13 +26,13 @@ const contactLinks = new Map(
 				["LinkedIn", findSocialUrl("linkedin")],
 				["Telegram", findSocialUrl("telegram")],
 				["почту", findSocialUrl("aleks@akh-digital.ru")],
-				["CV", englishCv.url],
+				["CV", cv.url],
 			]
 		: [
 				["LinkedIn", findSocialUrl("linkedin")],
 				["Telegram", findSocialUrl("telegram")],
 				["email", findSocialUrl("aleks@akh-digital.ru")],
-				["CV", englishCv.url],
+				["CV", cv.url],
 			],
 );
 ---

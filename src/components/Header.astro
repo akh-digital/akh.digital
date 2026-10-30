@@ -129,10 +129,7 @@ const alternatePath = isNotFoundPage
 			Math.min(Math.max(bounds.left + bounds.width / 2, 0), window.innerWidth),
 			Math.min(Math.max(bounds.top + bounds.height / 2, 0), window.innerHeight),
 		];
-		const previousTheme = root.dataset.theme;
-		root.dataset.theme = nextTheme;
 		const pixelColor = getComputedStyle(root).backgroundColor;
-		root.dataset.theme = previousTheme;
 
 		const pixelLayer = document.createElement("canvas");
 		const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
