@@ -103,14 +103,150 @@ const alternatePath = isNotFoundPage
 
 	syncThemeToggle();
 	document.addEventListener("astro:page-load", syncThemeToggle);
+	let themeTransitionInProgress = false;
+
 	document.addEventListener("click", (event) => {
 		if (!(event.target instanceof Element)) return;
 		const themeToggle = event.target.closest("[data-theme-toggle]");
-		if (!(themeToggle instanceof HTMLButtonElement)) return;
+		if (!(themeToggle instanceof HTMLButtonElement) || themeTransitionInProgress) return;
 
-		const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-		document.documentElement.dataset.theme = nextTheme;
-		localStorage.setItem("theme", nextTheme);
-		syncThemeToggle();
+		const root = document.documentElement;
+		const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+		const applyTheme = () => {
+			root.dataset.theme = nextTheme;
+			localStorage.setItem("theme", nextTheme);
+			syncThemeToggle();
+		};
+		const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+		if (prefersReducedMotion) {
+			applyTheme();
+			return;
+		}
+
+		const bounds = themeToggle.getBoundingClientRect();
+		const origin = [
+			Math.min(Math.max(bounds.left + bounds.width / 2, 0), window.innerWidth),
+			Math.min(Math.max(bounds.top + bounds.height / 2, 0), window.innerHeight),
+		];
+		const previousTheme = root.dataset.theme;
+		root.dataset.theme = nextTheme;
+		const pixelColor = getComputedStyle(root).backgroundColor;
+		root.dataset.theme = previousTheme;
+
+		const pixelLayer = document.createElement("canvas");
+		const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+		const width = window.innerWidth;
+		const height = window.innerHeight;
+		const pixelSize = Math.round(Math.min(64, Math.max(20, (32 * width) / 1366)));
+		const columns = Math.ceil(width / pixelSize);
+		const rows = Math.ceil(height / pixelSize);
+		const context = pixelLayer.getContext("2d");
+
+		if (!context) {
+			applyTheme();
+			return;
+		}
+
+		pixelLayer.width = width * pixelRatio;
+		pixelLayer.height = height * pixelRatio;
+		Object.assign(pixelLayer.style, {
+			position: "fixed",
+			inset: "0",
+			zIndex: "100000",
+			width: `${width}px`,
+			height: `${height}px`,
+			pointerEvents: "none",
+		});
+		document.body.append(pixelLayer);
+		context.scale(pixelRatio, pixelRatio);
+		context.fillStyle = pixelColor;
+
+		const cells = [];
+		for (let row = 0; row < rows; row++) {
+			for (let column = 0; column < columns; column++) {
+				cells.push({
+					x: column * pixelSize,
+					y: row * pixelSize,
+					centerX: column * pixelSize + pixelSize / 2,
+					centerY: row * pixelSize + pixelSize / 2,
+				});
+			}
+		}
+
+		const orderCells = (fromPoint) => {
+			const [originX, originY] = fromPoint || [];
+			const maximumDistance = fromPoint
+				? Math.hypot(
+						Math.max(originX, width - originX),
+						Math.max(originY, height - originY),
+					) || 1
+				: 1;
+			const score = (cell) => {
+				if (!fromPoint) return Math.random();
+
+				const distance =
+					Math.hypot(cell.centerX - originX, cell.centerY - originY) / maximumDistance;
+				return distance * 0.65 + Math.random() * 0.35;
+			};
+
+			return cells.map((cell) => ({ cell, score: score(cell) }))
+				.sort((first, second) => first.score - second.score)
+				.map(({ cell }) => cell);
+		};
+
+		const animatePixels = (orderedCells, duration, drawCell) =>
+			new Promise((resolve) => {
+				let drawnCells = 0;
+				const startTime = performance.now();
+				const drawFrame = (time) => {
+					const progress = Math.min((time - startTime) / duration, 1);
+					const easedProgress = progress < 0.5
+						? 2 * progress * progress
+						: 1 - Math.pow(-2 * progress + 2, 2) / 2;
+					const targetCells = Math.floor(easedProgress * orderedCells.length);
+
+					for (; drawnCells < targetCells; drawnCells++) {
+						drawCell(orderedCells[drawnCells]);
+					}
+
+					if (progress < 1) {
+						requestAnimationFrame(drawFrame);
+						return;
+					}
+
+					for (; drawnCells < orderedCells.length; drawnCells++) {
+						drawCell(orderedCells[drawnCells]);
+					}
+					resolve();
+				};
+
+				requestAnimationFrame(drawFrame);
+			});
+
+		const cover = async () => {
+			themeTransitionInProgress = true;
+			try {
+				await animatePixels(orderCells(origin), 450, (cell) => {
+					context.fillRect(cell.x, cell.y, pixelSize, pixelSize);
+				});
+
+				root.classList.add("theme-instant");
+				applyTheme();
+				void document.body.offsetHeight;
+				requestAnimationFrame(() => root.classList.remove("theme-instant"));
+				await new Promise((resolve) => window.setTimeout(resolve, 60));
+				await animatePixels(orderCells(), 450, (cell) => {
+					context.clearRect(cell.x, cell.y, pixelSize, pixelSize);
+				});
+			}
+			finally {
+				root.classList.remove("theme-instant");
+				pixelLayer.remove();
+				themeTransitionInProgress = false;
+			}
+		};
+
+		void cover();
 	});
 </script>

@@ -1,11 +1,39 @@
 ---
-import { localeFromPath, project } from "../../lib/config.js";
+import { about, localeFromPath, project } from "../../lib/config.js";
 import { parseDescription } from "../../lib/parseDescription.js";
 
-const expertiseData = project(localeFromPath(Astro.url.pathname)).expertise;
+const locale = localeFromPath(Astro.url.pathname);
+const expertiseData = project(locale).expertise;
+const aboutData = about(locale);
 
 const tags = expertiseData.tags;
 const descList = parseDescription(expertiseData.desc);
+const findSocialUrl = (title) => {
+	const socialLink = aboutData.social.list.find((link) => link.title === title);
+	if (!socialLink) {
+		throw new Error(`Missing ${title} contact link`);
+	}
+	return socialLink.url;
+};
+const englishCv = aboutData.cv.list.find((cv) => cv.title === "PDF / ENGLISH");
+if (!englishCv) {
+	throw new Error("Missing English CV link");
+}
+const contactLinks = new Map(
+	locale === "ru"
+		? [
+				["LinkedIn", findSocialUrl("linkedin")],
+				["Telegram", findSocialUrl("telegram")],
+				["почту", findSocialUrl("aleks@akh-digital.ru")],
+				["CV", englishCv.url],
+			]
+		: [
+				["LinkedIn", findSocialUrl("linkedin")],
+				["Telegram", findSocialUrl("telegram")],
+				["email", findSocialUrl("aleks@akh-digital.ru")],
+				["CV", englishCv.url],
+			],
+);
 ---
 
 <section class="tags">
@@ -22,7 +50,18 @@ const descList = parseDescription(expertiseData.desc);
 		</ul>
 	</div>
 	<div class="tags__desc">
-		{descList.map((d) => <p>{d}</p>)}
+		{descList.map((d) => (
+			<p>
+				{d.split(locale === "ru" ? /(LinkedIn|Telegram|почту|CV)/g : /(LinkedIn|Telegram|email|CV)/g).map((part) => {
+					const url = contactLinks.get(part);
+					return url ? (
+						<a href={url} target="_blank" rel="noopener noreferrer">{part}</a>
+					) : (
+						part
+					);
+				})}
+			</p>
+		))}
 	</div>
 </section>
 
@@ -76,6 +115,11 @@ const descList = parseDescription(expertiseData.desc);
 
 	.tags__desc > p {
 		margin: 0;
+	}
+
+	.tags__desc a {
+		color: inherit;
+		text-decoration: underline;
 	}
 
 	@media (min-width: 768px) {
