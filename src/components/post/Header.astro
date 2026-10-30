@@ -1,26 +1,16 @@
 ---
 import { getCollection } from "astro:content";
-import { localeFromPath } from "../../lib/config.js";
 
 const { slug } = Astro.params;
-const locale = localeFromPath(Astro.url.pathname);
 
-const projects = (await getCollection("projects")).filter((project) =>
-	locale === "ru" ? project.id.endsWith("index.ru.md") : project.id.endsWith("index.md"),
-);
+const projects = await getCollection("projects");
 const sortedProjects = projects.sort((a, b) => {
 	return b.data.date - a.data.date;
 });
-const getProjectSlug = (project) =>
-	locale === "ru" ? project.id.split("/").slice(-2, -1)[0].toLowerCase() : project.slug;
 const currentProjectNumber =
-	sortedProjects.findIndex((project) => getProjectSlug(project) === slug) + 1;
+	sortedProjects.findIndex((project) => project.slug === slug) + 1;
 
-const currentProject = projects.find((project) =>
-	locale === "ru"
-		? project.id.split("/").slice(-2, -1)[0].toLowerCase() === slug
-		: project.slug === slug,
-);
+const currentProject = projects.find((project) => project.slug === slug);
 const { title } = currentProject.data;
 ---
 
@@ -46,7 +36,7 @@ const { title } = currentProject.data;
 <style>
 	.post-header__divider {
 		margin: 20px 0;
-		border-top: 2px solid var(--border-color);
+		border-top: 2px solid var(--black);
 	}
 	.post-header__number {
 		font-weight: 500;

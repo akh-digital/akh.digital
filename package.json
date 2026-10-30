@@ -7,8 +7,9 @@
 	},
 	"packageManager": "pnpm@9.1.4",
 	"scripts": {
-		"dev": "astro dev",
-		"build": "astro build"
+		"sync:project-previews": "node scripts/sync-project-previews.mjs",
+		"dev": "node scripts/sync-project-previews.mjs && astro dev",
+		"build": "node scripts/sync-project-previews.mjs && astro build"
 	},
 	"dependencies": {
 		"@astrojs/partytown": "^2.1.4",
