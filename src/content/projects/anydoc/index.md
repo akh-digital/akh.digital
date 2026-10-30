@@ -1,9 +1,9 @@
 ---
-title: Anydoc
+title: Anydoc — Умное распознавание и процессинг таможенных документов
 date: 2025-09-08
 client: Indital Group
 role: Lead Product Designer
-responsibilities: Creation and development of the design-system, UI UX design, User Research, User Flows
+responsibilities: Creation and development of the UI kit, Designed web app (desktop + mobile versions) from scratch, Conducted user research, prototyping, user journey and use cases
 tags: ["KEY UI UX DESIGN", "PRODUCT DESIGN"]
 ---
 
@@ -26,6 +26,7 @@ Solution — I designed an AI-assisted document verification experience that com
 ![anydoc-case-4@2x](./anydoc-case-4@2x.webp)
 
 Impact — 4–5× faster document processing, 60% reduction in fully manual document reviews, 8× increase in operator throughput.
+After the successful MVP launch, the project was handed over to the client for further development, along with all design and development assets. 
 
 ![anydoc-case-5@2x](./anydoc-case-5@2x.webp)
 
