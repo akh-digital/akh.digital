@@ -1,5 +1,5 @@
 ---
-title: Anydoc — Умное распознавание и процессинг таможенных документов
+title: Anydoc
 date: 2025-09-08
 client: Indital Group
 role: Ведущий продуктовый дизайнер

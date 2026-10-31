@@ -1,5 +1,5 @@
 ---
-title: Anydoc — Intelligent recognition and processing of customs documents
+title: Anydoc
 date: 2025-09-08
 client: Indital Group
 role: Lead Product Designer

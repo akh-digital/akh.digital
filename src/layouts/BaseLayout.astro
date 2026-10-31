@@ -1,13 +1,11 @@
 ---
 import HeadMeta from "../components/HeadMeta.astro";
 import YaMetrika from "../components/third-party-script/YaMetrika.astro";
-import { global, localeFromPath } from "../lib/config";
+import { global } from "../lib/config";
 import "../styles/index.css";
-
-const locale = localeFromPath(Astro.url.pathname);
 ---
 
-<html class="page" lang={global(locale).language}>
+<html class="page" lang={global().language}>
 	<head>
 		<HeadMeta />
 
