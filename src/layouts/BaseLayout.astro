@@ -7,6 +7,11 @@ import "../styles/index.css";
 
 <html class="page" lang={global().language}>
 	<head>
+		<script is:inline>
+			if (localStorage.getItem("theme") === "dark") {
+				document.documentElement.dataset.theme = "dark";
+			}
+		</script>
 		<HeadMeta />
 
 		<link
