@@ -19,10 +19,9 @@ Ensured consistency with the company's standardized digital service patterns and
 
 ![optima-bi-case-2-1@2x](./optima-bi-case-2-1@2x.webp) ![optima-bi-case-2-2@2x](./optima-bi-case-2-2@2x.webp)
 
-Low-Fidelity Interactive Prototypes — Introduced interactive low-fidelity prototypes to validate new features, user flows, and product hypotheses through micro-interactions. Built prototypes using Figma Make and Claude Code. 
+Low-Fidelity Interactive Prototypes — Introduced interactive low-fidelity prototypes to validate new features, user flows, and product hypotheses through micro-interactions. Built prototypes using Figma Make and Claude Code. Introduced AI tools into the product and design workflows.
 
-Reduced design approval time by 3× by enabling stakeholders to experience functionality early in the design process, significantly improving collaboration across design, product analytics, and engineering teams. 
-Reduced the number of post-release redesigns by validating interactions before development, eliminating the need to wait for testing or production releases to evaluate user experience.
+Reduced design approval time by 3× by enabling stakeholders to experience functionality early in the design process, significantly improving collaboration across design, product analytics, and engineering teams. Reduced the number of post-release redesigns by validating interactions before development, eliminating the need to wait for testing or production releases to evaluate user experience.
 
 ![optima-bi-case-3-1@2x](./optima-bi-case-3-1@2x.webp) ![optima-bi-case-3-2@2x](./optima-bi-case-3-2@2x.webp)
 
@@ -32,9 +31,7 @@ Maintained separate long-term vision and sprint-ready design artifacts, ensuring
 
 ![optima-bi-case-4-1@2x](./optima-bi-case-4-1@2x.webp) ![optima-bi-case-4-2@2x](./optima-bi-case-4-2@2x.webp)
 
-Grew the design team from a single designer to a small, self-sufficient team, building the hiring pipeline, onboarding process, and mentoring structure from the ground up. 
-Introduced product training for designers to deepen their understanding of user workflows and industry best practices. 
-Defined business and product KPIs, identified strategic opportunities for design and product growth, and aligned design efforts with business objectives.
+Grew the design team from a single designer to a small, self-sufficient team, building the hiring pipeline, onboarding process, and mentoring structure from the ground up. Introduced product training for designers to deepen their understanding of user workflows and industry best practices. Defined business and product KPIs, identified strategic opportunities for design and product growth, and aligned design efforts with business objectives.
 
 ![optima-bi-case-5-1@2x](./optima-bi-case-5-1@2x.webp) ![optima-bi-case-5-2@2x](./optima-bi-case-5-2@2x.webp)
 
