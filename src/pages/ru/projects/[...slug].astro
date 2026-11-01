@@ -9,10 +9,11 @@ import MetaData from "../../../components/post/MetaData.astro";
 import Pagination from "../../../components/post/Pagination.astro";
 import { global } from "../../../lib/config.js";
 import Post from "../../../components/post/Post.astro";
+import { isProjectForLocale } from "../../../lib/projectLocale.js";
 
 export async function getStaticPaths() {
 	const projects = await getCollection("projects");
-	const russianProjects = projects.filter((project) => project.id.endsWith("index.ru.md"));
+	const russianProjects = projects.filter((project) => isProjectForLocale(project, "ru"));
 
 	return russianProjects.map((project) => ({
 		params: { slug: project.id.split("/").slice(-2, -1)[0].toLowerCase() },

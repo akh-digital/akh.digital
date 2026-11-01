@@ -46,4 +46,3 @@ Delivered internal lectures and webinars on product design, design methodology, 
 Advocated for design across the organization, fostering stronger relationships between designers and business stakeholders and increasing trust in the design function. Helped improve team motivation, collaboration, and cross-functional alignment.
 
 ![optima-bi-case-8@2x](./optima-bi-case-8@2x.webp)
-

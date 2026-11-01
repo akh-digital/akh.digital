@@ -28,4 +28,3 @@ Solution — I designed an AI-assisted document verification experience that com
 Impact — 4–5× faster document processing, 60% reduction in fully manual document reviews, 8× increase in operator throughput. After the successful MVP launch, the project was handed over to the client for further development, along with all design and development assets. 
 
 ![anydoc-case-5@2x](./anydoc-case-5@2x.webp)
-

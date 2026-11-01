@@ -2,12 +2,13 @@
 import { getCollection } from "astro:content";
 import Show from "../../lib/Show.astro";
 import { localeFromPath } from "../../lib/config.js";
+import { isProjectForLocale } from "../../lib/projectLocale.js";
 
 const { slug } = Astro.params;
 const locale = localeFromPath(Astro.url.pathname);
 
 const projects = (await getCollection("projects")).filter((project) =>
-	locale === "ru" ? project.id.endsWith("index.ru.md") : project.id.endsWith("index.md"),
+	isProjectForLocale(project, locale),
 );
 const currentProject = projects.find((project) =>
 	locale === "ru"
